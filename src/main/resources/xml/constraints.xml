@@ -1,0 +1,26 @@
+<ac:structured-macro ac:name="info">
+  <ac:rich-text-body>
+    <div>
+      <h6 class="Erluterungberschrift">Contents</h6>
+      <p class="Erluterungstext">Any requirement that constrains software architects in their freedom of design decisions or the development process.</p>
+      <h6 class="Erluterungberschrift">Motivation</h6>
+      <p class="Erluterungstext">Architects should know exactly where they are free in their design decisions and where they must adhere to constraints.</p>
+      <p class="Erluterungstext">Constraints must always be dealt with; they may be negotiable, though.</p>
+      <h6 class="Erluterungstext">
+        <strong>
+          <em>Form</em>
+        </strong>
+      </h6>
+      <p class="Erluterungstext">Informal lists, structured by the sub-sections of this section.</p>
+      <h6 class="Erluterungstext">
+        <strong>
+          <em>Examples</em>
+        </strong>
+      </h6>
+      <p class="Erluterungstext">see sub-sections</p>
+      <h6 class="Erluterungberschrift">Background Information</h6>
+      <p class="Erluterungstext">In the optimal case constraints are defined by requirements. In any case, at least the architects must be aware of constraints.</p>
+      <p class="Erluterungstext">The influence of constraints is described by [Hofmeister et al] (Software Architecture, A Practical Guide, Addison Wesley 1999)  using the term “global analysis”.</p>
+    </div>
+  </ac:rich-text-body>
+</ac:structured-macro>
