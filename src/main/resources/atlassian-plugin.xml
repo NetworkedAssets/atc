@@ -43,10 +43,10 @@
 	<component-import key="applicationProperties"
 		interface="com.atlassian.sal.api.ApplicationProperties" />
 
-	<web-item key='arc-space-blueprint-item' i18n-name-key='confluence.blueprints.space.name'
-		section='system.create.space.dialog/content'>
-		<description key='confluence.blueprints.space.description' />
-		<param name='blueprintKey' value='example-space-blueprint' />
+	<web-item key="space-blueprint-item" i18n-name-key="confluence.blueprints.space.name"
+		section="system.create.space.dialog/content">
+		<description key="confluence.blueprints.space.description" />
+		<param name="blueprintKey" value="example-space-blueprint" />
 	</web-item>
 
 <!-- 1 Home page -->
@@ -54,13 +54,6 @@
 		i18n-name-key="confluence.blueprints.space.homepage.name">
 		<description key="confluence.blueprints.space.homepage.desc" />
 		<resource name="template" type="download" location="/xml/space-home.xml" />
-	</content-template>
-	
-<!-- 1 child page -->
-	<content-template key="space-childpage-template"
-		i18n-name-key="confluence.blueprints.space.childpage.name">
-		<description key="confluence.blueprints.space.childpage.desc" />
-		<resource name="template" type="download" location="/xml/space-childpage.xml" />
 	</content-template>
 	
 <!-- Introduction page -->
@@ -83,6 +76,20 @@
 		<description key="confluence.blueprints.space.context.desc" />
 		<resource name="template" type="download" location="/xml/context.xml" />
 	</content-template>
+	
+<!-- Solution page -->
+	<content-template key="solution"
+		i18n-name-key="confluence.blueprints.space.solution.name">
+		<description key="confluence.blueprints.space.solution.desc" />
+		<resource name="template" type="download" location="/xml/solution.xml" />
+	</content-template>
+	
+<!-- Building Block page -->
+	<content-template key="buildingblock"
+		i18n-name-key="confluence.blueprints.space.buildingblock.name">
+		<description key="confluence.blueprints.space.buildingblock.desc" />
+		<resource name="template" type="download" location="/xml/buildingblock.xml" />
+	</content-template>
 
 <!-- Definition of the space blueprint and the dialog wizard -->
 	<space-blueprint key="example-space-blueprint"
@@ -91,9 +98,11 @@
 		     <content-template ref="introduction"/>
 		     <content-template ref="constraints"/>
 		     <content-template ref="context"/>
+		     <content-template ref="solution"/>
+		     <content-template ref="buildingblock"/>
 		 </content-template>
 
-		<dialog-wizard key="arc-space-blueprint-wizard">
+		<dialog-wizard key="example-space-blueprint-wizard">
 			<dialog-page id="exampleSpaceId"
 				template-key="Confluence.SpaceBlueprints.Example.dialogForm"
 				title-key="confluence.blueprints.space.dialog.create.title"

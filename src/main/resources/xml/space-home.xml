@@ -3,6 +3,7 @@
 		<ac:layout-cell>
 			<h2>
 				<at:var at:name="spaceHomepageHeading" />
+				<!-- <at:i18n at:key="confluence.blueprints.space.home.heading" /> -->
 			</h2>
 			<p>
 				<at:var at:name="spaceDesc" />

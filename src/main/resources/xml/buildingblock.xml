@@ -1,0 +1,23 @@
+<ac:structured-macro ac:name="info">
+  <ac:rich-text-body>
+    <div>
+      <div>
+        <h6>Contents</h6>
+        <p>Static decomposition of the system (introduced in the context diagram in section 3) into building blocks (modules, components, subsystems, subsidiary systems, classes, interfaces, packages, libraries, frameworks, layers, partitions, tiers, functions, macros, operations, data structures, …) and the relationships between them.</p>
+        <h6>Motivation</h6>
+        <p>This is the most important view, that must be part of each architecture documentation. It is the equivalent the the floor pan in building architecture.</p>
+        <h6>Form</h6>
+        <p>The building block view is a hierarchical set of diagrams including the next lower level black boxes and their dependencies. Each diagram is described according to the white box template (see section 5.1).</p>
+      </div>
+      <p> <ac:image ac:width="500">
+          <ri:attachment ri:filename="arc42-White-Blackbox-Hierarchy engl.png"/>
+        </ac:image>
+      </p>
+      <div>
+        <p>Level 1 contains the white box description of the overall system (system under development / SUD, introduced in the context diagram in section 3).</p>
+        <p>Level 2 zooms into the building blocks of Level 1 and is thus made up of the white box descriptions of all building blocks of Level 1.</p>
+        <p>Level 3 zooms into the building blocks of Level 2, etc.</p>
+      </div>
+    </div>
+  </ac:rich-text-body>
+</ac:structured-macro>
