@@ -1,0 +1,44 @@
+<ac:structured-macro ac:name="info">
+  <ac:rich-text-body>
+    <div>
+      <h6>Contents</h6>
+      <p>The top three (max five) goals for the architecture and/or constraints whose fulfillment is of highest importance to the major stakeholders.</p>
+      <p>Goals that define the architecture’s quality could be:</p>
+    </div>
+    <div>
+      <ul>
+        <li>·availability</li>
+        <li>·modifiability</li>
+        <li>·performance</li>
+        <li>·security</li>
+        <li>·testability</li>
+        <li>·usability</li>
+      </ul>
+    </div>
+    <div>
+      <h6>Motivation</h6>
+      <p>If you as an architect do not know how the quality of your work can be judged …</p>
+      <h6>Form</h6>
+      <p>Simple tabular representation, ordered by priorities</p>
+      <p>Background Information</p>
+      <p>NEVER start developing an architecture if these goals have not been put into writing and have not been signed by the major stakeholders.</p>
+    </div>
+    <p> </p>
+    <table>
+      <tbody>
+        <tr>
+          <td>
+            <p>We have endured projects lacking defined quality goals much too often. We do not like to suffer, therefore we are by now highly convinced that the few hours spent on collecting quality goals are well invested.</p>
+            <p>PH &amp; GS.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div>
+      <h6>Sources</h6>
+      <p>The DIN/ISO 92000 Standard contains an extensive set of possible quality goals.</p>
+      <p align="left">Or use chapters 10 – 17 of the VOLERE template as a starting point (<a href="http://www.volere.co.uk">www.volere.co.uk</a>).</p>
+    </div>
+    <p> </p>
+  </ac:rich-text-body>
+</ac:structured-macro>

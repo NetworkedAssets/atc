@@ -60,63 +60,84 @@
 	<content-template key="introduction"
 		i18n-name-key="confluence.blueprints.space.introduction.name">
 		<description key="confluence.blueprints.space.introduction.desc" />
-		<resource name="template" type="download" location="/xml/1introduction.xml" />
+		<resource name="template" type="download" location="/xml/01introduction.xml" />
+	</content-template>
+	
+	<!-- Requirements page -->
+	<content-template key="requirements"
+		i18n-name-key="confluence.blueprints.space.requirements.name">
+		<description key="confluence.blueprints.space.requirements.desc" />
+		<resource name="template" type="download" location="/xml/011requirements.xml" />
+	</content-template>
+	
+	<!-- Quality goals page -->
+	<content-template key="qualitygoals"
+		i18n-name-key="confluence.blueprints.space.qualitygoals.name">
+		<description key="confluence.blueprints.space.qualitygoals.desc" />
+		<resource name="template" type="download" location="/xml/012qualitygoals.xml" />
+	</content-template>
+	
+	<!-- Stakeholders page -->
+	<content-template key="stakeholders"
+		i18n-name-key="confluence.blueprints.space.stakeholders.name">
+		<description key="confluence.blueprints.space.stakeholders.desc" />
+		<resource name="template" type="download" location="/xml/013stakeholders.xml" />
 	</content-template>
 	
 <!-- Constraints page -->
 	<content-template key="constraints"
 		i18n-name-key="confluence.blueprints.space.constraints.name">
 		<description key="confluence.blueprints.space.constraints.desc" />
-		<resource name="template" type="download" location="/xml/2constraints.xml" />
+		<resource name="template" type="download" location="/xml/02constraints.xml" />
 	</content-template>
 	
 <!-- Context page -->
 	<content-template key="context"
 		i18n-name-key="confluence.blueprints.space.context.name">
 		<description key="confluence.blueprints.space.context.desc" />
-		<resource name="template" type="download" location="/xml/3context.xml" />
+		<resource name="template" type="download" location="/xml/03context.xml" />
 	</content-template>
 	
 <!-- Solution page -->
 	<content-template key="solution"
 		i18n-name-key="confluence.blueprints.space.solution.name">
 		<description key="confluence.blueprints.space.solution.desc" />
-		<resource name="template" type="download" location="/xml/4solution.xml" />
+		<resource name="template" type="download" location="/xml/04solution.xml" />
 	</content-template>
 	
 <!-- Building Block page -->
 	<content-template key="buildingblock"
 		i18n-name-key="confluence.blueprints.space.buildingblock.name">
 		<description key="confluence.blueprints.space.buildingblock.desc" />
-		<resource name="template" type="download" location="/xml/5buildingblock.xml" />
+		<resource name="template" type="download" location="/xml/05buildingblock.xml" />
 	</content-template>
 	
 <!-- Runtime View page -->
 	<content-template key="runtimeview"
 		i18n-name-key="confluence.blueprints.space.runtimeview.name">
 		<description key="confluence.blueprints.space.runtimeview.desc" />
-		<resource name="template" type="download" location="/xml/6runtimeview.xml" />
+		<resource name="template" type="download" location="/xml/06runtimeview.xml" />
 	</content-template>
 	
 <!-- Deployment View page -->
 	<content-template key="deploymentview"
 		i18n-name-key="confluence.blueprints.space.deploymentview.name">
 		<description key="confluence.blueprints.space.deploymentview.desc" />
-		<resource name="template" type="download" location="/xml/7deploymentview.xml" />
+		<resource name="template" type="download" location="/xml/07deploymentview.xml" />
 	</content-template>
 	
 <!-- Concepts page -->
 	<content-template key="concepts"
 		i18n-name-key="confluence.blueprints.space.concepts.name">
 		<description key="confluence.blueprints.space.concepts.desc" />
-		<resource name="template" type="download" location="/xml/8concepts.xml" />
+		<resource name="template" type="download" location="/xml/08concepts.xml" />
 	</content-template>
 	
 <!-- Design Decisions page -->
 	<content-template key="designdecisions"
 		i18n-name-key="confluence.blueprints.space.designdecisions.name">
 		<description key="confluence.blueprints.space.designdecisions.desc" />
-		<resource name="template" type="download" location="/xml/9designdecisions.xml" />
+		<resource name="template" type="download" location="/xml/09designdecisions.xml" />
 	</content-template>
 	
 <!-- Quality page -->
@@ -144,7 +165,11 @@
 	<space-blueprint key="space-blueprint"
 		i18n-name-key="confluence.blueprints.space.name" category="Architecture">
 		 <content-template ref="space-homepage-template">
-		     <content-template ref="introduction"/>
+		     <content-template ref="introduction">
+		        <content-template ref="requirements"/>
+		        <content-template ref="qualitygoals"/>
+		        <content-template ref="stakeholders"/>
+		     </content-template>
 		     <content-template ref="constraints"/>
 		     <content-template ref="context"/>
 		     <content-template ref="solution"/>
