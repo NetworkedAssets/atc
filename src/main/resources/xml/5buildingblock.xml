@@ -9,10 +9,10 @@
         <h6>Form</h6>
         <p>The building block view is a hierarchical set of diagrams including the next lower level black boxes and their dependencies. Each diagram is described according to the white box template (see section 5.1).</p>
       </div>
-      <p> <ac:image ac:width="500">
+     <!-- <p> <ac:image ac:width="500">
           <ri:attachment ri:filename="arc42-White-Blackbox-Hierarchy engl.png"/>
         </ac:image>
-      </p>
+      </p> --> 
       <div>
         <p>Level 1 contains the white box description of the overall system (system under development / SUD, introduced in the context diagram in section 3).</p>
         <p>Level 2 zooms into the building blocks of Level 1 and is thus made up of the white box descriptions of all building blocks of Level 1.</p>

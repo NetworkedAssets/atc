@@ -1,0 +1,14 @@
+<ac:structured-macro ac:name="info">
+  <ac:rich-text-body>
+    <div>
+      <h6>Contents</h6>
+      <p>A list of identified technical risks, ordered by priority</p>
+      <h6>Motivation</h6>
+      <p>“Risk management is project management for grown-ups” (Tim Lister, Atlantic Systems Guild.) This should be your motto for systematic detection and evaluation of technical risks in the architecture, which will be needed by project management as part of the overall risk analysis.</p>
+      <h6>Form</h6>
+      <p>List of risks with probability of occurrence, amount of damage, options for risk avoidance or risk mitigation, …</p>
+    </div>
+  </ac:rich-text-body>
+</ac:structured-macro>
+<p> </p>
+<p> </p>

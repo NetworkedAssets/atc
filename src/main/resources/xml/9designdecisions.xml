@@ -1,0 +1,50 @@
+<ac:structured-macro ac:name="info">
+  <ac:rich-text-body>
+    <div>
+      <h6>Contents</h6>
+      <p>Document all important design decisions and their reasons!</p>
+      <h6>Motivation</h6>
+      <p>It is advantageous if all important design decisions can be found in one place. It is up to you to decide if a decision should be documented here or rather locally (e.g. in the white box descriptions of building blocks). In any case avoid redundancies.</p>
+      <h6>Form</h6>
+      <p>Informal list, if possible ordered by the decisions’ importance for the reader.</p>
+      <p>Alternatively, use the following template to structure your decisions:</p>
+      <h6>9.x.1    Problem</h6>
+      <div style="margin-left: 30.0px;">
+        <p>What exactly is the problem?</p>
+        <p>Why is it relevant for the architecture?</p>
+        <p>What consequences does the decision have?</p>
+      </div>
+      <h6>9.x.2    Constraints</h6>
+      <div style="margin-left: 30.0px;">
+        <p>Which constraints do you have to keep in mind?</p>
+        <p>What factors influence the decision?</p>
+      </div>
+      <h6>9.x.3    Assumptions</h6>
+      <div style="margin-left: 30.0px;">
+        <p>Which assumption have you made?</p>
+        <p>How can you check those assumptions?</p>
+        <p>Which risks are you facing?</p>
+      </div>
+      <h6>9.x.4    Considered Alternatives</h6>
+      <div style="margin-left: 30.0px;">
+        <p>Which alternative options did you consider?</p>
+        <p>How do you judge each one?</p>
+        <p>Which alternatives are you excluding deliberately?</p>
+      </div>
+      <h6>9.x.5    Decision</h6>
+      <div style="margin-left: 30.0px;">
+        <p>Who (if not you) has decided?</p>
+        <p>How has the decision been justified?</p>
+        <p>When did you decide?</p>
+      </div>
+    </div>
+  </ac:rich-text-body>
+</ac:structured-macro>
+<p> </p>
+<h2>9.1  &lt;Decision Topic 1&gt;</h2>
+<h2>9.2 &lt;Decision Topic 2&gt;</h2>
+<h2>9.3 &lt;Decision Topic 3&gt;</h2>
+<h2>...</h2>
+<h3>
+  <span> </span>
+</h3>

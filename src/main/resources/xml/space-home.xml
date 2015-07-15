@@ -26,25 +26,18 @@
          ("search confluence"). Simply toggle it - and the sidebar will show up.</p>
 
         <p>The sidebar works like any browser tree structure. It shows all the 12 chapters of the ARC42 Template. 
-        Click on the "+" to see the subchapters or hide them again by clicking "-".</p>
+        Click on the arrow to see the subchapters or hide them again.</p>
 
       </ac:rich-text-body>
     </ac:structured-macro>
     <ac:structured-macro ac:name="column">
       <ac:parameter ac:name="width">50</ac:parameter>
       <ac:rich-text-body>
-        <h3>Big Picture</h3>
+       <!-- <h3>Big Picture</h3>-->
         <p>
-          <ac:link>
-            <ri:attachment ri:filename="arc42-BigPicture-v60-EN.graffle.pdf"/>
-            <ac:link-body>
-              <ac:image ac:thumbnail="true" ac:width="300">
-                <ri:attachment ri:filename="arc42-BigPicture-v60-EN.graffle_ BigPicture_Blank.jpg"/>
-              </ac:image>
-            </ac:link-body>
-          </ac:link>
+
         </p>
-        <p>(click on image to download pdf)</p>
+
       </ac:rich-text-body>
     </ac:structured-macro>
   </ac:rich-text-body>
