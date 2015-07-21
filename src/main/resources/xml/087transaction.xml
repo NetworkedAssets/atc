@@ -1,0 +1,7 @@
+<ac:structured-macro ac:name="info">
+  <ac:rich-text-body>
+    <div>
+      <p>A transaction is a sets of operations or activities that must be processed either in its entirety or not at all. The term is especially relevant in the database area with the important notion of ACID-transactions (atomic, consistent, isolated, durable).</p>
+    </div>
+  </ac:rich-text-body>
+</ac:structured-macro>

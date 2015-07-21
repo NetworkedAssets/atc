@@ -1,0 +1,96 @@
+<ac:structured-macro ac:name="info">
+  <ac:rich-text-body>
+    <div style="margin-left: 30.0px;">
+      <p>For many building blocks you can describe its interfaces directly in the black box template of the building block.</p>
+      <p>For complex interfaces – and external interfaces are normally very complex – it is worth while to describe them in separate sections.</p>
+      <p>Use the following interface template to guide you towards many questions that might be relevant for the interface. </p>
+      <p> </p>
+      <p>
+        <strong>Interface Template:</strong>
+      </p>
+      <h6 style="margin-left: 30.0px;">Interfacer ID</h6>
+      <table style="margin-left: 60.0px;">
+        <tbody>
+          <tr>
+            <th>Name</th>
+            <th>&lt;name of interface&gt;</th>
+          </tr>
+          <tr>
+            <td>Version</td>
+            <td> </td>
+          </tr>
+          <tr>
+            <td>Changes w.r.t previous release</td>
+            <td> </td>
+          </tr>
+          <tr>
+            <td>Who changed it and why?</td>
+            <td> </td>
+          </tr>
+          <tr>
+            <td>Contact person</td>
+            <td> </td>
+          </tr>
+        </tbody>
+      </table>
+      <h6 style="margin-left: 30.0px;">Business Context of the Interface</h6>
+      <h6 style="margin-left: 30.0px;">Business Processes</h6>
+      <p style="margin-left: 60.0px;">&lt;Diagram or desciption of business processes relevant for this interface&gt;</p>
+      <h6 style="margin-left: 30.0px;">Interface Data</h6>
+      <p style="margin-left: 60.0px;">&lt;Description of interface data&gt;</p>
+      <p class="p3" style="margin-left: 60.0px;">  Technical Context</p>
+      <p class="p3" style="margin-left: 60.0px;">  Form of interaction</p>
+      <h6 style="margin-left: 30.0px;">Requirements for the Interface </h6>
+      <h6 style="margin-left: 30.0px;">Security Aspects </h6>
+      <h6 style="margin-left: 30.0px;">Quantities</h6>
+      <p class="p3" style="margin-left: 60.0px;">   Runtime</p>
+      <p class="p3" style="margin-left: 60.0px;">   Throughput/Volume</p>
+      <p class="p3" style="margin-left: 60.0px;">  Availability</p>
+      <p class="p3" style="margin-left: 60.0px;">  Logging</p>
+      <p class="p3" style="margin-left: 60.0px;">  Archiving</p>
+      <h6 style="margin-left: 30.0px;"> Participating Resources</h6>
+      <h6 style="margin-left: 30.0px;"> Syntax: Data and Formats</h6>
+      <p class="p3" style="margin-left: 60.0px;">   Data Formats</p>
+      <p class="p3" style="margin-left: 60.0px;">   Validity &amp; Plausibility Rules</p>
+      <p class="p3" style="margin-left: 60.0px;">   Encoding, Character Sets</p>
+      <p class="p3" style="margin-left: 60.0px;">   Configuration data</p>
+      <h6 style="margin-left: 30.0px;"> Syntax: Methods/Functions</h6>
+      <p class="p3" style="margin-left: 60.0px;">  Check data</p>
+      <h6 style="margin-left: 30.0px;"> <strong>Interface Process</strong>
+      </h6>
+      <p style="margin-left: 60.0px;">Logical and technical processes</p>
+      <h6 style="margin-left: 30.0px;">Semantics</h6>
+      <p class="p3" style="margin-left: 60.0px;"> Side effects, consequences</p>
+      <h6 style="margin-left: 30.0px;">Technical Infrastructure</h6>
+      <p class="p3" style="margin-left: 60.0px;"> Technical protocols</p>
+      <h6 style="margin-left: 30.0px;">Error and Exception Handling</h6>
+      <h6 style="margin-left: 30.0px;">Constraints and Assumptions</h6>
+      <p class="p3" style="margin-left: 60.0px;"> Access Rights</p>
+      <p class="p3" style="margin-left: 60.0px;">  Temporal constraints</p>
+      <p class="p3" style="margin-left: 60.0px;">  Parallel Access</p>
+      <p class="p3" style="margin-left: 60.0px;">  Preconditions for using the interface</p>
+      <h6 style="margin-left: 30.0px;">Operating the Interface</h6>
+      <h6 style="margin-left: 30.0px;">Meta Information for the Interface</h6>
+      <p class="p3" style="margin-left: 60.0px;">Person in charge</p>
+      <p class="p3" style="margin-left: 60.0px;">Costs of using the interface</p>
+      <p class="p3" style="margin-left: 60.0px;">Organizational Issues</p>
+      <p class="p3" style="margin-left: 60.0px;">Versioning</p>
+      <h6 style="margin-left: 30.0px;">Examples of Using the Interface</h6>
+      <p class="p3" style="margin-left: 60.0px;">Sample data</p>
+      <p class="p3" style="margin-left: 60.0px;">Sample flows and interactions</p>
+      <p class="p3" style="margin-left: 60.0px;">Programming Examples</p>
+      <p style="margin-left: 30.0px;">
+        <strong>
+          <br/>
+        </strong>
+      </p>
+    </div>
+  </ac:rich-text-body>
+</ac:structured-macro>
+<h3>3.3.1 External Interface 1</h3>
+<p>&lt;insert interface template&gt;</p>
+<h3>3.3.2 External Interface 2</h3>
+<p>&lt;insert interface template&gt;</p>
+<h3 style="margin-left: 0.0px;">3.3.3 ...</h3>
+<h3 style="margin-left: 0.0px;">3.3.n External Interface n</h3>
+<p>&lt;insert interface template&gt;</p>

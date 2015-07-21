@@ -1,0 +1,25 @@
+<p> </p>
+<p> </p>
+<ac:structured-macro ac:name="info">
+  <ac:rich-text-body>
+    <div>
+      <h6 style="margin-left: 0.0px;">Contents</h6>
+      <p>Identify all neighboring systems and specify all logical/business data that is exchanged with the system under development. Add data formats and communication protocols with neighboring systems and the general environment if these are not specified in detail with the relevant components.</p>
+      <h6 style="margin-left: 0.0px;">Motivation</h6>
+      <p>Understanding the information exchange with neighboring systems (i.e. all input flows and all output flows).</p>
+      <h6 style="margin-left: 0.0px;">Form</h6>
+      <p>Logical context diagram.</p>
+      <p>In UML this can be simulated by e.g. class diagrams, use case diagrams, communications diagrams – i.e. all diagrams that represent the system as a black box and explain its interfaces to neighboring systems (in varying degrees of detail).</p>
+      <div>
+        <p>If there are many neighboring systems you can substitute the context diagram with a table, including all the neighboring systems, their inputs and their outputs.</p>
+      </div>
+    </div>
+    <div>
+      <br/>
+      <div>
+        <p>
+          We often tend to a pragmatic approach – but here we insist on a list of all (a-l-l) neighboring systems. Too many projects have failed because they were not aware of their neighbors. :-(</p>
+      </div>
+    </div>
+  </ac:rich-text-body>
+</ac:structured-macro>

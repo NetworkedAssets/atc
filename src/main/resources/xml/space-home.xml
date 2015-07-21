@@ -21,33 +21,71 @@
     <ac:structured-macro ac:name="column">
       <ac:parameter ac:name="width">50%</ac:parameter>
       <ac:rich-text-body>
-        <p>The easiest way for browsing this space is to turn on the sidebar of confluence. You will find the button for it on the righthand 
-        side the top row of your browser, portrayed as two adjacent rectangles, between "login" and the search field
-         ("search confluence"). Simply toggle it - and the sidebar will show up.</p>
+      <p>arc42 supports software- and system architects. It is based upon practical experience of many architecture projects of different sizes and domains. It includes feedback of its many users.</p>
+      <p>arc42 contains a template for development, documentation and communication of software architectures.</p>
+      <p>arc42 fits arbitrary technologies and tools.</p>
+      <p>arc42 therefore ensures better software- and system architectures.</p>
+
+        <p>The easiest way for browsing this space is to turn on the sidebar of confluence. You will find the button for it on the lefthand 
+        side at the bottom corner of your browser, portrayed as two arrows. Click on it - and the sidebar will show up.</p>
 
         <p>The sidebar works like any browser tree structure. It shows all the 12 chapters of the ARC42 Template. 
         Click on the arrow to see the subchapters or hide them again.</p>
+        
+        	<p>
+				<ac:macro ac:name="children">
+					<ac:parameter ac:name="page"></ac:parameter>
+					<ac:parameter ac:name="all">true</ac:parameter>
+				</ac:macro>
+			</p>
 
       </ac:rich-text-body>
     </ac:structured-macro>
     <ac:structured-macro ac:name="column">
       <ac:parameter ac:name="width">50</ac:parameter>
       <ac:rich-text-body>
-       <!-- <h3>Big Picture</h3>-->
+       <!-- <h3>Big Picture</h3>
         <p>
-
-        </p>
+          <ac:link>
+            <ri:attachment ri:filename="arc42-BigPicture-v60-EN.graffle.pdf"/>
+            <ac:link-body>
+              <ac:image ac:thumbnail="true" ac:width="300">
+                <ri:attachment ri:filename="arc42-BigPicture-v60-EN.graffle_ BigPicture_Blank.jpg"/>
+              </ac:image>
+            </ac:link-body>
+          </ac:link>
+        </p>-->
+        <p><h2>Content Overview</h2></p>
+        <p><b>1. Introduction and Goals</b><br/>
+          problem, brief definition of task, quality goals, summary of architecturally relevant requirements, 
+          especially the non-functional reqs, list of stakeholder.</p>
+        <p><b>2. Constraints</b><br/>
+         What kind of constraints restrict design decisions?</p>
+        <p><b>3. Context</b><br/>
+        What's the business and technical context of the system?</p>
+        <p><b>4. Solution Ideas and Strategy</b><br/>
+        How does the solution work? What are the fundamental solution approaches?</p>
+        <p><b>5. Building Block View</b><br/>
+        Static structure of system, implementation Blocks.</p>
+        <p><b>6. Runtime View</b><br/>
+        Cooperation of (instances) of building blocks at runtime, relevant and important interactions.</p>
+        <p><b>7. Deployment View</b><br/>
+        Deployment: On which hardware will the building blocks be operated? What further information is required to 
+        operate the system?</p>
+        <p><b>8. Concepts</b><br/>
+         Recurring patterns and structures.<br/>
+         Business domain models.<br/>
+         Crosscutting (technical) concepts.<br/>
+         These concepts can often be re-used across systems.</p>
+         <p><b>9. Design Decisions</b><br/>
+         Important design decisions. </p>
+         <p><b>10. Quality Scenarios</b><br/>
+         Quality tree with scenarios.</p>
+         <p><b>11. Risks</b></p>
+         <p><b>12. Glossary</b><br/>
+         Important terms.</p>
 
       </ac:rich-text-body>
     </ac:structured-macro>
   </ac:rich-text-body>
 </ac:structured-macro>
-<p> </p>
-<p> </p>
-
-			<p>
-				<ac:macro ac:name="children">
-					<ac:parameter ac:name="page"></ac:parameter>
-					<ac:parameter ac:name="all">true</ac:parameter>
-				</ac:macro>
-			</p>

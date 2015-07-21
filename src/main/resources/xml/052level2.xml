@@ -1,0 +1,15 @@
+<ac:structured-macro ac:name="info">
+  <ac:rich-text-body>
+    <div>
+      <p>Describe all building blocks from level 1 - that need further details - as a series of white box templates. The structure is given below for three building blocks and should be duplicated as needed.</p>
+    </div>
+  </ac:rich-text-body>
+</ac:structured-macro>
+<h3>5.2.1 &lt;Building Block 1&gt; (White Box Description)</h3>
+<p>&lt;insert white box template here&gt;</p>
+<h3 style="margin-left: 0.0px;">5.2.2 &lt;Building Block 2&gt; (White Box Description)</h3>
+<p>&lt;insert white box template here&gt;</p>
+<h3>5.2.3 &lt;Building Block 3&gt; (White Box Description)</h3>
+<div>
+  <p>&lt;insert white box template here&gt;</p>
+</div>

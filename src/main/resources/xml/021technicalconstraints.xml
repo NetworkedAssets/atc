@@ -1,0 +1,270 @@
+<div>
+  <p> </p>
+</div>
+<div>
+  <p> </p>
+  <ac:structured-macro ac:name="info">
+    <ac:rich-text-body>
+      <h6>Contents</h6>
+      <p>List all technical constraints in this section. This category covers hardware and software infrastructure, applied technologies (operating systems, middleware, databases, programming languages, …).</p>
+    </ac:rich-text-body>
+  </ac:structured-macro>
+  <table>
+    <tbody>
+      <tr>
+        <td colspan="2">
+          <p>
+            <strong>Hardware-Constraints</strong>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p> </p>
+        </td>
+        <td>
+          <p>&lt;insert constraint here&gt;</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p> </p>
+        </td>
+        <td>
+          <p>&lt;insert constraint here&gt;</p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <p>
+            <strong>Software-Constraints</strong>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p> </p>
+        </td>
+        <td>
+          <p>&lt;insert constraint here&gt;</p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <p>
+            <strong>Operating System Constraints</strong>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p> </p>
+        </td>
+        <td>
+          <p>&lt;insert constraint here&gt;</p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <p>
+            <strong>Programming Constraints</strong>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p> </p>
+        </td>
+        <td>
+          <p>&lt;insert constraint here&gt;</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <ac:structured-macro ac:name="info">
+    <ac:rich-text-body>
+      <div>
+        <h6>Examples</h6>
+        <p> </p>
+      </div>
+      <table>
+        <tbody>
+          <tr>
+            <td>
+              <div>
+                <p>
+                  <strong>Constraint</strong>
+                </p>
+              </div>
+            </td>
+            <td>
+              <div>
+                <p>
+                  <strong>Description</strong>
+                </p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <p>Hardware infrastructure</p>
+              </div>
+            </td>
+            <td>
+              <div>
+                <p>Processors, memory, networks, firewalls and other relevant elements</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <p>Software infrastructure</p>
+              </div>
+            </td>
+            <td>
+              <div>
+                <p>Operating systems, database systems, middleware, communications systems, transaction monitors, web servers, directory services</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <p>System operations</p>
+              </div>
+            </td>
+            <td>
+              <div>
+                <p>Batch- or online operations of the system or of required external systems?</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <p>Availability of the runtime environment</p>
+              </div>
+            </td>
+            <td>
+              <div>
+                <p>Data center with 7x24 uptime?</p>
+                <p>Will there be service times that cause reduced availability of the system or important parts thereof?</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <p>Graphical user interface</p>
+              </div>
+            </td>
+            <td>
+              <div>
+                <p>Are there any restrictions related to GUI (style guide)?</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <p>Libraries, frameworks, components</p>
+              </div>
+            </td>
+            <td>
+              <div>
+                <p>Is there any COTS that must be used?</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <p>Programming languages</p>
+              </div>
+            </td>
+            <td>
+              <div>
+                <p>Object oriented, structured, declarative, or rule-based languages?</p>
+                <p>Compiled or interpreted languages?</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <p>Reference architectures</p>
+              </div>
+            </td>
+            <td>
+              <div>
+                <p>Are there any comparable or reusable reference projects in the organization?</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <p>Analysis and design methodologies</p>
+              </div>
+            </td>
+            <td>
+              <div>
+                <p>Object oriented or structured methodologies?</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <p>Data structures</p>
+              </div>
+            </td>
+            <td>
+              <div>
+                <p>Constraints for certain data structures, interfaces to existing databases or files?</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <p>Software interfaces</p>
+              </div>
+            </td>
+            <td>
+              <div>
+                <p>Interfaces to existing applications</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <p>Programming requirements</p>
+              </div>
+            </td>
+            <td>
+              <div>
+                <p>Programming guidelines, fixed program structure</p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <p>Technical communications</p>
+              </div>
+            </td>
+            <td>
+              <div>
+                <p>synchronous or asynchronous; protocols</p>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </ac:rich-text-body>
+  </ac:structured-macro>
+</div>

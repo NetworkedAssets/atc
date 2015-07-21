@@ -1,0 +1,16 @@
+<ac:structured-macro ac:name="info">
+  <ac:rich-text-body>
+    <h6>Contents</h6>
+    <p>Business (or logical) models, domain models - they all describe subject-specific, business aspects, without relation to technology.</p>
+    <p>Often these structures or concepts are re-used at many places within an architecture, especially within chapter <ac:link>
+        <ri:page ri:content-title="5. Building Block View"/>
+      </ac:link>.</p>
+    <div>
+      <h6>Motivation</h6>
+      <p>Often parts of these models reappear in the building block view, but in order to „keep them clean from technnology“ they can be captured as a concept.</p>
+      <h6>Form</h6>
+      <p>Usually either ER-Models (Entity-Relationship Models) or UML class diagrams (mainly containing entity classes) are used to document domain models.</p>
+    </div>
+    <p> </p>
+  </ac:rich-text-body>
+</ac:structured-macro>

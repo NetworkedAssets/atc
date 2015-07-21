@@ -1,0 +1,28 @@
+<ac:structured-macro ac:name="info">
+  <ac:rich-text-body>
+    <div>
+      <p>Here you describe the white box view of level 1 according to the white box template. Its structure is given below.</p>
+      <p> </p>
+      <h6>White Box Template:</h6>
+      <h6 style="margin-left: 30.0px;">&lt;name of the building block&gt;</h6>
+      <h6 style="margin-left: 30.0px;">Overview</h6>
+      <p style="margin-left: 60.0px;">The overview describes the inner structure of the building block (by introducing new black boxes) as well as their relationships and dependencies.</p>
+      <p style="margin-left: 60.0px;">Usually we suggest to draw a UML component diagram (or package diagram or class diagram) to decompose the building block. Feel free to use other notations, but don't forget to explain the symbols you are using, if you are not using any standard notation.</p>
+      <h6 style="margin-left: 30.0px;">Decisions, Reasons &amp; Alternatives</h6>
+      <p style="margin-left: 60.0px;">It is often useful to explain the reasons that led to this structure, esp. as relevant to the interdependencies / relationships among the building blocks at this level.</p>
+      <p style="margin-left: 60.0px;">You could also mention rejected alternatives incl. reasons for their rejection.</p>
+      <h6 style="margin-left: 30.0px;">Black Box Templates for local building blocks</h6>
+      <p style="margin-left: 60.0px;">&lt;black box template for building block 1&gt; (see <ac:link>
+          <ri:page ri:content-title="Blackbox-Template"/>
+        </ac:link>)</p>
+      <p style="margin-left: 60.0px;">....</p>
+      <p style="margin-left: 60.0px;">&lt;black box template for building block 2&gt;</p>
+      <h6 style="margin-left: 30.0px;">Special Dependency Issues</h6>
+    </div>
+    <p style="margin-left: 60.0px;"> If necessary, discuss selected complex dependencies of the local building blocks</p>
+    <h6 style="text-align: left;margin-left: 30.0px;">Open Issues:</h6>
+    <p style="text-align: left;margin-left: 60.0px;">Include anything you don't want to forget about this white box.</p>
+  </ac:rich-text-body>
+</ac:structured-macro>
+<h6>&lt;name of the system&gt;</h6>
+<p>&lt;insert white box template here&gt;</p>

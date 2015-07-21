@@ -13,6 +13,7 @@
           <ri:attachment ri:filename="arc42-White-Blackbox-Hierarchy engl.png"/>
         </ac:image>
       </p> --> 
+      <p></p>
       <div>
         <p>Level 1 contains the white box description of the overall system (system under development / SUD, introduced in the context diagram in section 3).</p>
         <p>Level 2 zooms into the building blocks of Level 1 and is thus made up of the white box descriptions of all building blocks of Level 1.</p>

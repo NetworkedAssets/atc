@@ -1,0 +1,17 @@
+<ac:structured-macro ac:name="info">
+  <ac:rich-text-body>
+    <div>
+      <p>There are two ways of documenting an application’s status during runtime: <em>Logging</em> and <em>Tracing</em>. In both cases the application is extended with function or method calls that write state information, but there is a difference in their usage:</p>
+    </div>
+    <div>
+      <ul>
+        <li>Logging can cover business or technical aspects or any combination of both.<ul>
+            <li>Business logs are normally prepared for end users, administrators or operators. They  contain information on the business processes that  are executed by the application. This kind of logging may also be related to auditing.</li>
+            <li>Technical logs contain information for operators or developers. These are used for error detection and system optimization.</li>
+          </ul>
+        </li>
+        <li>Tracing is intended to provide debugging information for developers or support personnel. It is primarily used for error detection and analysis.</li>
+      </ul>
+    </div>
+  </ac:rich-text-body>
+</ac:structured-macro>

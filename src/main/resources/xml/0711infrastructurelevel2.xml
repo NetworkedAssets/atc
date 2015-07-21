@@ -1,0 +1,10 @@
+<ac:structured-macro ac:name="info">
+  <ac:rich-text-body>
+    <div>
+      <h6>Contents</h6>
+      <p>Additional deployment diagrams with similar structure as above, refining each node of infrastructure level 1 that needs more details to map the software blocks.</p>
+      <h6>Motivation</h6>
+      <p>To describe additional details of the infrastructure, as needed by software deployment.</p>
+    </div>
+  </ac:rich-text-body>
+</ac:structured-macro>
