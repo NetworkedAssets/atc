@@ -1,12 +1,10 @@
 <ac:structured-macro ac:name="info">
   <ac:rich-text-body>
-    <div>
       <p>This chapter summarizes all you (or other stakeholders) might need to systematically evaluate the architecture against the quality requirements.</p>
       <p>It contains:</p>
       <ul>
         <li>Quality Tree (sometimes called <em>utility tree</em>), an overview of the quality requirements</li>
         <li>Evaluation or quality scenarios - detailed descriptions of the quality requirements or goals.</li>
       </ul>
-    </div>
   </ac:rich-text-body>
 </ac:structured-macro>

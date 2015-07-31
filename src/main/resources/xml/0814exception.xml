@@ -1,11 +1,9 @@
 <ac:structured-macro ac:name="info">
   <ac:rich-text-body>
-    <div>
       <p>How are exceptions and errors handled systematically and consistently?</p>
       <p>How can the system reach a consistent state after an error? Is this done automatically or is manual interaction required?</p>
       <p>This aspect is also related to logging and tracing,</p>
       <p>Which kind of exceptions and errors are handled by the system? Which kinds of errors are forwarded to which external interface and which are handled fully internally?</p>
       <p>How do you use the exception handling mechanisms of your programming language? Do you use checked or unchecked exceptions?</p>
-    </div>
   </ac:rich-text-body>
 </ac:structured-macro>

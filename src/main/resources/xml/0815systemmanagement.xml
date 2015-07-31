@@ -1,7 +1,5 @@
 <ac:structured-macro ac:name="info">
   <ac:rich-text-body>
-    <div>
       <p>Larger software systems are often executed in controlled environments (data centers) under oversight of operators or administrators. These stakeholders require specific information on the applications’ states during runtime as well as special means of control and configuration.</p>
-    </div>
   </ac:rich-text-body>
 </ac:structured-macro>

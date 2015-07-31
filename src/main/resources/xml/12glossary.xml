@@ -1,12 +1,12 @@
 <ac:structured-macro ac:name="info">
   <ac:rich-text-body>
-    <div>
-      <h6>Contents</h6>
+      <h4>Contents</h4>
       <p>The most important terms of the software architecture in alphabetic order.</p>
-      <h6>Motivation</h6>
+      
+      <h4>Motivation</h4>
       <p>It should not be necessary to explain the usefulness of a glossary …</p>
-      <h6>Form</h6>
+     
+      <h4>Form</h4>
       <p>A simple table with columns &lt;Term&gt; and &lt;Definition&gt;</p>
-    </div>
   </ac:rich-text-body>
 </ac:structured-macro>

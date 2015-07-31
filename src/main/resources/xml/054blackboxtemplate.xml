@@ -1,7 +1,11 @@
 <ac:structured-macro ac:name="info">
   <ac:rich-text-body>
     <p>A blackbox template can be either tabular or with heading elements, your choice. Here you find both alternatives.</p>
-    <h3>Blackbox &lt;name-of-this-blackbox&gt; (as table)</h3>
+    
+  </ac:rich-text-body>
+</ac:structured-macro>
+
+<h3>Blackbox &lt;name-of-this-blackbox&gt; (as table)</h3>
     <table>
       <tbody>
         <tr>
@@ -58,9 +62,6 @@
         </tr>
       </tbody>
     </table>
-  </ac:rich-text-body>
-</ac:structured-macro>
+<p> </p>
+<p> </p>
 
-<h2>Blackbox &lt;X&gt; (headings)</h2>
-<p> </p>
-<p> </p>

@@ -1,7 +1,5 @@
 <ac:structured-macro ac:name="info">
   <ac:rich-text-body>
-    <div>
       <p>How can you achieve high availability of your system? Do you use redundancy of major parts? Or do you distribute your system to different processors or locations. Are you running standby- systems? </p>
-    </div>
   </ac:rich-text-body>
 </ac:structured-macro>

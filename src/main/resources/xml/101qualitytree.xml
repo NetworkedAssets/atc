@@ -1,16 +1,16 @@
 <ac:structured-macro ac:name="info">
   <ac:rich-text-body>
-    <div>
-      <h6>Content</h6>
+      <h4>Content</h4>
       <p>The quality tree ( as defined in ATAM - Architecture Tradeoff Analysis Methode) with quality / evaluation scenarios as leafs.</p>
-      <h6>Motivation</h6>
+     
+      <h4>Motivation</h4>
       <p>When you want to evaluate the quality (especially risks to certain quality attributes) with methods like ATAM, you need to systematically refine your quality goals (from <ac:link>
           <ri:page ri:content-title="1.2 Quality Goals"/>
         </ac:link>). The quality tree shows the top-down refinement of the stakeholder-specific notion of quality.</p>
-      <h6>Form</h6>
+      
+      <h4>Form</h4>
       <p>We personally prefer mind maps to a pure tree-like structure, as mind maps allow arbitrary cross-references between scenarios, attributes and intermediate nodes.</p>
       <p>Often it is difficult to assign scenarios to single quality attributes, as the scenario refers to several qualities at once. Simply draw references from such scenarios to all affected nodes!</p>
-    </div>
   </ac:rich-text-body>
 </ac:structured-macro>
 <p>&lt;insert quality tree here&gt;</p>

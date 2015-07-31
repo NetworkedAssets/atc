@@ -1,19 +1,13 @@
 <ac:structured-macro ac:name="info">
   <ac:rich-text-body>
-    <div>
       <p>The security of software systems deals with mechanisms that ensure data confidentiality, integrity, and availability.</p>
       <p>Typical issues are:</p>
-    </div>
-    <div>
       <ul>
         <li>How can data be protected during transport (e.g. via open networks such as the internet)?</li>
         <li>How can communicating entities ensure mutual trust?</li>
         <li>How can communicating entities identify each other and be protected against faked identities?</li>
         <li>How can communicating entities prove data provenience or certify validity of data?</li>
       </ul>
-    </div>
-    <div>
       <p>The topic of IT-security often touches upon legal aspects, sometimes even international law.</p>
-    </div>
   </ac:rich-text-body>
 </ac:structured-macro>

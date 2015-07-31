@@ -1,7 +1,5 @@
 <ac:structured-macro ac:name="info">
   <ac:rich-text-body>
-    <div>
       <p>Flow of control for software systems is related to visible flows (on the - graphical - user interface) as well as the flow of background activities. Therefore this section should cover control of the user interface as well as control of workflows.</p>
-    </div>
   </ac:rich-text-body>
 </ac:structured-macro>
