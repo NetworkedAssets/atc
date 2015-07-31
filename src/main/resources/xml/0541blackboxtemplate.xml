@@ -1,17 +1,20 @@
 <ac:structured-macro ac:name="info">
   <ac:rich-text-body>
-    <p>A blackbox template can be either tabular or with heading elements, your choice. Here you find both alternatives.</p>
-    <h3>Blackbox &lt;name-of-this-blackbox&gt; (as table)</h3>
+    <p>A blackbox template can be either tabular or with heading elements, your choice.</p>    
+  </ac:rich-text-body>
+</ac:structured-macro>
+
+<h4>Blackbox &lt;name-of-this-blackbox&gt; (as table)</h4>
     <table>
       <tbody>
         <tr>
           <td>
-            <p>Purpose, Responsibilty</p>
+            <strong>Purpose, Responsibilty</strong>
           </td>
           <td>&lt;describe purpose here, one or two short sentences&gt;</td>
         </tr>
         <tr>
-          <td>Interfaces</td>
+          <td><strong>Interfaces</strong></td>
           <td>
             <p>Provided Interfaces:</p>
             <ul>
@@ -26,7 +29,7 @@
           </td>
         </tr>
         <tr>
-          <td> Repository / Files</td>
+          <td><strong>Repository / Files</strong> </td>
           <td>&lt;name the directories and files here; link to source code repository or location&gt; </td>
         </tr>
         <tr>
@@ -38,29 +41,23 @@
         </tr>
         <tr>
           <td colspan="1">
-            <p>(optional)</p>
-            <p>Quality attributes</p>
+            <p><strong>(optional)</strong></p>
+            <p><strong>Quality attributes</strong></p>
           </td>
           <td colspan="1">&lt;briefly describe the quality attributes of this blackbox, e.g. performance, variability, security...&gt;</td>
         </tr>
         <tr>
           <td colspan="1">
-            <p>Administrative information</p>
+            <p><strong>Administrative information</strong></p>
           </td>
           <td colspan="1">&lt;Author, version, date, revision history&gt;</td>
         </tr>
         <tr>
           <td colspan="1">
-            <p>(optional)</p>
-            <p>Open issues</p>
+            <p><strong>(optional)</strong></p>
+            <p><strong>Open issues</strong></p>
           </td>
-          <td colspan="1">&lt;oops - this should hopefully be left blank</td>
+          <td colspan="1">&lt;oops - this should hopefully be left blank&gt;</td>
         </tr>
       </tbody>
     </table>
-  </ac:rich-text-body>
-</ac:structured-macro>
-
-<h2>Blackbox &lt;X&gt; (headings)</h2>
-<p> </p>
-<p> </p>

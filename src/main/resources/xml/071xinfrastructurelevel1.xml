@@ -1,0 +1,56 @@
+<h3>7.1.1 Deployment Diagram Level 1</h3>
+<ac:structured-macro ac:name="info">
+  <ac:rich-text-body>
+    <ul style="margin-left: 0.0px;">
+      <li style="margin-left: 0.0px;">Shows the deployment of the overall system to 1 – n processors or sites as well as the physical connections among these elements.</li>
+      <li style="margin-left: 0.0px;">Lists the most important reasons that led to this deployment structure, i.e. the specific selection of nodes and channels.</li>
+      <li style="margin-left: 0.0px;">Should also mention rejected alternatives incl. reasons for their rejection.</li>
+    </ul>
+  </ac:rich-text-body>
+</ac:structured-macro>
+
+<h3>7.2.1 Processor 1</h3>
+  <p>&lt;insert node template here&gt;</p>
+  <ac:structured-macro ac:name="info">
+    <ac:rich-text-body>
+        <p><strong>Node Template:</strong></p>
+      <ul style="margin-left: 0.0px;">
+        <li style="margin-left: 0.0px;">Description</li>
+        <li style="margin-left: 0.0px;">
+          <p>Deployed software blocks</p>
+        </li>
+        <li style="margin-left: 0.0px;">Quality attributes (performance, constraints, ...)</li>
+        <li style="margin-left: 0.0px;">Other administrative information</li>
+        <li style="margin-left: 0.0px;">Open issues</li>
+      </ul>
+    </ac:rich-text-body>
+  </ac:structured-macro>
+
+<h3>7.2.1 Processor 2</h3>
+<p>&lt;insert node template here&gt;</p>
+
+<h3>7.2.3 ...</h3>
+<p>&lt;insert node template here&gt;</p>
+
+<h3>7.3.1 Channel 1</h3>
+<p>&lt;insert channel description here&gt;</p>
+  <ac:structured-macro ac:name="info">
+    <ac:rich-text-body>
+      <h4>Channel description</h4>
+      <h4>Contents</h4>
+      <p style="margin-left: 30.0px;">Specification of the channel’s attributes, as relevant for software architecture.</p>
+      
+      <h4>Motivation</h4>
+      <p style="margin-left: 30.0px;">Specify at least those attributes of the communications channels that you need for proving fulfillment of non-functional requirements such as maximal throughput, probability for faults, etc.</p>
+     
+      <h4>Form</h4>
+      <p style="margin-left: 30.0px;">Often you will refer to a standard (e.g. CAN-Bus, 10Mbit Ethernet, IEEE 1394, ...</p>
+      <p style="margin-left: 30.0px;">If you need more information use a structure similar to the node template (especially to document quality aspects of channels like throughput, error rates, ...)</p>
+    </ac:rich-text-body>
+  </ac:structured-macro>
+  <p> </p>
+</div>
+<h3>7.3.2 Channel 2</h3>
+<p>&lt;insert channel description here&gt;</p>
+<h3>7.3.3    ...</h3>
+<p>&lt;insert channel description here&gt;</p>

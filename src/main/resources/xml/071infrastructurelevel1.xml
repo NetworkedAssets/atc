@@ -10,11 +10,11 @@
 </ac:structured-macro>
 <h3>7.1.2    Processor 1</h3>
 <div>
-  <p>&lt;insert node template here&gt;</p>
+  <p class="Erluterungstext">&lt;insert node template here&gt;</p>
   <ac:structured-macro ac:name="info">
     <ac:rich-text-body>
       <div>
-        <p>
+        <p class="Erluterungstext">
           <strong>Node Template:</strong>
         </p>
       </div>
@@ -33,26 +33,26 @@
 </div>
 <h3>7.1.3    Processor 2</h3>
 <div>
-  <p>&lt;insert node template here&gt;</p>
+  <p class="Erluterungstext">&lt;insert node template here&gt;</p>
 </div>
 <h3>7.1.4    ...</h3>
 <h3>7.1.5    Processor n</h3>
 <p>&lt;insert node template here&gt;</p>
 <div>
-  <h3>1.1.6    Channel 1</h3>
+  <h3 class="Erluterungstext">1.1.6    Channel 1</h3>
 </div>
 <div>
   <p>&lt;insert channel description here&gt;</p>
   <ac:structured-macro ac:name="info">
     <ac:rich-text-body>
-      <h6>Channel description</h6>
-      <h6 style="margin-left: 30.0px;">Contents</h6>
-      <p style="margin-left: 30.0px;">Specification of the channel’s attributes, as relevant for software architecture.</p>
-      <h6 style="margin-left: 30.0px;">Motivation</h6>
-      <p style="margin-left: 30.0px;">Specify at least those attributes of the communications channels that you need for proving fulfillment of non-functional requirements such as maximal throughput, probability for faults, etc.</p>
-      <h6 style="margin-left: 30.0px;">Form</h6>
-      <p style="margin-left: 30.0px;">Often you will refer to a standard (e.g. CAN-Bus, 10Mbit Ethernet, IEEE 1394, ...</p>
-      <p style="margin-left: 30.0px;">If you need more information use a structure similar to the node template (especially to document quality aspects of channels like throughput, error rates, ...)</p>
+      <h6 class="Erluterungberschrift">Channel description</h6>
+      <h6 class="Erluterungberschrift" style="margin-left: 30.0px;">Contents</h6>
+      <p class="Erluterungstext" style="margin-left: 30.0px;">Specification of the channel’s attributes, as relevant for software architecture.</p>
+      <h6 class="Erluterungberschrift" style="margin-left: 30.0px;">Motivation</h6>
+      <p class="Erluterungstext" style="margin-left: 30.0px;">Specify at least those attributes of the communications channels that you need for proving fulfillment of non-functional requirements such as maximal throughput, probability for faults, etc.</p>
+      <h6 class="Erluterungberschrift" style="margin-left: 30.0px;">Form</h6>
+      <p class="Erluterungstext" style="margin-left: 30.0px;">Often you will refer to a standard (e.g. CAN-Bus, 10Mbit Ethernet, IEEE 1394, ...</p>
+      <p class="Erluterungstext" style="margin-left: 30.0px;">If you need more information use a structure similar to the node template (especially to document quality aspects of channels like throughput, error rates, ...)</p>
     </ac:rich-text-body>
   </ac:structured-macro>
   <p> </p>

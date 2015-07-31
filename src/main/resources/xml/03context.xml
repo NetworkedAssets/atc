@@ -1,22 +1,18 @@
-<div>
-  <ac:structured-macro ac:name="info">
+ <ac:structured-macro ac:name="info">
     <ac:rich-text-body>
-      <div>
-        <h6 class="Erluterungberschrift">Contents</h6>
-        <p class="Erluterungstext">The context view defines the boundaries of the system under development to distinguish it from neighboring systems. It thereby identifies the system’s relevant external interfaces.</p>
-        <p class="Erluterungstext">Make sure that the interfaces are specified with all their relevant aspects (what is communicated, in which format is it communicated, what is the transport medium, …), even though some popular diagrams (such as the UML use case diagram) represent only a few aspects of the interface.</p>
-        <h6 class="Erluterungberschrift">Motivation</h6>
-        <p class="Erluterungstext">The interfaces to neighboring systems are among most critical and risky aspects of a project. Ensure early on that you have understood them in their entirety.</p>
-        <h6 class="Erluterungberschrift">Form</h6>
-      </div>
-      <div>
+
+        <h4>Contents</h4>
+        <p>The context view defines the boundaries of the system under development to distinguish it from neighboring systems. It thereby identifies the system’s relevant external interfaces.</p>
+        <p>Make sure that the interfaces are specified with all their relevant aspects (what is communicated, in which format is it communicated, what is the transport medium, …), even though some popular diagrams (such as the UML use case diagram) represent only a few aspects of the interface.</p>
+        
+        <h4>Motivation</h4>
+        <p>The interfaces to neighboring systems are among most critical and risky aspects of a project. Ensure early on that you have understood them in their entirety.</p>
+        
+        <h4>Form</h4>
         <ul>
           <li>Various context diagram (see below)</li>
           <li>Lists of neighboring systems and their interfaces.</li>
         </ul>
-      </div>
+
     </ac:rich-text-body>
   </ac:structured-macro>
-  <p> </p>
-</div>
-<p> </p>

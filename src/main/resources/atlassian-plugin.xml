@@ -49,7 +49,7 @@
 		<param name="blueprintKey" value="space-blueprint" />
 	</web-item>
 
-<!-- 1 Home page -->
+<!-- Home page -->
 	<content-template key="space-homepage-template"
 		i18n-name-key="confluence.blueprints.space.homepage.name">
 		<description key="confluence.blueprints.space.homepage.desc" />
@@ -140,6 +140,13 @@
 		<resource name="template" type="download" location="/xml/033externalinterfaces.xml" />
 	</content-template>
 	
+	<!-- Interface Template page -->
+	<content-template key="interfacetemplate"
+		i18n-name-key="confluence.blueprints.space.interfacetemplate.name">
+		<description key="confluence.blueprints.space.interfacetemplate.desc" />
+		<resource name="template" type="download" location="/xml/034interfacetemplate.xml" />
+	</content-template>
+	
 <!-- Solution page -->
 	<content-template key="solution"
 		i18n-name-key="confluence.blueprints.space.solution.name">
@@ -172,7 +179,14 @@
 	<content-template key="level3"
 		i18n-name-key="confluence.blueprints.space.level3.name">
 		<description key="confluence.blueprints.space.level3.desc" />
-		<resource name="template" type="download" location="/xml/053level3.xml" />
+		<resource name="template" type="download" location="/xml/0521level3.xml" />
+	</content-template>
+	
+	<!-- Whitebox Template page -->
+	<content-template key="whiteboxtemplate"
+		i18n-name-key="confluence.blueprints.space.whiteboxtemplate.name">
+		<description key="confluence.blueprints.space.whiteboxtemplate.desc" />
+		<resource name="template" type="download" location="/xml/053whiteboxtemplate.xml" />
 	</content-template>
 	
 <!-- Blackbox Template page -->
@@ -486,7 +500,9 @@
 		     <content-template ref="context">
 		        <content-template ref="businesscontext"/>
 		        <content-template ref="technicalcontext"/>
-		        <content-template ref="externalinterfaces"/>
+		        <content-template ref="externalinterfaces">
+		           <content-template ref="interfacetemplate"/>
+		        </content-template>
 		     </content-template>
 		     <content-template ref="solution"/>
 		     <content-template ref="buildingblock">
@@ -496,6 +512,7 @@
 		           </content-template>
 		        </content-template>
 		        <content-template ref="blackboxtemplate"/>
+		        <content-template ref="whiteboxtemplate"/>
 		     </content-template>
 		     <content-template ref="runtimeview">
 		        <content-template ref="runtimescenario1"/>
@@ -546,7 +563,7 @@
 		 </content-template>
 
 		<dialog-wizard key="space-blueprint-wizard">
-			<dialog-page id="exampleSpaceId"
+			<dialog-page id="arcSpaceId"
 				template-key="Confluence.SpaceBlueprints.Arc.dialogForm"
 				title-key="confluence.blueprints.space.dialog.create.title"
 				description-header-key="confluence.blueprints.space.dialog.create.heading"

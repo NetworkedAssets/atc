@@ -32,6 +32,7 @@
         <p>The sidebar works like any browser tree structure. It shows all the 12 chapters of the ARC42 Template. 
         Click on the arrow to see the subchapters or hide them again.</p>
         
+        <h2>Table of Contents</h2>
         	<p>
 				<ac:macro ac:name="children">
 					<ac:parameter ac:name="page"></ac:parameter>
@@ -55,7 +56,7 @@
             </ac:link-body>
           </ac:link>
         </p>-->
-        <p><h2>Content Overview</h2></p>
+        <h2>Content Overview</h2>
         <p><b>1. Introduction and Goals</b><br/>
           problem, brief definition of task, quality goals, summary of architecturally relevant requirements, 
           especially the non-functional reqs, list of stakeholder.</p>

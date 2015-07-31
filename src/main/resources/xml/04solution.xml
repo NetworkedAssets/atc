@@ -1,19 +1,15 @@
 <ac:structured-macro ac:name="info">
   <ac:rich-text-body>
       <ac:rich-text-body>
-        <div>
-          <h6>Contents</h6>
+          <h4>Contents</h4>
           <p>A short summary and explanation of the fundamental solution ideas and strategies.</p>
-          <h6>Motivation</h6>
+          
+          <h4>Motivation</h4>
           <p>An architecture is often based upon some key solution ideas or strategies. These ideas should be familiar to everyone involved into the architecture.</p>
-          <h6>Form</h6>
-        </div>
-        <div>
+          
+          <h4>Form</h4>
           <p>Diagrams and / or text, as appropriate. Keep it short, i.e. 1 or 2 pages at most!</p>
-        </div>
+
       </ac:rich-text-body>
   </ac:rich-text-body>
 </ac:structured-macro>
-<p> </p>
-<p> </p>
-<p> </p>

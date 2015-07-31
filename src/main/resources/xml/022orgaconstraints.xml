@@ -1,21 +1,18 @@
 <ac:structured-macro ac:name="info">
   <ac:rich-text-body>
-    <h6>Contents</h6>
+    <h4>Contents</h4>
     <p>Enter all organizational, structural, and resource-related constraints. This category also covers standards and legal constraints that you must comply with.</p>
     <p> </p>
-    <h6>Examples</h6>
+    
+    <h4>Examples</h4>
     <table>
       <thead>
         <tr>
           <td>
-            <div>
-              <p>Constraint</p>
-            </div>
+           <b>Constraint</b>
           </td>
           <td>
-            <div>
-              <p>Description</p>
-            </div>
+            <b>Description</b>
           </td>
         </tr>
       </thead>
@@ -355,17 +352,14 @@
     </table>
   </ac:rich-text-body>
 </ac:structured-macro>
+
 <p> </p>
-<p>
-  <span style="color: rgb(0,0,0);">
-    <span style="white-space: pre-wrap;"> </span>
-  </span>
-</p>
+
 <table>
   <tbody>
     <tr>
       <td colspan="2">
-        <p>Organization and Structure</p>
+        <b>Organization and Structure</b>
       </td>
     </tr>
     <tr>
@@ -378,7 +372,7 @@
     </tr>
     <tr>
       <td colspan="2">
-        <p>Resources (Budget, Time, Personnel)</p>
+        <b>Resources (Budget, Time, Personnel)</b>
       </td>
     </tr>
     <tr>
@@ -391,7 +385,7 @@
     </tr>
     <tr>
       <td colspan="2">
-        <p>Organizational Standards</p>
+        <b>Organizational Standards</b>
       </td>
     </tr>
     <tr>
@@ -404,7 +398,7 @@
     </tr>
     <tr>
       <td colspan="2">
-        <p>Legal Factors</p>
+        <b>Legal Factors</b>
       </td>
     </tr>
     <tr>
@@ -417,13 +411,4 @@
     </tr>
   </tbody>
 </table>
-<p>
-  <span style="color: rgb(0,0,0);">
-    <span style="white-space: pre-wrap;">
-      <strong>
-        <br/>
-      </strong>
-    </span>
-  </span>
-</p>
-<p> </p>
+

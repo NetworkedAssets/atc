@@ -1,92 +1,10 @@
-<div>
-  <p> </p>
-</div>
-<div>
-  <p> </p>
-  <ac:structured-macro ac:name="info">
+<ac:structured-macro ac:name="info">
     <ac:rich-text-body>
-      <h6>Contents</h6>
+      <h4>Contents</h4>
       <p>List all technical constraints in this section. This category covers hardware and software infrastructure, applied technologies (operating systems, middleware, databases, programming languages, …).</p>
-    </ac:rich-text-body>
-  </ac:structured-macro>
-  <table>
-    <tbody>
-      <tr>
-        <td colspan="2">
-          <p>
-            <strong>Hardware-Constraints</strong>
-          </p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p> </p>
-        </td>
-        <td>
-          <p>&lt;insert constraint here&gt;</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p> </p>
-        </td>
-        <td>
-          <p>&lt;insert constraint here&gt;</p>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <p>
-            <strong>Software-Constraints</strong>
-          </p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p> </p>
-        </td>
-        <td>
-          <p>&lt;insert constraint here&gt;</p>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <p>
-            <strong>Operating System Constraints</strong>
-          </p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p> </p>
-        </td>
-        <td>
-          <p>&lt;insert constraint here&gt;</p>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <p>
-            <strong>Programming Constraints</strong>
-          </p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p> </p>
-        </td>
-        <td>
-          <p>&lt;insert constraint here&gt;</p>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <ac:structured-macro ac:name="info">
-    <ac:rich-text-body>
-      <div>
-        <h6>Examples</h6>
-        <p> </p>
-      </div>
+
+      <h4>Examples</h4>
+
       <table>
         <tbody>
           <tr>
@@ -267,4 +185,76 @@
       </table>
     </ac:rich-text-body>
   </ac:structured-macro>
-</div>
+  
+  <table>
+    <tbody>
+      <tr>
+        <td colspan="2">
+          <p>
+            <strong>Hardware-Constraints</strong>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p> </p>
+        </td>
+        <td>
+          <p>&lt;insert constraint here&gt;</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p> </p>
+        </td>
+        <td>
+          <p>&lt;insert constraint here&gt;</p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <p>
+            <strong>Software-Constraints</strong>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p> </p>
+        </td>
+        <td>
+          <p>&lt;insert constraint here&gt;</p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <p>
+            <strong>Operating System Constraints</strong>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p> </p>
+        </td>
+        <td>
+          <p>&lt;insert constraint here&gt;</p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <p>
+            <strong>Programming Constraints</strong>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p> </p>
+        </td>
+        <td>
+          <p>&lt;insert constraint here&gt;</p>
+        </td>
+      </tr>
+    </tbody>
+  </table>

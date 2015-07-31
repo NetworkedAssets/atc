@@ -11,8 +11,8 @@ AJS.bind("blueprint.wizard-register.ready", function () {
         state.soyRenderContext['showSpacePermission'] = false; 
     }
    Confluence.Blueprint.setWizard('com.networkedassets.plugins.space-blueprint:space-blueprint-item', function(wizard) {
-        wizard.on("submit.exampleSpaceId", submitArcSpace);
-        wizard.on("pre-render.exampleSpaceId", preRenderArcSpace);
-        wizard.on("post-render.exampleSpaceId", Confluence.SpaceBlueprint.CommonWizardBindings.postRender);
+        wizard.on("submit.arcSpaceId", submitArcSpace);
+        wizard.on("pre-render.arcSpaceId", preRenderArcSpace);
+        wizard.on("post-render.arcSpaceId", Confluence.SpaceBlueprint.CommonWizardBindings.postRender);
     });
 });
