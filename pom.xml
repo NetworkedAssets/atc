@@ -14,8 +14,8 @@
         <url>http://www.networkedassets.com/</url>
     </organization>
 
-    <name>space-blueprint</name>
-    <description>This is the com.networkedassets.plugins:space-blueprint plugin for Atlassian Confluence.</description>
+    <name>arc42-space-blueprint</name>
+    <description>A template to create a space for the documentation of software architecture depending on the english version of the Arc42 documentation structure.</description>
     <packaging>atlassian-plugin</packaging>
 
     <dependencies>

@@ -18,6 +18,13 @@
 
  /** Ask the user for some information in the create dialog, to add a space description field and a custom heading field to display 
  on the space homepage.*/
+     <fieldset>
+        <div class="field-group">
+            <label for="space-homepage-heading">{getText('confluence.blueprints.space.dialog.label.heading')}</label>
+            <textarea id="space-homepage-heading" class="textarea long-field" rows="3" type="text" name="spaceHomepageHeading"
+                placeholder="{getText('confluence.blueprints.space.dialog.label.heading.placeholder')}"></textarea>
+        </div>
+    </fieldset>  
    <fieldset>
         <div class="field-group">
             <label for="space-description">{getText('confluence.blueprints.space.dialog.label.description')}</label>
@@ -25,13 +32,6 @@
                 placeholder="{getText('confluence.blueprints.space.dialog.label.description.placeholder')}"></textarea>
         </div>
     </fieldset>
-    <fieldset>
-        <div class="field-group">
-            <label for="space-homepage-heading">{getText('confluence.blueprints.space.dialog.label.heading')}</label>
-            <textarea id="space-homepage-heading" class="textarea long-field" rows="3" type="text" name="spaceHomepageHeading"
-                placeholder="{getText('confluence.blueprints.space.dialog.label.heading.placeholder')}"></textarea>
-        </div>
-    </fieldset>  
      
 /**to hide prefix of space name before child pages*/
     <input type="hidden" name="noPageTitlePrefix" value="true" />

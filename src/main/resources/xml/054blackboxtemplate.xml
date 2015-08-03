@@ -1,6 +1,6 @@
 <ac:structured-macro ac:name="info">
   <ac:rich-text-body>
-    <p>A blackbox template can be either tabular or with heading elements, your choice. Here you find both alternatives.</p>
+    <p>A blackbox template can be either tabular or with heading elements, your choice.</p>
     
   </ac:rich-text-body>
 </ac:structured-macro>
@@ -10,12 +10,12 @@
       <tbody>
         <tr>
           <td>
-            <p>Purpose, Responsibilty</p>
+            <p><b>Purpose, Responsibilty</b></p>
           </td>
           <td>&lt;describe purpose here, one or two short sentences&gt;</td>
         </tr>
         <tr>
-          <td>Interfaces</td>
+          <td><b>Interfaces</b></td>
           <td>
             <p>Provided Interfaces:</p>
             <ul>
@@ -30,35 +30,35 @@
           </td>
         </tr>
         <tr>
-          <td> Repository / Files</td>
+          <td><b>Repository / Files</b></td>
           <td>&lt;name the directories and files here; link to source code repository or location&gt; </td>
         </tr>
         <tr>
           <td colspan="1">
-            <p>(optional)</p>
-            <p>Fulfilled Requirements</p>
+            <p><b>(optional)</b></p>
+            <p><b>Fulfilled Requirements</b></p>
           </td>
           <td colspan="1">&lt;If you need traceability, list the requirements that this blackbox fulfills. Otherwise delete this row&gt;</td>
         </tr>
         <tr>
           <td colspan="1">
-            <p>(optional)</p>
-            <p>Quality attributes</p>
+            <p><b>(optional)</b></p>
+            <p><b>Quality attributes</b></p>
           </td>
           <td colspan="1">&lt;briefly describe the quality attributes of this blackbox, e.g. performance, variability, security...&gt;</td>
         </tr>
         <tr>
           <td colspan="1">
-            <p>Administrative information</p>
+            <p><b>Administrative information</b></p>
           </td>
           <td colspan="1">&lt;Author, version, date, revision history&gt;</td>
         </tr>
         <tr>
           <td colspan="1">
-            <p>(optional)</p>
-            <p>Open issues</p>
+            <p><b>(optional)</b></p>
+            <p><b>Open issues</b></p>
           </td>
-          <td colspan="1">&lt;oops - this should hopefully be left blank</td>
+          <td colspan="1">&lt;oops - this should hopefully be left blank&gt;</td>
         </tr>
       </tbody>
     </table>
