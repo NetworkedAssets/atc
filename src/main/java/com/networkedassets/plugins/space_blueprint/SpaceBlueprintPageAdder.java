@@ -3,10 +3,6 @@ package com.networkedassets.plugins.space_blueprint;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.StringWriter;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.List;
 
 import org.apache.commons.io.IOUtils;
 import org.jsoup.Jsoup;
@@ -27,6 +23,7 @@ public class SpaceBlueprintPageAdder {
 	private InputStream atlassianPlugin;
 	private PageManager pageManager;
 	private I18NBean i18n;
+	@SuppressWarnings("unused")
 	private static Logger log = LoggerFactory.getLogger(SpaceBlueprintPageAdder.class);
 
 	public SpaceBlueprintPageAdder(PageManager pm, InputStream atlasPlugin, I18NBeanFactory i18) {
@@ -60,25 +57,22 @@ public class SpaceBlueprintPageAdder {
 		}
 
 		Element spaceBlueprint = spaceBlueprints.get(0);
-
-		Elements els = spaceBlueprint.children();
-		List<Element> es = new ArrayList<Element>();
-		
-		for (Element e : els) { // TODO: refactor this to stream filter asap
-			if (e.tag().getName().equals("content-template"))
-				es.add(e);
+		Element root = null;
+		for (Element e : spaceBlueprint.children()) {
+			if (e.tag().getName().equals("content-template")) {
+				if (root == null)
+					root = e;
+				else
+					throw new RuntimeException("Not supported number of root <content-template>s");
+			}
 		}
 		
-		log.warn("!!!!!!!!!!!!!es.size === " + es.size());
-
-		if (es.size() != 1)
-			throw new RuntimeException("Not supported number of root <content-template>s");
+		if (root == null)
+			throw new RuntimeException("Root not found");
 
 		try {
-			plantPageTree(es.get(0), rootPage);
+			plantPageTree(root, rootPage);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
 			throw new RuntimeException("Error while planting pages", e);
 		}
 	}
@@ -97,8 +91,9 @@ public class SpaceBlueprintPageAdder {
 		String content = writer.toString();
 		rootPage.setBodyAsString(content);
 		pageManager.saveContentEntity(rootPage, null);
-		for (Element child : elem.children().select("content-template")) {
-			plantChild(child, rootPage);
+		for (Element child : elem.children()) {
+			if (child.tag().getName().equals("content-template"))
+				plantChild(child, rootPage);
 		}
 	}
 

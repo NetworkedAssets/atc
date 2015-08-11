@@ -589,7 +589,8 @@
 			<action name="add-arc42-existing"
 				class="com.networkedassets.plugins.space_blueprint.AddArc42Existing"
 				method="addInExisting">
-				<result name="success" type="velocity">/vm/success.vm</result>
+				<result name="success" type="redirect">/pages/viewpage.action?pageId=${pageId}</result>
+				<!-- <result name="success" type="velocity">/vm/success.vm</result> -->
 			</action>
 		</package>
 	</xwork>
