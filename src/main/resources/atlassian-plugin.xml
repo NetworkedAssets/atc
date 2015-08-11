@@ -182,7 +182,7 @@
 		<resource name="template" type="download" location="/xml/0521level3.xml" />
 	</content-template>
 	
-	<!-- Whitebox Template page -->
+<!-- Whitebox Template page -->
 	<content-template key="whiteboxtemplate"
 		i18n-name-key="confluence.blueprints.space.whiteboxtemplate.name">
 		<description key="confluence.blueprints.space.whiteboxtemplate.desc" />
@@ -511,8 +511,8 @@
 		              <content-template ref="level3"/>
 		           </content-template>
 		        </content-template>
-		        <content-template ref="blackboxtemplate"/>
 		        <content-template ref="whiteboxtemplate"/>
+		        <content-template ref="blackboxtemplate"/>
 		     </content-template>
 		     <content-template ref="runtimeview">
 		        <content-template ref="runtimescenario1"/>
