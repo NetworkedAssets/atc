@@ -29,6 +29,7 @@
 		<resource type="download" name="space-blueprint.js" location="/js/space-blueprint.js" />
 		<resource type="download" name="images/" location="/images" />
 		<resource type="download" name="dialog-page.js" location="/soy/dialog-page.soy" />
+		<resource type="download" name="error.soy.js" location="/soy/error.soy"/>
 
 		<dependency>com.atlassian.auiplugin:ajs</dependency>
 		<dependency>com.atlassian.confluence.plugins.confluence-create-content-plugin:space-blueprints
@@ -582,7 +583,12 @@
 				class="com.networkedassets.plugins.space_blueprint.AddArc42Existing"
 				method="addInExisting">
 				<result name="success" type="redirect">/pages/viewpage.action?pageId=${pageId}</result>
-				<!-- <result name="success" type="velocity">/vm/success.vm</result> -->
+				<result name="error" type="soy">
+          			<param name="location">${project.groupId}.${project.artifactId}:space-blueprint-resources/space_blueprint.unauth</param>
+   				</result>
+				<result name="pagesError" type="soy">
+          			<param name="location">${project.groupId}.${project.artifactId}:space-blueprint-resources/space_blueprint.pageError</param>
+   				</result>
 			</action>
 		</package>
 	</xwork>
@@ -594,8 +600,11 @@
 		</description>
 		<label key="confluence.blueprints.space.add-to-existing-link" />
 		<link linkId="add-arc42-existing-space-link-id">
-			/plugins/${project.artifactId}/add-arc42-existing.action?pageId=$page.id
+			/plugins/${project.artifactId}/add-arc42-existing.action?pageId=$page.id&amp;key=$space.key
 		</link>
+		<condition class="com.atlassian.confluence.plugin.descriptor.web.conditions.SpacePermissionCondition">
+			<param name="permission">administer</param>
+		</condition>
 	</web-item>
 
 </atlassian-plugin>

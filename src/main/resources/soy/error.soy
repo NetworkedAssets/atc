@@ -1,0 +1,49 @@
+{namespace space_blueprint}
+
+/**
+ * Unauthorized!
+ */
+{template .unauth}
+<html>
+
+	<head>
+		<title>Unauthorized!</title>
+		<meta name="decorator" content="main">
+	</head>
+
+	<body>
+		<header class="aui-page-header">
+			<div class="aui-page-header-inner">
+				<div class="aui-page-header-main">
+					<h2>Unauthorized!</h2>
+				</div>
+			</div>
+		</header>
+		<div>Unauthorized!</div>		
+	</body>
+</html>
+{/template}
+
+/**
+ * PageErr
+ */
+{template .pageError}
+<html>
+
+	<head>
+		<title>Error!</title>
+		<meta name="decorator" content="main">
+	</head>
+
+	<body>
+		<header class="aui-page-header">
+			<div class="aui-page-header-inner">
+				<div class="aui-page-header-main">
+					<h2>Error!</h2>
+				</div>
+			</div>
+		</header>
+		<div>Can't add pages. Pages with the same names already exist in space.</div>		
+	</body>
+</html>
+{/template}
