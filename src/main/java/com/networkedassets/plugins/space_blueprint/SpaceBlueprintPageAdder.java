@@ -19,7 +19,6 @@ import com.atlassian.confluence.util.i18n.I18NBean;
 import com.atlassian.confluence.util.i18n.I18NBeanFactory;
 
 public class SpaceBlueprintPageAdder {
-	private Document document;
 	private InputStream atlassianPlugin;
 	private PageManager pageManager;
 	private I18NBean i18n;
@@ -32,19 +31,20 @@ public class SpaceBlueprintPageAdder {
 		i18n = i18.getI18NBean();
 	}
 
-	private void loadAndParse() throws IOException {
-		document = Jsoup.parse(atlassianPlugin, null, "", Parser.xmlParser());
+	private Document loadAndParse() throws IOException {
+		return Jsoup.parse(atlassianPlugin, null, "", Parser.xmlParser());
 	}
 
 	public void addPages(Long pageId) {
 		Page rootPage = pageManager.getPage(pageId);
+		Document document;
 
 		if (rootPage == null) {
 			throw new RuntimeException("root page is null");
 		}
 
 		try {
-			loadAndParse();
+			document = loadAndParse();
 		} catch (IOException e) {
 			e.printStackTrace();
 			throw new RuntimeException(e); // like I care
@@ -71,13 +71,13 @@ public class SpaceBlueprintPageAdder {
 			throw new RuntimeException("Root not found");
 
 		try {
-			plantPageTree(root, rootPage);
+			plantPageTree(root, rootPage, document);
 		} catch (IOException e) {
 			throw new RuntimeException("Error while planting pages", e);
 		}
 	}
 
-	private void plantPageTree(Element elem, Page rootPage) throws IOException {
+	private void plantPageTree(Element elem, Page rootPage, Document document) throws IOException {
 		Element templateDetails = document.select("content-template[key=\"" + elem.attr("ref") + "\"]").get(0);
 		String titleKey = templateDetails.attr("i18n-name-key");
 		String title = i18n.getText(titleKey);
@@ -93,16 +93,16 @@ public class SpaceBlueprintPageAdder {
 		pageManager.saveContentEntity(rootPage, null);
 		for (Element child : elem.children()) {
 			if (child.tag().getName().equals("content-template"))
-				plantChild(child, rootPage);
+				plantChild(child, rootPage, document);
 		}
 	}
 
-	private void plantChild(Element child, Page parentPage) throws IOException {
+	private void plantChild(Element child, Page parentPage, Document document) throws IOException {
 		Page page = new Page();
 		page.setParentPage(parentPage);
 		page.setSpace(parentPage.getSpace());
 		page.setVersion(0); // increments to 1 in plantPageTree
 		parentPage.addChild(page);
-		plantPageTree(child, page);
+		plantPageTree(child, page, document);
 	}
 }
