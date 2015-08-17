@@ -572,4 +572,30 @@
 		</dialog-wizard>
 	</space-blueprint>
 
+	<xwork name="Add ARC42 Template in existing space" key="add-arc42-existing-space">
+		<description>Adds ARC42 Template in existing space</description>
+		<package name="add-arc42-existing-space-xwork-package"
+			extends="default" namespace="/plugins/${project.artifactId}">
+			<default-interceptor-ref name="validatingStack" />
+
+			<action name="add-arc42-existing"
+				class="com.networkedassets.plugins.space_blueprint.AddArc42Existing"
+				method="addInExisting">
+				<result name="success" type="redirect">/pages/viewpage.action?pageId=${pageId}</result>
+				<!-- <result name="success" type="velocity">/vm/success.vm</result> -->
+			</action>
+		</package>
+	</xwork>
+
+	<web-item name="Add ARC42 to existing - link" key="add-arc42-existing-space-link"
+		section="system.content.action/modify" weight="1000">
+		<description key="add-arc42-existing-space-link.description">
+			Link for adding ARC42 Template to existing space
+		</description>
+		<label key="confluence.blueprints.space.add-to-existing-link" />
+		<link linkId="add-arc42-existing-space-link-id">
+			/plugins/${project.artifactId}/add-arc42-existing.action?pageId=$page.id
+		</link>
+	</web-item>
+
 </atlassian-plugin>
