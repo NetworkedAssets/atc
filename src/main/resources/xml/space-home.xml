@@ -19,7 +19,7 @@
 <ac:structured-macro ac:name="section">
   <ac:rich-text-body>
     <ac:structured-macro ac:name="column">
-      <ac:parameter ac:name="width">50%</ac:parameter>
+      <ac:parameter ac:name="width">60%</ac:parameter>
       <ac:rich-text-body>
       <p>arc42 supports software- and system architects. It is based upon practical experience of many architecture projects of different sizes and domains. It includes feedback of its many users.</p>
       <p>arc42 contains a template for development, documentation and communication of software architectures.</p>
@@ -32,31 +32,7 @@
         <p>The sidebar works like any browser tree structure. It shows all the 12 chapters of the ARC42 Template. 
         Click on the arrow to see the subchapters or hide them again.</p>
         
-        <h2>Table of Contents</h2>
-        	<p>
-				<ac:macro ac:name="children">
-					<ac:parameter ac:name="page"></ac:parameter>
-					<ac:parameter ac:name="all">true</ac:parameter>
-				</ac:macro>
-			</p>
-
-      </ac:rich-text-body>
-    </ac:structured-macro>
-    <ac:structured-macro ac:name="column">
-      <ac:parameter ac:name="width">50</ac:parameter>
-      <ac:rich-text-body>
-       <!-- <h3>Big Picture</h3>
-        <p>
-          <ac:link>
-            <ri:attachment ri:filename="arc42-BigPicture-v60-EN.graffle.pdf"/>
-            <ac:link-body>
-              <ac:image ac:thumbnail="true" ac:width="300">
-                <ri:attachment ri:filename="arc42-BigPicture-v60-EN.graffle_ BigPicture_Blank.jpg"/>
-              </ac:image>
-            </ac:link-body>
-          </ac:link>
-        </p>-->
-        <h2>Content Overview</h2>
+         <h2>Content Overview</h2>
         <p><b>1. Introduction and Goals</b><br/>
           problem, brief definition of task, quality goals, summary of architecturally relevant requirements, 
           especially the non-functional reqs, list of stakeholder.</p>
@@ -85,6 +61,30 @@
          <p><b>11. Risks</b></p>
          <p><b>12. Glossary</b><br/>
          Important terms.</p>
+
+      </ac:rich-text-body>
+    </ac:structured-macro>
+    <ac:structured-macro ac:name="column">
+      <ac:parameter ac:name="width">40%</ac:parameter>
+      <ac:rich-text-body>
+       <!-- <h3>Big Picture</h3>
+        <p>
+          <ac:link>
+            <ri:attachment ri:filename="arc42-BigPicture-v60-EN.graffle.pdf"/>
+            <ac:link-body>
+              <ac:image ac:thumbnail="true" ac:width="300">
+                <ri:attachment ri:filename="arc42-BigPicture-v60-EN.graffle_ BigPicture_Blank.jpg"/>
+              </ac:image>
+            </ac:link-body>
+          </ac:link>
+        </p>-->
+        <h2>Table of Contents</h2>
+        	<p>
+				<ac:macro ac:name="children">
+					<ac:parameter ac:name="page"></ac:parameter>
+					<ac:parameter ac:name="all">true</ac:parameter>
+				</ac:macro>
+			</p>
 
       </ac:rich-text-body>
     </ac:structured-macro>
