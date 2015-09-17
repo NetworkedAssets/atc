@@ -1,4 +1,7 @@
 <ac:structured-macro ac:name="info">
+ <ac:rich-text-body>
+<ac:structured-macro ac:name="expand">
+  <ac:parameter ac:name="title">Content information...</ac:parameter>
   <ac:rich-text-body>
     <h4>Contents</h4>
     <p>The following chapters cover examples of frequent cross-cutting concerns (a.k.a. aspects in some programming languages)</p>
@@ -9,5 +12,7 @@
     
     <h4>Form</h4>
     <p>.. can be varied. Some concepts are plain natural language text with a freely chosen structure, some others may include models/scenarios using notations that are also applied in architecture views.</p>
+  </ac:rich-text-body>
+   </ac:structured-macro>
   </ac:rich-text-body>
 </ac:structured-macro>

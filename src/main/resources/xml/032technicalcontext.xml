@@ -1,4 +1,7 @@
 <ac:structured-macro ac:name="info">
+<ac:rich-text-body>
+<ac:structured-macro ac:name="expand">
+  <ac:parameter ac:name="title">Content information...</ac:parameter>
   <ac:rich-text-body>
     <h4>Contents</h4>
       <p>Specification of the communication channels linking your system to neighboring systems and the environment.</p>
@@ -9,5 +12,7 @@
       <h4>Form</h4>
       <p>E.g. UML deployment diagram describing channels to neighboring systems, together with a mapping table of logical input and output flows of the business context diagram (3.1) to the channels.</p>
 
+  </ac:rich-text-body>
+    </ac:structured-macro>
   </ac:rich-text-body>
 </ac:structured-macro>

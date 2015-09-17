@@ -1,4 +1,7 @@
 <ac:structured-macro ac:name="info">
+ <ac:rich-text-body>
+<ac:structured-macro ac:name="expand">
+  <ac:parameter ac:name="title">Content information...</ac:parameter>
   <ac:rich-text-body>
       <ac:rich-text-body>
           <h4>Contents</h4>
@@ -11,5 +14,7 @@
           <p>Diagrams and / or text, as appropriate. Keep it short, i.e. 1 or 2 pages at most!</p>
 
       </ac:rich-text-body>
+  </ac:rich-text-body>
+  </ac:structured-macro>
   </ac:rich-text-body>
 </ac:structured-macro>

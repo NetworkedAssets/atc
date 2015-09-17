@@ -1,4 +1,7 @@
 <ac:structured-macro ac:name="info">
+ <ac:rich-text-body>
+<ac:structured-macro ac:name="expand">
+  <ac:parameter ac:name="title">Content information...</ac:parameter>
   <ac:rich-text-body>
       <h4>Contents</h4>
       <p>A list of identified technical risks, ordered by priority</p>
@@ -8,5 +11,7 @@
       
       <h4>Form</h4>
       <p>List of risks with probability of occurrence, amount of damage, options for risk avoidance or risk mitigation, …</p>
+  </ac:rich-text-body>
+    </ac:structured-macro>
   </ac:rich-text-body>
 </ac:structured-macro>

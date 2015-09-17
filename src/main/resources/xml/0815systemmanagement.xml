@@ -1,5 +1,10 @@
 <ac:structured-macro ac:name="info">
+ <ac:rich-text-body>
+<ac:structured-macro ac:name="expand">
+  <ac:parameter ac:name="title">Content information...</ac:parameter>
   <ac:rich-text-body>
       <p>Larger software systems are often executed in controlled environments (data centers) under oversight of operators or administrators. These stakeholders require specific information on the applications’ states during runtime as well as special means of control and configuration.</p>
+  </ac:rich-text-body>
+     </ac:structured-macro>
   </ac:rich-text-body>
 </ac:structured-macro>

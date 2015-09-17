@@ -1,4 +1,7 @@
 <ac:structured-macro ac:name="info">
+ <ac:rich-text-body>
+<ac:structured-macro ac:name="expand">
+  <ac:parameter ac:name="title">Content information...</ac:parameter>
   <ac:rich-text-body>
       <h4>Contents</h4>
       <p>Document all important design decisions and their reasons!</p>
@@ -44,7 +47,10 @@
         <p>When did you decide?</p>
       </div>
   </ac:rich-text-body>
+   </ac:structured-macro>
+  </ac:rich-text-body>
 </ac:structured-macro>
+
 <p> </p>
 <h2>9.1  &lt;Decision Topic 1&gt;</h2>
 <h2>9.2 &lt;Decision Topic 2&gt;</h2>

@@ -1,8 +1,13 @@
 <ac:structured-macro ac:name="info">
+ <ac:rich-text-body>
+<ac:structured-macro ac:name="expand">
+  <ac:parameter ac:name="title">Content information...</ac:parameter>
   <ac:rich-text-body>
       <ul>
         <li>Runtime diagram  (or other adequate description of scenario!)</li>
         <li>Description of the notable aspects of the interactions between the building block instances depicted in this diagram.</li>
       </ul>
+  </ac:rich-text-body>
+    </ac:structured-macro>
   </ac:rich-text-body>
 </ac:structured-macro>

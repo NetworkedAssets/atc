@@ -1,4 +1,7 @@
 <ac:structured-macro ac:name="info">
+<ac:rich-text-body>
+<ac:structured-macro ac:name="expand">
+  <ac:parameter ac:name="title">Content information...</ac:parameter>
   <ac:rich-text-body>
 
       <h4>Contents</h4>
@@ -11,4 +14,6 @@
       <p>Simple table with role names, person names, their knowledge as pertaining to architecture, their availability, etc.</p>
 
   </ac:rich-text-body>
+   </ac:structured-macro>
+   </ac:rich-text-body>
 </ac:structured-macro>

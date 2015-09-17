@@ -1,4 +1,7 @@
 <ac:structured-macro ac:name="info">
+ <ac:rich-text-body>
+<ac:structured-macro ac:name="expand">
+  <ac:parameter ac:name="title">Content information...</ac:parameter>
   <ac:rich-text-body>
         <h4>Contents</h4>
         <p>Static decomposition of the system (introduced in the context diagram in section 3) into building blocks (modules, components, subsystems, subsidiary systems, classes, interfaces, packages, libraries, frameworks, layers, partitions, tiers, functions, macros, operations, data structures, …) and the relationships between them.</p>
@@ -8,13 +11,12 @@
         
         <h4>Form</h4>
         <p>The building block view is a hierarchical set of diagrams including the next lower level black boxes and their dependencies. Each diagram is described according to the white box template (see section 5.1).</p>
-     <!-- <p> <ac:image ac:width="500">
-          <ri:attachment ri:filename="arc42-White-Blackbox-Hierarchy engl.png"/>
-        </ac:image>
-      </p> --> 
+
       <p></p>
         <p><b>Level 1</b> contains the white box description of the overall system (system under development / SUD, introduced in the context diagram in section 3).</p>
         <p><b>Level 2</b> zooms into the building blocks of Level 1 and is thus made up of the white box descriptions of all building blocks of Level 1.</p>
         <p><b>Level 3</b> zooms into the building blocks of Level 2, etc.</p>
+      </ac:rich-text-body>
+      </ac:structured-macro>
   </ac:rich-text-body>
 </ac:structured-macro>

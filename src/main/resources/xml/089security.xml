@@ -1,4 +1,7 @@
 <ac:structured-macro ac:name="info">
+ <ac:rich-text-body>
+<ac:structured-macro ac:name="expand">
+  <ac:parameter ac:name="title">Content information...</ac:parameter>
   <ac:rich-text-body>
       <p>The security of software systems deals with mechanisms that ensure data confidentiality, integrity, and availability.</p>
       <p>Typical issues are:</p>
@@ -9,5 +12,7 @@
         <li>How can communicating entities prove data provenience or certify validity of data?</li>
       </ul>
       <p>The topic of IT-security often touches upon legal aspects, sometimes even international law.</p>
+  </ac:rich-text-body>
+      </ac:structured-macro>
   </ac:rich-text-body>
 </ac:structured-macro>

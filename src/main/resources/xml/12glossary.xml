@@ -1,4 +1,7 @@
 <ac:structured-macro ac:name="info">
+ <ac:rich-text-body>
+<ac:structured-macro ac:name="expand">
+  <ac:parameter ac:name="title">Content information...</ac:parameter>
   <ac:rich-text-body>
       <h4>Contents</h4>
       <p>The most important terms of the software architecture in alphabetic order.</p>
@@ -8,5 +11,7 @@
      
       <h4>Form</h4>
       <p>A simple table with columns &lt;Term&gt; and &lt;Definition&gt;</p>
+  </ac:rich-text-body>
+    </ac:structured-macro>
   </ac:rich-text-body>
 </ac:structured-macro>

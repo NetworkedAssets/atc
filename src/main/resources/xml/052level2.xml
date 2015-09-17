@@ -1,9 +1,15 @@
 <ac:structured-macro ac:name="info">
+ <ac:rich-text-body>
+<ac:structured-macro ac:name="expand">
+  <ac:parameter ac:name="title">Content information...</ac:parameter>
   <ac:rich-text-body>
       <p>Describe all building blocks from level 1 - that need further details - as a series of white box templates. 
       The structure is given below for three building blocks and should be duplicated as needed.</p>
   </ac:rich-text-body>
+  </ac:structured-macro>
+  </ac:rich-text-body>
 </ac:structured-macro>
+
 <h3>&lt;Building Block 1&gt; (White Box Description)</h3>
 <p>&lt;insert white box template here&gt;</p>
 <h3>&lt;Building Block 2&gt; (White Box Description)</h3>
