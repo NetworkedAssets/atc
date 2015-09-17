@@ -1,4 +1,8 @@
 <ac:structured-macro ac:name="info">
+<ac:rich-text-body>
+<ac:structured-macro ac:name="expand">
+  <ac:parameter ac:name="title">Content information...</ac:parameter>
+  
   <ac:rich-text-body>
 
       <h4>Contents</h4>
@@ -18,5 +22,7 @@
       <p>In the optimal case constraints are defined by requirements. In any case, at least the architects must be aware of constraints.</p>
       <p>The influence of constraints is described by [Hofmeister et al] (Software Architecture, A Practical Guide, Addison Wesley 1999)  using the term “global analysis”.</p>
 
+  </ac:rich-text-body>
+  </ac:structured-macro>
   </ac:rich-text-body>
 </ac:structured-macro>

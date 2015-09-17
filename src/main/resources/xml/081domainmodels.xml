@@ -1,4 +1,7 @@
 <ac:structured-macro ac:name="info">
+ <ac:rich-text-body>
+<ac:structured-macro ac:name="expand">
+  <ac:parameter ac:name="title">Content information...</ac:parameter>
   <ac:rich-text-body>
     <h4>Contents</h4>
     <p>Business (or logical) models, domain models - they all describe subject-specific, business aspects, without relation to technology.</p>
@@ -12,5 +15,7 @@
       <h4>Form</h4>
       <p>Usually either ER-Models (Entity-Relationship Models) or UML class diagrams (mainly containing entity classes) are used to document domain models.</p>
 
+  </ac:rich-text-body>
+    </ac:structured-macro>
   </ac:rich-text-body>
 </ac:structured-macro>

@@ -1,6 +1,11 @@
 <ac:structured-macro ac:name="info">
+ <ac:rich-text-body>
+<ac:structured-macro ac:name="expand">
+  <ac:parameter ac:name="title">Content information...</ac:parameter>
   <ac:rich-text-body>
       <p>Communication: Exchange of data between system components. Covers communications within one process or address space, between different processes (inter-process communication – IPC), and between different systems.</p>
       <p>Integration: Combination of existing systems in a new context. Also known as: (Legacy) Wrapper, Gateway, Enterprise Application Integration (EAI).</p>
+  </ac:rich-text-body>
+      </ac:structured-macro>
   </ac:rich-text-body>
 </ac:structured-macro>

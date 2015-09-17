@@ -1,4 +1,7 @@
 <ac:structured-macro ac:name="info">
+<ac:rich-text-body>
+<ac:structured-macro ac:name="expand">
+  <ac:parameter ac:name="title">Content information...</ac:parameter>
   <ac:rich-text-body>
 
       <h4>Contents</h4>
@@ -37,5 +40,7 @@
       <p align="left">Or use chapters 10 – 17 of the VOLERE template as a starting point (<a href="http://www.volere.co.uk">www.volere.co.uk</a>).</p>
 
     <p> </p>
+  </ac:rich-text-body>
+  </ac:structured-macro>
   </ac:rich-text-body>
 </ac:structured-macro>

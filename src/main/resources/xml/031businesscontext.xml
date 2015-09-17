@@ -1,4 +1,7 @@
 <ac:structured-macro ac:name="info">
+<ac:rich-text-body>
+<ac:structured-macro ac:name="expand">
+  <ac:parameter ac:name="title">Content information...</ac:parameter>
   <ac:rich-text-body>
       <h4>Contents</h4>
       <p>Identify all neighboring systems and specify all logical/business data that is exchanged with the system under development. Add data formats and communication protocols with neighboring systems and the general environment if these are not specified in detail with the relevant components.</p>
@@ -13,5 +16,7 @@
 
         <p>
           We often tend to a pragmatic approach – but here we insist on a list of all (a-l-l) neighboring systems. Too many projects have failed because they were not aware of their neighbors. :-(</p>
+  </ac:rich-text-body>
+  </ac:structured-macro>
   </ac:rich-text-body>
 </ac:structured-macro>

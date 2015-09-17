@@ -1,4 +1,7 @@
 <ac:structured-macro ac:name="info">
+<ac:rich-text-body>
+<ac:structured-macro ac:name="expand">
+  <ac:parameter ac:name="title">Content information...</ac:parameter>
   <ac:rich-text-body>
       <p>Short description of the functional requirements.</p>
       <p>Digest (or abstract) of the requirements documents.</p>
@@ -30,5 +33,7 @@
       </ul>
 
     <p>Here you can reuse parts of the requirements documents – but keep these excerpts short and balance readability against avoidance of redundancy</p>
+  </ac:rich-text-body>
+  </ac:structured-macro>
   </ac:rich-text-body>
 </ac:structured-macro>

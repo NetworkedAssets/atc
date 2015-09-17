@@ -1,4 +1,7 @@
 <ac:structured-macro ac:name="info">
+ <ac:rich-text-body>
+<ac:structured-macro ac:name="expand">
+  <ac:parameter ac:name="title">Content information...</ac:parameter>
   <ac:rich-text-body>
       <h4>Contents</h4>
       <p>Scenarios describe a system’s reaction to a stimulus in a certain situation. They thus characterize the interaction between stakeholders and the system. Scenarios operationalize quality criteria and turn them into measurable quantities.</p>
@@ -11,15 +14,6 @@
       <ul>
         <li>Boundary or stress scenarios describe how the system reacts to exceptional conditions. Examples: How does the system react to a complete power outage, a serious hardware failure, etc.</li>
       </ul>
-       <!--  <p>
-          <span style="color: rgb(255,0,0);">
-            <ac:image ac:width="500">
-              <ri:attachment ri:filename="Evaluation Scenario.png"/>
-            </ac:image>
-            <br/>
-          </span>
-        </p>
-        <p>Figure: Schematic depiction of scenarios (cf. [Bass+03])</p>-->
         <p>Scenarios comprise the following major parts (according to [Starke05], original structure from [Bass+03]):</p>
         <ul>
           <li>Stimulus: Describes a specific interaction between the (stimulating) stakeholder and the system. Example: A user calls a functions, a developer implements an extension, an administrator installs or configures the system.</li>
@@ -43,7 +37,10 @@
         <h4>Background Information</h4>
         <p>There are relations between scenarios and the runtime view. Often you can use scenarios of the runtime view fully or as a basis for evaluation. Evaluation scenarios additionally contain response measures that are often not considered in the pure execution focus of runtime scenarios.</p>
   </ac:rich-text-body>
+   </ac:structured-macro>
+  </ac:rich-text-body>
 </ac:structured-macro>
+
 <h3>10.2.1 &lt;Evaluation Scenario 1&gt;</h3>
 <p>&lt;insert scenario here&gt;</p>
 <h3 style="margin-left: 0.0px;">10.2.2 &lt;Evaluation Scenario 2&gt;</h3>

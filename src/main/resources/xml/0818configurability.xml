@@ -1,4 +1,7 @@
 <ac:structured-macro ac:name="info">
+ <ac:rich-text-body>
+<ac:structured-macro ac:name="expand">
+  <ac:parameter ac:name="title">Content information...</ac:parameter>
   <ac:rich-text-body>
       <p>The flexibility of a software system is influenced by its configurability, i.e. the possibility to make certain decisions about usage of the system at a late point in time.</p>
       <p>Configurability can occur at the following events:</p>
@@ -8,5 +11,7 @@
         <li>At system startup: Information can be read dynamically before or during system startup.</li>
         <li>During application execution: Configuration information is queried or read during runtime.</li>
       </ul>
+  </ac:rich-text-body>
+       </ac:structured-macro>
   </ac:rich-text-body>
 </ac:structured-macro>

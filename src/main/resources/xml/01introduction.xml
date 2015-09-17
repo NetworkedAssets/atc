@@ -1,6 +1,11 @@
 <ac:structured-macro ac:name="info">
+<ac:rich-text-body>
+<ac:structured-macro ac:name="expand">
+  <ac:parameter ac:name="title">Content information...</ac:parameter>
   <ac:rich-text-body>
-    <p class="Erluterungstext">The introduction to the architecture documentation should list the driving forces that software architects must consider in their decisions.</p>
-    <p class="Erluterungstext">This includes on the one hand the fulfillment of functional requirements of the stakeholders, on the other hand the fulfillment of or compliance with required constraints, always in consideration of the architecture goals.</p>
+    <p>The introduction to the architecture documentation should list the driving forces that software architects must consider in their decisions.</p>
+    <p>This includes on the one hand the fulfillment of functional requirements of the stakeholders, on the other hand the fulfillment of or compliance with required constraints, always in consideration of the architecture goals.</p>
   </ac:rich-text-body>
+   </ac:structured-macro>
+   </ac:rich-text-body>
 </ac:structured-macro>

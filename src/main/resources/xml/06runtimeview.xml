@@ -1,4 +1,7 @@
 <ac:structured-macro ac:name="info">
+ <ac:rich-text-body>
+<ac:structured-macro ac:name="expand">
+  <ac:parameter ac:name="title">Content information...</ac:parameter>
   <ac:rich-text-body>
       <h4>Contents</h4>
       <p>Alternative terms:</p>
@@ -32,5 +35,7 @@
       <h4>Form</h4>
       <p>Document the chosen scenarios using UML sequence diagrams, activity diagrams or communications diagrams. Enumerated lists are sometimes feasible.</p>
       <p>Using object diagrams you can depict snapshots of existing runtime objects as well as instantiated relationships. The UML allows to distinguish between active and passive objects.</p>
+  </ac:rich-text-body>
+    </ac:structured-macro>
   </ac:rich-text-body>
 </ac:structured-macro>
