@@ -1,7 +1,7 @@
 <ac:structured-macro ac:name="info">
  <ac:rich-text-body>
 <ac:structured-macro ac:name="expand">
-  <ac:parameter ac:name="title">Content information...</ac:parameter>
+  <ac:parameter ac:name="title">Click here for content instructions...</ac:parameter>
   <ac:rich-text-body>
     <div>
       <p>Describe all building blocks from level 2 that need more refinement as a series of white box templates. The structure is identical to the structure of level 2. Duplicate the corresponding sub-sections as needed.</p>

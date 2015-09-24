@@ -2,7 +2,7 @@
 <ac:structured-macro ac:name="info">
  <ac:rich-text-body>
 <ac:structured-macro ac:name="expand">
-  <ac:parameter ac:name="title">Content information...</ac:parameter>
+  <ac:parameter ac:name="title">Click here for content instructions...</ac:parameter>
   <ac:rich-text-body>
     <ul style="margin-left: 0.0px;">
       <li style="margin-left: 0.0px;">Shows the deployment of the overall system to 1 – n processors or sites as well as the physical connections among these elements.</li>

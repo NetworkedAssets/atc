@@ -1,7 +1,7 @@
 <ac:structured-macro ac:name="info">
 <ac:rich-text-body>
 <ac:structured-macro ac:name="expand">
-  <ac:parameter ac:name="title">Content information...</ac:parameter>
+  <ac:parameter ac:name="title">Click here for content instructions...</ac:parameter>
   <ac:rich-text-body>
       <p>For many building blocks you can describe its interfaces directly in the black box template of the building block.</p>
       <p>For complex interfaces – and external interfaces are normally very complex – it is worth while to describe them in separate sections.</p>

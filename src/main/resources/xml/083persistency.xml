@@ -1,7 +1,7 @@
 <ac:structured-macro ac:name="info">
  <ac:rich-text-body>
 <ac:structured-macro ac:name="expand">
-  <ac:parameter ac:name="title">Content information...</ac:parameter>
+  <ac:parameter ac:name="title">Click here for content instructions...</ac:parameter>
   <ac:rich-text-body>
       <p>Persistency means moving data from (volatile) memory to a durable storage medium (and back).</p>
       <p>Some of the data that a software system is processing must be written to and read from persistent storage media.</p>

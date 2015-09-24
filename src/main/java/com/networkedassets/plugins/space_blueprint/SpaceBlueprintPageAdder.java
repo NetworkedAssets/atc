@@ -1,3 +1,6 @@
+// Copyright 2015 NetworkedAssets GmbH
+// This file is part of the Arc42-Template-Plugin for Atlassian Confluence.
+
 package com.networkedassets.plugins.space_blueprint;
 
 import java.io.IOException;
@@ -18,6 +21,12 @@ import com.atlassian.confluence.pages.PageManager;
 import com.atlassian.confluence.util.i18n.I18NBean;
 import com.atlassian.confluence.util.i18n.I18NBeanFactory;
 
+/**
+ * This page adder adds a pagetree to a given root page.
+ * 
+ *  @author Mikołaj Robakowski
+ *
+ */
 public class SpaceBlueprintPageAdder {
 	private InputStream atlassianPlugin;
 	private PageManager pageManager;

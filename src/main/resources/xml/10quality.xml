@@ -1,7 +1,7 @@
 <ac:structured-macro ac:name="info">
  <ac:rich-text-body>
 <ac:structured-macro ac:name="expand">
-  <ac:parameter ac:name="title">Content information...</ac:parameter>
+  <ac:parameter ac:name="title">Click here for content instructions...</ac:parameter>
   <ac:rich-text-body>
       <p>This chapter summarizes all you (or other stakeholders) might need to systematically evaluate the architecture against the quality requirements.</p>
       <p>It contains:</p>

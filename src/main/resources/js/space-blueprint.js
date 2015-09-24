@@ -1,5 +1,12 @@
-/*Hook into the wizard apis. Update the space home page title to be the space name
-  and a suffix of " Home Page".*/
+// Copyright 2015 NetworkedAssets GmbH
+// This file is part of the Arc42-Template-Plugin for Atlassian Confluence.
+
+/** 
+ * This script hooks into the wizard API. It adds the blueprint to the wizard and updates the space home page title to be the space name 
+ * followed by the suffix "Home Page".
+ *
+ *  @author Tina Steiger  
+ */
 
 AJS.bind("blueprint.wizard-register.ready", function () {
     function submitArcSpace(e, state) {

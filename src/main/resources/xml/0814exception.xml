@@ -1,7 +1,7 @@
 <ac:structured-macro ac:name="info">
  <ac:rich-text-body>
 <ac:structured-macro ac:name="expand">
-  <ac:parameter ac:name="title">Content information...</ac:parameter>
+  <ac:parameter ac:name="title">Click here for content instructions...</ac:parameter>
   <ac:rich-text-body>
       <p>How are exceptions and errors handled systematically and consistently?</p>
       <p>How can the system reach a consistent state after an error? Is this done automatically or is manual interaction required?</p>

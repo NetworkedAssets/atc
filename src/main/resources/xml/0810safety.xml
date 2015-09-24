@@ -1,7 +1,7 @@
 <ac:structured-macro ac:name="info">
  <ac:rich-text-body>
 <ac:structured-macro ac:name="expand">
-  <ac:parameter ac:name="title">Content information...</ac:parameter>
+  <ac:parameter ac:name="title">Click here for content instructions...</ac:parameter>
   <ac:rich-text-body>
       <p>The safety of software systems deals with mechanisms that ensure that human life or our environment is not endangered.</p>
       <p>Describe your concept here: identify those parts of the system that might endanger life and describe mechanism to ensure proper safety.</p>
