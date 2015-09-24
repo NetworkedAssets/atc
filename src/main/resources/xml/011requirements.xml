@@ -1,7 +1,7 @@
 <ac:structured-macro ac:name="info">
 <ac:rich-text-body>
 <ac:structured-macro ac:name="expand">
-  <ac:parameter ac:name="title">Content information...</ac:parameter>
+  <ac:parameter ac:name="title">Click here for content instructions...</ac:parameter>
   <ac:rich-text-body>
       <p>Short description of the functional requirements.</p>
       <p>Digest (or abstract) of the requirements documents.</p>
