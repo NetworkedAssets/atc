@@ -9,7 +9,7 @@
 				<at:var at:name="spaceDesc" />
 			</p>
 			<p>
-				This is the Index page for the Architecture Confluence Space with the English version of the ARC42 Template.
+				This is the Index page for Software Architecture Documentation with the English version of the ARC42 Template.
 			</p>
 
 		</ac:layout-cell>
@@ -21,10 +21,10 @@
     <ac:structured-macro ac:name="column">
       <ac:parameter ac:name="width">60%</ac:parameter>
       <ac:rich-text-body>
-      <p>arc42 supports software- and system architects. It is based upon practical experience of many architecture projects of different sizes and domains. It includes feedback of its many users.</p>
-      <p>arc42 contains a template for development, documentation and communication of software architectures.</p>
-      <p>arc42 fits arbitrary technologies and tools.</p>
-      <p>arc42 therefore ensures better software- and system architectures.</p>
+      <p><b>arc42</b> supports software- and system architects. It is based upon practical experience of many architecture projects of different sizes and domains. It includes feedback of its many users.</p>
+      <p><b>arc42</b> contains a template for development, documentation and communication of software architectures.</p>
+      <p><b>arc42</b> fits arbitrary technologies and tools.</p>
+      <p><b>arc42</b> therefore ensures better software- and system architectures.</p>
 
         <p>The easiest way for browsing this space is to turn on the sidebar of confluence. You will find the button for it on the lefthand 
         side at the bottom corner of your browser, portrayed as two arrows. Click on it - and the sidebar will show up.</p>
@@ -80,10 +80,11 @@
         </p>-->
         <h2>Table of Contents</h2>
         	<p>
-				<ac:macro ac:name="children">
-					<ac:parameter ac:name="page"></ac:parameter>
-					<ac:parameter ac:name="all">true</ac:parameter>
-				</ac:macro>
+				<ac:structured-macro ac:name="children">
+            <ac:parameter ac:name="page"><ac:link/>
+            </ac:parameter>
+            <ac:parameter ac:name="depth">2</ac:parameter>
+            <ac:parameter ac:name="all">true</ac:parameter>
 			</p>
 
       </ac:rich-text-body>
