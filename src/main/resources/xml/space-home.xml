@@ -9,7 +9,7 @@
 				<at:var at:name="spaceDesc" />
 			</p>
 			<p>
-				This is the Index page for Software Architecture Documentation with the English version of the ARC42 Template.
+				This is the index page for the Software Architecture Documentation with the english version of the arc42 standard as a template.
 			</p>
 
 		</ac:layout-cell>
@@ -80,11 +80,10 @@
         </p>-->
         <h2>Table of Contents</h2>
         	<p>
-				<ac:structured-macro ac:name="children">
-            <ac:parameter ac:name="page"><ac:link/>
-            </ac:parameter>
-            <ac:parameter ac:name="depth">2</ac:parameter>
-            <ac:parameter ac:name="all">true</ac:parameter>
+				<ac:macro ac:name="children">
+					<ac:parameter ac:name="page"></ac:parameter>
+					<ac:parameter ac:name="all">true</ac:parameter>
+				</ac:macro>
 			</p>
 
       </ac:rich-text-body>
