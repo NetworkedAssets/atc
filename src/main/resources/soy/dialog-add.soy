@@ -1,0 +1,47 @@
+{namespace space_blueprint}
+/**
+ * Add arc42 blueprint confirmation dialog
+ */
+{template .addArcDialog}
+<!-- Render the dialog -->
+<section role="dialog" id="add-arc42-dialog" class="aui-layer aui-dialog2 aui-dialog2-medium" aria-hidden="true">
+    <!-- Dialog header -->
+    <header class="aui-dialog2-header">
+        <!-- The dialog's title -->
+        <h2 class="aui-dialog2-header-main">Add ARC42 blueprint</h2>
+        <!-- Close icon -->
+        <a class="aui-dialog2-header-close">
+            <span class="aui-icon aui-icon-small aui-iconfont-close-dialog">Close</span>
+        </a>
+    </header>
+    <!-- Main dialog content -->
+    <div class="aui-dialog2-content">
+        <form action="/plugins/space-blueprint/add-arc42-existing.action" method="get" id="add-arc42-dialog-form" class="aui">
+            <fieldset class="group">
+                <legend><span>Blueprint options</span></legend>
+                <div class="checkbox">
+                    <input class="checkbox" type="checkbox" name="isLabeled" id="arc42isLabeled" checked="checked">
+                    <label for="arc42isLabeled">Label created pagetree</label>
+                </div>
+                <div class="checkbox">
+                    <input class="checkbox" type="checkbox" name="overwrite" id="arc42overwrite">
+                    <label for="arc42overwrite">Overwrite current page</label>
+                </div>
+
+                <input id="arc42spaceKey" type="hidden" value="foo" name="key" />
+                <input id="arc42pageId" type="hidden" value="-1" name="pageId">
+            </fieldset>
+        </form>
+    </div>
+    <!-- Dialog footer -->
+    <footer class="aui-dialog2-footer">
+        <!-- Actions to render on the right of the footer -->
+        <div class="aui-dialog2-footer-actions">
+            <button id="add-arc42-add-button" class="aui-button aui-button-primary">Add</button>
+            <button id="add-arc42-close-button" class="aui-button aui-button-link">Close</button>
+        </div>
+        <!-- Hint text is rendered on the left of the footer -->
+        <div class="aui-dialog2-footer-hint">Click Add to create page stubs. Cancel to discard.</div>
+    </footer>
+</section>
+{/template}

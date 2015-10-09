@@ -40,6 +40,17 @@
 		<context>atl.admin</context>
 	</web-resource>
 
+	<web-resource key="add-blueprint-resources">
+		<!--<dependency>com.atlassian.soy.soy-template-plugin:soy-deps</dependency>-->
+		<!--<dependency>com.atlassian.auiplugin:ajs</dependency>-->
+
+		<!-- Available to the server-side only -->
+		<resource type="soy" name="dialog-add" location="/soy/dialog-add.soy" />
+		<resource type="download" name="add-blueprint.js" location="/js/add-blueprint.js" />
+
+		<context>page</context>
+	</web-resource>
+
 	<!-- import from the product container -->
 	<component-import key="applicationProperties"
 		interface="com.atlassian.sal.api.ApplicationProperties" />
@@ -593,18 +604,25 @@
 		</package>
 	</xwork>
 
-	<web-item name="Add ARC42 to existing - link" key="add-arc42-existing-space-link"
+	<web-item name="Add ARC42 to existing space" key="add-arc42-existing-space-link"
 		section="system.content.action/modify" weight="1000">
 		<description key="add-arc42-existing-space-link.description">
 			Link for adding ARC42 Template to existing space
 		</description>
 		<label key="confluence.blueprints.space.add-to-existing-link" />
-		<link linkId="add-arc42-existing-space-link-id">
-			/plugins/${project.artifactId}/add-arc42-existing.action?pageId=$page.id&amp;key=$space.key
-		</link>
 		<condition class="com.atlassian.confluence.plugin.descriptor.web.conditions.SpacePermissionCondition">
 			<param name="permission">administer</param>
 		</condition>
+		<link linkId="add-arc42-existing-space-link-id">
+			javascript:void(0)
+		</link>
 	</web-item>
+
+	<web-panel key="arc42Add_dialog" location="atl.general">
+		<resource name="view" type="soy"
+				  location=":add-blueprint-resources/space_blueprint.addArcDialog" />
+		<!-- <condition class="com.atlassian.confluence.plugin.descriptor.web.conditions.HasSpaceCondition"
+			/> -->
+	</web-panel>
 
 </atlassian-plugin>
