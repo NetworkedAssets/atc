@@ -41,6 +41,8 @@ AJS.toInit(function () {
         dialog.hide();
     });
 
+    AJS.$("#add-arc42-existing-space-link-id").attr("href", "javascript:void(0)");
+
     AJS.$("#add-arc42-existing-space-link-id").click(function () {
         dialog.show();
     });
