@@ -20,8 +20,6 @@
  */
 
 AJS.toInit(function () {
-    console.log("stuffff!!!!");
-
     var dialog = new AJS.Dialog({
         width: 600,
         height: 300,
@@ -29,18 +27,19 @@ AJS.toInit(function () {
         closeOnOutsideClick: true
     });
 
-    dialog.addHeader("Add ARC42 blueprint");
+    dialog.addHeader(AJS.I18n.getText("confluence.arc42.addinexisting.dialog.name"));
+    var baseUrl = AJS.params.baseUrl;
     dialog.addPanel("DefaultPanel", '\
-        <form action="/plugins/space-blueprint/add-arc42-existing.action" method="get" id="add-arc42-dialog-form" class="aui">\
+        <form action="'+baseUrl+'/plugins/space-blueprint/add-arc42-existing.action" method="get" id="add-arc42-dialog-form" class="aui">\
             <fieldset class="group">\
-            <legend><span>Blueprint options</span></legend>\
+            <legend><span>' + AJS.I18n.getText("confluence.arc42.addinexisting.dialog.options") + '</span></legend>\
             <div class="checkbox">\
                 <input class="checkbox" type="checkbox" name="isLabeled" id="arc42isLabeled" checked="checked">\
-                <label for="arc42isLabeled">Add "arc42-added" labels to inserted pages</label>\
+                <label for="arc42isLabeled">' + AJS.I18n.getText("confluence.arc42.addinexisting.dialog.labels") + '</label>\
             </div>\
             <div class="checkbox">\
                 <input class="checkbox" type="checkbox" name="overwrite" id="arc42overwrite">\
-                <label for="arc42overwrite">Overwrite current page instead of adding as a child</label>\
+                <label for="arc42overwrite">' + AJS.I18n.getText("confluence.arc42.addinexisting.dialog.overwrite") + '</label>\
             </div>\
         \
             <input id="arc42spaceKey" type="hidden" value="foo" name="key" />\

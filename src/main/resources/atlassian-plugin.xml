@@ -39,6 +39,10 @@
 	</web-resource>
 
 	<web-resource key="add-blueprint-resources">
+        <transformation extension="js">
+            <transformer key="jsI18n" />
+        </transformation>
+
 		<resource type="download" name="add-blueprint.js" location="/js/add-blueprint.js" />
 
 		<context>page</context>
@@ -587,7 +591,7 @@
 			<action name="add-arc42-existing"
 				class="com.networkedassets.plugins.space_blueprint.AddArc42Existing"
 				method="addInExisting">
-				<result name="success" type="redirect">/pages/viewpage.action?pageId=${pageId}</result>
+				<result name="success" type="redirect">${baseUrl}/pages/viewpage.action?pageId=${pageId}</result>
 				<result name="error" type="soy">
           			<param name="location">${project.groupId}.${project.artifactId}:space-blueprint-resources/space_blueprint.unauth</param>
    				</result>
@@ -598,7 +602,7 @@
 		</package>
 	</xwork>
 
-	<web-item name="Add ARC42 to existing space" key="add-arc42-existing-space-link"
+	<web-item name="confluence.arc42.addinexisting.menu.button" key="add-arc42-existing-space-link"
 		section="system.content.action/modify" weight="1000">
 		<description key="add-arc42-existing-space-link.description">
 			Link for adding ARC42 Template to existing space
