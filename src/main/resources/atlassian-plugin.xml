@@ -24,16 +24,14 @@
 			</transformation>
 		</transformation>
 
-		<resource type="download" name="space-blueprint.css"
-			location="/css/space-blueprint.css" />
+		<resource type="download" name="arc42-template.css" location="/css/arc42-template.css" />
 		<resource type="download" name="space-blueprint.js" location="/js/space-blueprint.js" />
 		<resource type="download" name="images/" location="/images" />
 		<resource type="download" name="dialog-page.js" location="/soy/dialog-page.soy" />
 		<resource type="download" name="error.soy.js" location="/soy/error.soy"/>
 
 		<dependency>com.atlassian.auiplugin:ajs</dependency>
-		<dependency>com.atlassian.confluence.plugins.confluence-create-content-plugin:space-blueprints
-		</dependency>
+		<dependency>com.atlassian.confluence.plugins.confluence-create-content-plugin:space-blueprints</dependency>
 		<!-- This dependency is not required for confluence 5.4+ -->
 
 		<context>atl.general</context>
