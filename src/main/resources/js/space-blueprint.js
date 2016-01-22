@@ -22,7 +22,8 @@
 
 AJS.bind("blueprint.wizard-register.ready", function () {
     function submitArcSpace(e, state) {
-        state.pageData.ContentPageTitle = state.pageData.name + " Home Page"; 
+        state.pageData.ContentPageTitle = state.pageData.name + " Home Page";
+        console.log(Object.keys(state.pageData));
         return Confluence.SpaceBlueprint.CommonWizardBindings.submit(e, state);
     }
     function preRenderArcSpace(e, state) {

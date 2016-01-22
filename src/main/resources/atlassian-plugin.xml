@@ -4,8 +4,8 @@
 		<description>${project.description}</description>
 		<version>${project.version}</version>
 		<vendor name="${project.organization.name}" url="${project.organization.url}" />
-		<param name="plugin-icon">images/pluginIcon.png</param>
-		<param name="plugin-logo">images/pluginLogo.png</param>
+		<param name="plugin-icon">images/logo_arc42.png</param>
+		<param name="plugin-logo">images/logo_arc42.png</param>
 	</plugin-info>
 
 	<!-- add our i18n resource -->
@@ -55,7 +55,7 @@
 	<web-item key="space-blueprint-item" i18n-name-key="confluence.arc42.template.name"
 		section="system.create.space.dialog/content">
 		<description key="confluence.arc42.template.description" />
-		<resource name="icon" type="download" location="/images/myblueprint.png" />
+		<resource name="icon" type="download" location="/images/logo_arc42.png" />
 		<param name="blueprintKey" value="space-blueprint" />
 	</web-item>
 
@@ -615,5 +615,9 @@
 			javascript:void(0)
 		</link>
 	</web-item>
+
+	<component-import key="attachmentManager" interface="com.atlassian.confluence.pages.AttachmentManager"/>
+	<component-import key="eventPublisher" interface="com.atlassian.event.api.EventPublisher"/>
+	<component key="arc42CreatedListener" class="com.networkedassets.plugins.space_blueprint.Arc42CreatedListener"/>
 
 </atlassian-plugin>
