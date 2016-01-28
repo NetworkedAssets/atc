@@ -36,14 +36,15 @@ public class Arc42CreatedListener {
         Space space = e.getSpace();
         SpaceBlueprint spaceBlueprint = e.getSpaceBlueprint();
         if (spaceBlueprint.getModuleCompleteKey().equals(MY_BLUEPRINT_KEY.getCompleteKey())) {
-            InputStream logoStream = Arc42CreatedListener.class.getClassLoader().getResourceAsStream("images/logo_arc42.png");
+            InputStream logoStream = Arc42CreatedListener.class.getClassLoader().getResourceAsStream("images/logo_arc42_space.png");
 
-            Attachment logo = new Attachment(); // TODO: fix npe caused by not loading resource
-            logo.setFileSize(6089);
+            Attachment logo = new Attachment();
+            logo.setContainer(space.getDescription());
+            logo.setMediaType("image/png");
+            logo.setFileSize(4848); // TODO: this shouldn't be hardcoded
             logo.setFileName(space.getKey());
 
             attachmentManager.saveAttachment(logo, null, logoStream);
-            log.error("STUFF'S DONE");
         }
     }
 
