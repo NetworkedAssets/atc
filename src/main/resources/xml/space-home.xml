@@ -1,7 +1,15 @@
-<ac:layout>
+<!-- <ac:layout>
 	<ac:layout-section ac:type="single">
 		<ac:layout-cell>
-			<h2>
+		</ac:layout-cell>
+	</ac:layout-section>
+</ac:layout> -->
+<ac:structured-macro ac:name="section">
+  <ac:rich-text-body>
+    <ac:structured-macro ac:name="column">
+      <ac:parameter ac:name="width">60%</ac:parameter>
+      <ac:rich-text-body>
+            <h2>
 				<at:var at:name="spaceHomepageHeading" />
 			</h2>
 			<p>
@@ -11,15 +19,6 @@
 				This is the index page for the Software Architecture Documentation with the english version of the arc42 standard as a template.
 			</p>
 
-		</ac:layout-cell>
-	</ac:layout-section>
-</ac:layout>
-
-<ac:structured-macro ac:name="section">
-  <ac:rich-text-body>
-    <ac:structured-macro ac:name="column">
-      <ac:parameter ac:name="width">60%</ac:parameter>
-      <ac:rich-text-body>
       <p><b>arc42</b> supports software- and system architects. It is based upon practical experience of many architecture projects of different sizes and domains. It includes feedback of its many users.</p>
       <p><b>arc42</b> contains a template for development, documentation and communication of software architectures.</p>
       <p><b>arc42</b> fits arbitrary technologies and tools.</p>
@@ -65,18 +64,13 @@
     </ac:structured-macro>
     <ac:structured-macro ac:name="column">
       <ac:parameter ac:name="width">40%</ac:parameter>
+      
       <ac:rich-text-body>
-       <!-- <h3>Big Picture</h3>
-        <p>
-          <ac:link>
-            <ri:attachment ri:filename="arc42-BigPicture-v60-EN.graffle.pdf"/>
-            <ac:link-body>
-              <ac:image ac:thumbnail="true" ac:width="300">
-                <ri:attachment ri:filename="arc42-BigPicture-v60-EN.graffle_ BigPicture_Blank.jpg"/>
-              </ac:image>
-            </ac:link-body>
-          </ac:link>
-        </p>-->
+      
+         <ac:image ac:width="150">
+                <ri:url ri:value="http://www.arc42.org/index_files/arc42-logo.png"/>
+          </ac:image>
+
         <h2>Table of Contents</h2>
         	<p>
 				<ac:macro ac:name="children">
