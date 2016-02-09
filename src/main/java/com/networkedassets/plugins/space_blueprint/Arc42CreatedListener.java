@@ -52,7 +52,7 @@ public class Arc42CreatedListener {
 
     private void setCustomColorScheme(Space space) {
         final BaseColourScheme colourScheme = colourSchemeManager.getSpaceColourSchemeIsolated(space.getKey());
-        colourScheme.set(ColourScheme.TOP_BAR, "#10803F");
+        colourScheme.set(ColourScheme.TOP_BAR, "#1D803F");
         colourScheme.set(ColourScheme.BREADCRUMBS_TEXT, "#FFFFFF");
         colourScheme.set(ColourScheme.HEADER_BUTTON_BASE_BACKGROUND, "#C6D92D");
         colourScheme.set(ColourScheme.HEADER_BUTTON_TEXT, "#FFFFFF");
@@ -71,7 +71,7 @@ public class Arc42CreatedListener {
         colourScheme.set(ColourScheme.BORDER, "#CCCCCC");
         colourScheme.set(ColourScheme.NAV_BACKGROUND, "#1D803F");
         colourScheme.set(ColourScheme.NAV_TEXT, "#FFFFFF");
-        colourScheme.set(ColourScheme.NAV_SELECTED_BACKGROUND, "#060920");
+        colourScheme.set(ColourScheme.NAV_SELECTED_BACKGROUND, "#C6D92D");
         colourScheme.set(ColourScheme.NAV_SELECTED_TEXT, "#FFFFFF");
         colourSchemeManager.saveSpaceColourScheme(space, colourScheme);
         colourSchemeManager.setColourSchemeSetting(space, ColourSchemesSettings.CUSTOM);
