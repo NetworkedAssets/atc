@@ -4,6 +4,7 @@ import com.atlassian.confluence.pages.Attachment;
 import com.atlassian.confluence.pages.AttachmentManager;
 import com.atlassian.confluence.plugins.createcontent.api.events.SpaceBlueprintCreateEvent;
 import com.atlassian.confluence.plugins.createcontent.impl.SpaceBlueprint;
+import com.atlassian.confluence.setup.settings.beans.ColourSchemesSettings;
 import com.atlassian.confluence.spaces.Space;
 import com.atlassian.confluence.themes.BaseColourScheme;
 import com.atlassian.confluence.themes.ColourScheme;
@@ -73,6 +74,7 @@ public class Arc42CreatedListener {
         colourScheme.set(ColourScheme.NAV_SELECTED_BACKGROUND, "#060920");
         colourScheme.set(ColourScheme.NAV_SELECTED_TEXT, "#FFFFFF");
         colourSchemeManager.saveSpaceColourScheme(space, colourScheme);
+        colourSchemeManager.setColourSchemeSetting(space, ColourSchemesSettings.CUSTOM);
     }
 
     private void setSpaceIcon(Space space) throws IOException {
