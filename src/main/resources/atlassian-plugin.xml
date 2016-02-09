@@ -618,6 +618,7 @@
 
 	<component-import key="attachmentManager" interface="com.atlassian.confluence.pages.AttachmentManager"/>
 	<component-import key="eventPublisher" interface="com.atlassian.event.api.EventPublisher"/>
+	<component-import key="colourSchemeManager" interface="com.atlassian.confluence.themes.ColourSchemeManager"/>
 	<component key="arc42CreatedListener" class="com.networkedassets.plugins.space_blueprint.Arc42CreatedListener"/>
 
 </atlassian-plugin>
