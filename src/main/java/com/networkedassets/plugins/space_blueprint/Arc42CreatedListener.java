@@ -62,7 +62,7 @@ public class Arc42CreatedListener {
         colourScheme.set(ColourScheme.MENU_ITEM_SELECTED_BACKGROUND, "#1D803F");
         colourScheme.set(ColourScheme.MENU_ITEM_SELECTED_TEXT, "#FFFFFF");
         colourScheme.set(ColourScheme.SEARCH_FIELD_BACKGROUND, "#FFFFFF");
-        colourScheme.set(ColourScheme.SEARCH_FIELD_TEXT, "#FFFFFF");
+        colourScheme.set(ColourScheme.SEARCH_FIELD_TEXT, "#000000");
         colourScheme.set(ColourScheme.MENU_SELECTED_BACKGROUND, "#1D803F");
         colourScheme.set(ColourScheme.MENU_ITEM_TEXT, "#333333");
         colourScheme.set(ColourScheme.HEADING_TEXT, "#333333");
