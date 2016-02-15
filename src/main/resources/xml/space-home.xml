@@ -82,4 +82,6 @@
       </ac:rich-text-body>
     </ac:structured-macro>
   </ac:rich-text-body>
+    <p>Created with arc42-blueprint v${version}</p>
 </ac:structured-macro>
+
