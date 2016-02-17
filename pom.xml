@@ -7,7 +7,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.networkedassets.plugins</groupId>
     <artifactId>space-blueprint</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
 
     <organization>
         <name>NetworkedAssets Sp. z o.o.</name>
@@ -72,6 +72,14 @@
                 <directory>src/main/resources</directory>
                 <includes><include>xml/*.xml</include></includes>
                 <filtering>true</filtering>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+                <excludes>
+                    <exclude>xml/*.xml</exclude>
+                    <exclude>atlassian-plugin.xml</exclude>
+                </excludes>
+                <filtering>false</filtering>
             </resource>
         </resources>
         <plugins>
