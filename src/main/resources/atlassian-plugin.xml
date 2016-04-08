@@ -4,8 +4,12 @@
 		<description>${project.description}</description>
 		<version>${project.version}</version>
 		<vendor name="${project.organization.name}" url="${project.organization.url}" />
-		<param name="plugin-icon">images/logo_arc42.png</param>
-		<param name="plugin-logo">images/logo_arc42.png</param>
+		<param name="plugin-icon">images/arcAddOnLogo.png</param>
+		<param name="plugin-logo">images/arcAddOnLogo.png</param>
+		<param name="vendor-icon">images/vendorIcon.png</param >
+		<param name="vendor-logo">images/vendorLogo.png</param >
+		<!--Licensing-->
+		<param name="atlassian-licensing-enabled">true</param>
 	</plugin-info>
 
 	<!-- add our i18n resource -->
@@ -619,6 +623,9 @@
 	<component-import key="attachmentManager" interface="com.atlassian.confluence.pages.AttachmentManager"/>
 	<component-import key="eventPublisher" interface="com.atlassian.event.api.EventPublisher"/>
 	<component-import key="colourSchemeManager" interface="com.atlassian.confluence.themes.ColourSchemeManager"/>
+	<!--Licensing-->
+	<component-import key="pluginLicenseManager" interface="com.atlassian.upm.api.license.PluginLicenseManager"/>
+
 	<component key="arc42CreatedListener" class="com.networkedassets.plugins.space_blueprint.Arc42CreatedListener"/>
 
 </atlassian-plugin>
