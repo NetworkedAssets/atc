@@ -15,7 +15,7 @@
     </organization>
 
     <name>arc42-template</name>
-    <description>The Arc42 Template for Confluence is an add-on to create a space for the documentation of software architecture in confluence, depending on the english version of the Arc42 documentation structure. The pagetree can also be inserted into already existing spaces via a page macro.</description>
+    <description>The Arc42 Template for Confluence is an add-on to create a space for the documentation of software architecture in confluence, according to the english version of the Arc42 documentation structure. The pagetree can also be inserted into already existing spaces through page menu.</description>
     <packaging>atlassian-plugin</packaging>
 
     <dependencies>
