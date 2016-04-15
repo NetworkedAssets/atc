@@ -16,21 +16,42 @@
                     <at:var at:name="spaceDesc"/>
                 </p>
 
-                <ac:structured-macro ac:name="expand">
-                    <ac:parameter ac:name="title">How to remove unwanted pages...</ac:parameter>
+                <ac:structured-macro ac:name="info">
                     <ac:rich-text-body>
-                        You can manage the added pages using the bundled Pagetree Management Plugin.
-                        <br/>
-                        To remove unwanted pages, click on page menu and choose "Manage page tree".
-                        <ac:image>
-                            <ri:url ri:value="http://i.imgur.com/hBnB0B5.png"/>
-                        </ac:image>
-                        If you want to remove unwanted sections from the space, select them, push the "Remove" button,
-                        and finally hit the "Save" button.
-                        <ac:image>
-                            <ri:url ri:value="http://i.imgur.com/U9mc2Kr.png"/>
-                        </ac:image>
-                        You can undo <b>one</b> last committed pagetree change by hitting the "Undo" button.
+                        <ac:structured-macro ac:name="expand">
+                            <ac:parameter ac:name="title">How to remove unwanted pages...</ac:parameter>
+                            <ac:rich-text-body>
+                                <p>You can manage the added pages using the bundled Pagetree Management Plugin.</p>
+                                <p>To remove unwanted pages, click on page menu and choose<i>Manage page tree</i>.
+                                </p>
+                                <ac:image>
+                                    <ri:url ri:value="http://i.imgur.com/hBnB0B5.png"/>
+                                </ac:image>
+                                <p>If you want to remove unwanted sections from the space, select them, push the
+                                    <i>Remove</i>
+                                    button, and finally hit the
+                                    <i>Save</i>
+                                    button.
+                                </p>
+                                <ac:image>
+                                    <ri:url ri:value="http://i.imgur.com/U9mc2Kr.png"/>
+                                </ac:image>
+                                <p>Unlike the default
+                                    <i>Delete</i>
+                                    Confluence command, this will remove all the selected pages
+                                    <b>and their descendants</b>.
+                                </p>
+                                <p>You can undo
+                                    <b>one</b>
+                                    last committed pagetree change by hitting the
+                                    <i>Undo</i>
+                                    button.
+                                </p>
+                                <ac:image>
+                                    <ri:url ri:value="http://i.imgur.com/kDA87V4.png"/>
+                                </ac:image>
+                            </ac:rich-text-body>
+                        </ac:structured-macro>
                     </ac:rich-text-body>
                 </ac:structured-macro>
 
