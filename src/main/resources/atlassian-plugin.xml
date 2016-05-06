@@ -9,7 +9,7 @@
 		<param name="vendor-icon">images/vendorIcon.png</param >
 		<param name="vendor-logo">images/vendorLogo.png</param >
 		<!--Licensing-->
-		<param name="atlassian-licensing-enabled">true</param>
+		<param name="atlassian-licensing-enabled">false</param>
 	</plugin-info>
 
 	<!-- add our i18n resource -->
