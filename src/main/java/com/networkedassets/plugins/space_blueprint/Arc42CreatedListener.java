@@ -46,7 +46,7 @@ public class Arc42CreatedListener {
     }
 
     private void handleArc42Create(Space arc42Space) throws IOException {
-        setSpaceIcon(arc42Space);
+//        setSpaceIcon(arc42Space);
         setCustomColorScheme(arc42Space);
     }
 
@@ -78,15 +78,13 @@ public class Arc42CreatedListener {
     }
 
     private void setSpaceIcon(Space space) throws IOException {
-        InputStream logoStream = Arc42CreatedListener.class.getClassLoader().getResourceAsStream("images/logo_arc42_space.png");
-
-        Attachment logo = new Attachment();
-        logo.setContainer(space.getDescription());
-        logo.setMediaType("image/png");
-        logo.setFileSize(4848); // TODO: this shouldn't be hardcoded
-        logo.setFileName(space.getKey());
-
-        attachmentManager.saveAttachment(logo, null, logoStream);
+        try (InputStream logoStream = Arc42CreatedListener.class.getClassLoader().getResourceAsStream("images/logo_arc42_space.png")) {
+            Attachment logo = new Attachment();
+            logo.setContainer(space.getDescription());
+            logo.setMediaType("image/png");
+            logo.setFileSize(4848); // TODO: this shouldn't be hardcoded
+            logo.setFileName(space.getKey());
+            attachmentManager.saveAttachment(logo, null, logoStream);
+        }
     }
-
 }
