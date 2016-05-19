@@ -14,6 +14,7 @@ import com.atlassian.event.api.EventPublisher;
 import com.atlassian.plugin.ModuleCompleteKey;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.DisposableBean;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -23,16 +24,18 @@ import java.net.URISyntaxException;
  * Event listener that changes the arc42 space logo after creation
  */
 @SuppressWarnings("unused")
-public class Arc42CreatedListener {
+public class Arc42CreatedListener implements DisposableBean {
     private static final ModuleCompleteKey MY_BLUEPRINT_KEY =
             new ModuleCompleteKey("com.networkedassets.plugins.space-blueprint", "space-blueprint");
     private static final Logger log = LoggerFactory.getLogger(Arc42CreatedListener.class);
     private final AttachmentManager attachmentManager;
     private final ColourSchemeManager colourSchemeManager;
+    private final EventPublisher eventPublisher;
 
     public Arc42CreatedListener(AttachmentManager attachmentManager, EventPublisher eventPublisher, ColourSchemeManager colourSchemeManager) {
         this.attachmentManager = attachmentManager;
         this.colourSchemeManager = colourSchemeManager;
+        this.eventPublisher = eventPublisher;
         eventPublisher.register(this);
     }
 
@@ -43,6 +46,11 @@ public class Arc42CreatedListener {
         if (spaceBlueprint.getModuleCompleteKey().equals(MY_BLUEPRINT_KEY.getCompleteKey())) {
             handleArc42Create(space);
         }
+    }
+
+    @Override
+    public void destroy() throws Exception {
+        eventPublisher.unregister(this);
     }
 
     private void handleArc42Create(Space arc42Space) throws IOException {
