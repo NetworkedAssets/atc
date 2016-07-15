@@ -7,7 +7,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.networkedassets.plugins</groupId>
     <artifactId>space-blueprint</artifactId>
-    <version>1.0.5</version>
+    <version>1.0.6</version>
 
     <organization>
         <name>NetworkedAssets Sp. z o.o.</name>
@@ -82,7 +82,7 @@
         <dependency>
             <groupId>com.networkedassets.plugins</groupId>
             <artifactId>manage-my-tree</artifactId>
-            <version>0.1.0</version>
+            <version>0.2.0</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
@@ -122,10 +122,11 @@
 
                     <instructions>
                         <Import-Package>
-                            com.networkedassets.plugins.managemytree;version="0.1.0",
+                            com.networkedassets.plugins.managemytree;version="0.2.0",
                             *;resolution:=optional
                         </Import-Package>
                     </instructions>
+                    <compressResources>false</compressResources>
                 </configuration>
             </plugin>
             <plugin>
