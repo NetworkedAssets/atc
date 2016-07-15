@@ -1,4 +1,4 @@
-# <a href="http://condoc.networkedassets.com/"><img src="https://github.com/networkedassets/arc42-template-plugin/src/main/resources/images/logo_arc42_with_text.png" height="79" title="Arc42 Template for Confluence"/></a><a href="http://www.networkedassets.com/"><img style="float: right;" src="http://www.networkedassets.com/wordpress/wp-content/uploads/2013/03/NA_logo_header.png" height="79"></a>
+# <a href="http://condoc.networkedassets.com/"><img src="https://github.com/NetworkedAssets/atc/raw/master/src/main/resources/images/logo_arc42_with_text.png" height="79" title="Arc42 Template for Confluence"/></a><a href="http://www.networkedassets.com/"><img style="float: right;" src="http://www.networkedassets.com/wordpress/wp-content/uploads/2013/03/NA_logo_header.png" height="79"></a>
 
 ## Overview
 The **Arc42 Template for Confluence** is an add-on to create a space for the documentation of software architecture in confluence, depending on the english version of the [Arc42](http://arc42.org/) structure. 
