@@ -21,8 +21,10 @@
                         <ac:structured-macro ac:name="expand">
                             <ac:parameter ac:name="title">How to remove unwanted pages...</ac:parameter>
                             <ac:rich-text-body>
-                                <p>You can manage the added pages using the bundled Pagetree Management Plugin.</p>
-                                <p>To remove unwanted pages, click on page menu and choose<i>Manage page tree</i>.
+                                <p>You can manage the added pages using our
+                                    <a href="https://marketplace.atlassian.com/plugins/com.networkedassets.plugins.manage-my-tree/server/overview">Manage My Tree</a>
+                                    plugin.</p>
+                                <p>To remove unwanted pages, click on page menu and choose <i>Manage page tree</i>.
                                 </p>
                                 <ac:image>
                                     <ri:url ri:value="http://i.imgur.com/hBnB0B5.png"/>

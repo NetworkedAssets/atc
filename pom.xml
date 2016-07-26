@@ -79,12 +79,6 @@
             <scope>provided</scope>
         </dependency>
 
-        <dependency>
-            <groupId>com.networkedassets.plugins</groupId>
-            <artifactId>manage-my-tree</artifactId>
-            <version>0.2.1</version>
-            <scope>provided</scope>
-        </dependency>
     </dependencies>
 
     <build>
@@ -113,20 +107,6 @@
                     <productVersion>${confluence.version}</productVersion>
                     <productDataVersion>${confluence.data.version}</productDataVersion>
 
-                    <pluginDependencies>
-                        <pluginDependency>
-                            <groupId>com.networkedassets.plugins</groupId>
-                            <artifactId>manage-my-tree</artifactId>
-                        </pluginDependency>
-                    </pluginDependencies>
-
-                    <instructions>
-                        <Import-Package>
-                            com.networkedassets.plugins.managemytree;version="0.2.1",
-                            *;resolution:=optional
-                        </Import-Package>
-                    </instructions>
-                    <compressResources>false</compressResources>
                 </configuration>
             </plugin>
             <plugin>
