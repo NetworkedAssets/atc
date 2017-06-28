@@ -7,7 +7,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.networkedassets.plugins</groupId>
     <artifactId>space-blueprint</artifactId>
-    <version>1.0.7</version>
+    <version>1.0.10</version>
 
     <organization>
         <name>NetworkedAssets Sp. z o.o.</name>
@@ -15,8 +15,42 @@
     </organization>
 
     <name>ATC - Arc42 Template for Confluence</name>
-    <description>The Arc42 Template for Confluence is an add-on to create a space for the documentation of software architecture in confluence, according to the english version of the arc42 documentation structure. The pagetree can also be inserted into already existing spaces through page menu.</description>
+    <description>The Arc42 Template for Confluence is an add-on to create a space for the documentation of software architecture in confluence,
+        according to the english version of the arc42 documentation structure. The pagetree can also be inserted into already existing spaces through
+        page menu.
+    </description>
     <packaging>atlassian-plugin</packaging>
+
+    <repositories>
+        <repository>
+            <id>atlassian-public</id>
+            <url>https://maven.atlassian.com/repository/public</url>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>never</updatePolicy>
+                <checksumPolicy>warn</checksumPolicy>
+            </snapshots>
+            <releases>
+                <enabled>true</enabled>
+                <checksumPolicy>warn</checksumPolicy>
+            </releases>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>atlassian-public</id>
+            <url>https://maven.atlassian.com/repository/public</url>
+            <snapshots>
+                <enabled>true</enabled>
+                <checksumPolicy>warn</checksumPolicy>
+            </snapshots>
+            <releases>
+                <enabled>true</enabled>
+                <checksumPolicy>warn</checksumPolicy>
+            </releases>
+        </pluginRepository>
+    </pluginRepositories>
 
     <dependencies>
         <dependency>
@@ -85,7 +119,9 @@
         <resources>
             <resource>
                 <directory>src/main/resources</directory>
-                <includes><include>xml/*.xml</include></includes>
+                <includes>
+                    <include>xml/*.xml</include>
+                </includes>
                 <filtering>true</filtering>
             </resource>
             <resource>
@@ -107,13 +143,8 @@
                     <productVersion>${confluence.version}</productVersion>
                     <productDataVersion>${confluence.data.version}</productDataVersion>
 
-                </configuration>
-            </plugin>
-            <plugin>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>1.6</source>
-                    <target>1.6</target>
+                    <enableQuickReload>true</enableQuickReload>
+                    <enableFastdev>false</enableFastdev>
                 </configuration>
             </plugin>
             <plugin>
@@ -128,9 +159,9 @@
     </build>
 
     <properties>
-        <confluence.version>5.8.6</confluence.version>
-        <confluence.data.version>5.8.6</confluence.data.version>
-        <amps.version>5.0.13</amps.version>
+        <confluence.version>6.2.0</confluence.version>
+        <confluence.data.version>6.2.0</confluence.data.version>
+        <amps.version>6.3.1</amps.version>
         <plugin.testrunner.version>1.2.3</plugin.testrunner.version>
         <create.content.version>5.0.9</create.content.version>
     </properties>

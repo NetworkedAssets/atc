@@ -1,22 +1,28 @@
 <ac:structured-macro ac:name="info">
  <ac:rich-text-body>
 <ac:structured-macro ac:name="expand">
-  <ac:parameter ac:name="title">Click here for content instructions...</ac:parameter>
-  <ac:rich-text-body>
-      <h4>Content</h4>
-      <p>The quality tree ( as defined in ATAM - Architecture Tradeoff Analysis Methode) with quality / evaluation scenarios as leafs.</p>
-     
-      <h4>Motivation</h4>
-      <p>When you want to evaluate the quality (especially risks to certain quality attributes) with methods like ATAM, you need to systematically refine your quality goals (from <ac:link>
-          <ri:page ri:content-title="1.2 Quality Goals"/>
-        </ac:link>). The quality tree shows the top-down refinement of the stakeholder-specific notion of quality.</p>
-      
-      <h4>Form</h4>
-      <p>We personally prefer mind maps to a pure tree-like structure, as mind maps allow arbitrary cross-references between scenarios, attributes and intermediate nodes.</p>
-      <p>Often it is difficult to assign scenarios to single quality attributes, as the scenario refers to several qualities at once. Simply draw references from such scenarios to all affected nodes!</p>
+<ac:parameter ac:name="title">Click here for content instructions...</ac:parameter>
+<ac:rich-text-body>
+
+    <h4>Content</h4>
+    <p>The quality tree (as defined in ATAM – Architecture Tradeoff Analysis Method) with quality/evaluation scenarios as leafs.</p>
+
+    <h4>Motivation</h4>
+    <p>The tree structure with priorities provides an overview for a sometimes large number of quality requirements.</p>
+
+    <h4>Form</h4>
+    <p>The quality tree is a high-level overview of the quality goals and requirements:</p>
+
+    <ul>
+        <li>tree-like refinement of the term “quality”. Use “quality” or “usefulness” as a root</li>
+        <li>a mind map with quality categories as main branches</li>
+    </ul>
+
+    <p>In any case the tree should include links to the scenarios of the following section.</p>
+
   </ac:rich-text-body>
      </ac:structured-macro>
   </ac:rich-text-body>
 </ac:structured-macro>
 
-<p>&lt;insert quality tree here&gt;</p>
+<p>&lt; describe quality tree here &gt;</p>

@@ -3,15 +3,48 @@
 <ac:structured-macro ac:name="expand">
   <ac:parameter ac:name="title">Click here for content instructions...</ac:parameter>
   <ac:rich-text-body>
-      <h4>Contents</h4>
-      <p>The most important terms of the software architecture in alphabetic order.</p>
-      
+
+      <h4>Content</h4>
+      <p>The most important domain and technical terms that your stakeholders use when discussing the system.</p>
+
+      <p>You can also see the glossary as source for translations if you work in a multi-language environment (i.e. in offshore development models).</p>
+
       <h4>Motivation</h4>
-      <p>It should not be necessary to explain the usefulness of a glossary …</p>
-     
+      <p>You should clearly define your terms, so that all stakeholders</p>
+
+      <ul>
+          <li>have an identical understanding of these terme</li>
+          <li>do not use synonyms and homonyms</li>
+      </ul>
+
       <h4>Form</h4>
-      <p>A simple table with columns &lt;Term&gt; and &lt;Definition&gt;</p>
+      <ul>
+          <li>A simple table with columns &lt;Term&gt; and &lt;Definition&gt;</li>
+          <li>Potentially more columns for translations</li>
+      </ul>
+
+      <table>
+          <thead>
+              <tr>
+                  <th>Term</th>
+                  <th>Definition</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>&lt;Term-1&gt;</td>
+                  <td>&lt;definition-1&gt;</td>
+              </tr>
+              <tr>
+                  <td>&lt;Term-2&gt;</td>
+                  <td>&lt;definition-2&gt;</td>
+              </tr>
+          </tbody>
+      </table>
+
+      <p><a href="http://docs.arc42.org/section-12/" target="_blank">Read more</a></p>
   </ac:rich-text-body>
     </ac:structured-macro>
   </ac:rich-text-body>
 </ac:structured-macro>
+<p>&lt; insert glossary (and optionally translation) table &gt;</p>

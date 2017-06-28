@@ -1,19 +1,47 @@
 <ac:structured-macro ac:name="info">
-<ac:rich-text-body>
-<ac:structured-macro ac:name="expand">
-  <ac:parameter ac:name="title">Click here for content instructions...</ac:parameter>
-  <ac:rich-text-body>
+    <ac:rich-text-body>
+        <ac:structured-macro ac:name="expand">
+            <ac:parameter ac:name="title">Click here for content instructions...</ac:parameter>
+            <ac:rich-text-body>
 
-      <h4>Contents</h4>
-      <p>A list of the most important persons or organizations that are affected by can contribute to the architecture.</p>
-      
-      <h4>Motivation</h4>
-      <p>If you do not know the persons participating in or concerned with the project you may get nasty surprises later in the development process. Should your project manager maintain this list, make sure that all the people influencing the architecture are part of it.</p>
-      
-      <h4>Form</h4>
-      <p>Simple table with role names, person names, their knowledge as pertaining to architecture, their availability, etc.</p>
+                <h4>Content</h4>
+                <p>Explicit overview of stakeholders of the system, i.e. all person, roles or organizations that</p>
+                <ul>
+                    <li>should know the architecture</li>
+                    <li>have to be convinced of the architecture</li>
+                    <li>have to work with the architecture or with code</li>
+                    <li>need the documentation of the architecture for their work</li>
+                    <li>have to come up with decisions about the system or its development</li>
+                </ul>
 
-  </ac:rich-text-body>
-   </ac:structured-macro>
-   </ac:rich-text-body>
+                <h4>Motivation</h4>
+                <p>You should know all parties involved in development of the system or affected by the system. Otherwise, you may get nasty surprises
+                    later in the development process. These stakeholders determine the extent and the level of detail of your work and its results.
+                </p>
+
+                <h4>Form</h4>
+                <p>Table with role names, person names, and their expectations with respect to the architecture and its documentation.</p>
+
+            </ac:rich-text-body>
+        </ac:structured-macro>
+    </ac:rich-text-body>
 </ac:structured-macro>
+
+<p>
+<b>&lt; insert table of quality goals here &gt;</b>
+</p>
+
+<p>
+<table>
+    <tr>
+        <th>Role/Name</th>
+        <th>Contact</th>
+        <th>Expectations</th>
+    </tr>
+    <tr>
+        <td>...</td>
+        <td>...</td>
+        <td>...</td>
+    </tr>
+</table>
+</p>

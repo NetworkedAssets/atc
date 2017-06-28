@@ -1,0 +1,149 @@
+<ac:structured-macro ac:name="info">
+    <ac:rich-text-body>
+        <ac:structured-macro ac:name="expand">
+            <ac:parameter ac:name="title">Click here for content instructions...</ac:parameter>
+            <ac:rich-text-body>
+                <p>Here you describe the decomposition of the overall system using the following white box template.</p>
+                <ul>
+                    <li>an overview diagram</li>
+                    <li>a motivation for the decomposition</li>
+                    <li>black box descriptions of the contained building blocks. For these we offer you alternatives:
+                        <br></br>
+                        <ul>
+                            <li>use one table for a short and pragmatic overview of all contained building blocks and their interfaces</li>
+                            <li>use a list of black box decriptions of the building blocks according to the black box template (see below). Depending
+                                on your choice of tool this list could be sub-chapters (in text files), sub-pages (in a Wiki) or nested elements (in a
+                                modelling tool).
+                            </li>
+                        </ul>
+                    </li>
+                    <li>(optional:) important interfaces, that are not explained in the black box templates of a building block, but are very
+                        important for understanding the white box.
+                    </li>
+                </ul>
+                <p>Since there are so many ways to specify interfaces why do not provide a specific template for them.</p>
+                <p>In the best case you will get away with examples or simple signatures.</p>
+            </ac:rich-text-body>
+        </ac:structured-macro>
+    </ac:rich-text-body>
+</ac:structured-macro>
+<p>
+<b>&lt; insert overview diagram of overall system &gt;</b>
+</p>
+<p>
+<b>&lt; describe motivation/reasoning for overall system decomposition &gt;</b>
+</p>
+<p>
+<b>&lt; describe contained building blocks (blackboxes) &gt;</b>
+</p>
+<p>
+<b>&lt; (optionally) describe important interfaces &gt;</b>
+</p>
+
+<ac:structured-macro ac:name="info">
+<ac:rich-text-body>
+    <ac:structured-macro ac:name="expand">
+        <ac:parameter ac:name="title">Click here for content instructions...</ac:parameter>
+        <ac:rich-text-body>
+            <p>Insert your explanations of black boxes from level 1:</p>
+            <p>If you use tabular form you will only describe your black boxes with name and responsibility according to the following schema:</p>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Responsibility</th>
+                </tr>
+                <tr>
+                    <td>&lt;black box 1&gt;</td>
+                    <td>&lt;Text&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;black box 2&gt;</td>
+                    <td>&lt;Text&gt;</td>
+                </tr>
+            </table>
+
+            <p>If you use a list of black box decriptions then you fill in a separate black box template for every important building block . Its
+                headline is the name of the black box.
+            </p>
+
+        </ac:rich-text-body>
+    </ac:structured-macro>
+</ac:rich-text-body>
+</ac:structured-macro>
+
+<p>
+<b>&lt; Name Blackbox 1 &gt;</b>
+</p>
+
+<ac:structured-macro ac:name="info">
+<ac:rich-text-body>
+    <ac:structured-macro ac:name="expand">
+        <ac:parameter ac:name="title">Click here for content instructions...</ac:parameter>
+        <ac:rich-text-body>
+            <p>Here you describe &lt;black box 1&gt; according the the following <b>black box template</b>:
+            </p>
+            <ul>
+                <li>Purpose/Responsibility</li>
+                <li>Interface(s), when they are not extracted as separate paragraphs. This interfaces may include qualities and performance
+                    characteristics.
+                </li>
+                <li>(Optional) Quality-/Performance characteristics of the black box, e.g.availability, run time behavior, ….</li>
+                <li>(Optional) directory/file location</li>
+                <li>(Optional) Fulfilled requirements (if you need traceability to requirements).</li>
+                <li>(Optional) Open issues/problems/risks</li>
+            </ul>
+            <p>You can use a table or text.</p>
+        </ac:rich-text-body>
+    </ac:structured-macro>
+</ac:rich-text-body>
+</ac:structured-macro>
+
+<p>
+&lt; Purpose/Responsibility &gt;
+</p>
+
+<p>
+&lt; Interface(s) &gt;
+</p>
+
+<p>
+&lt; (Optional) Quality/Performance Characteristics &gt;
+</p>
+
+<p>
+&lt; (Optional) Directory/File Location &gt;
+</p>
+
+<p>
+&lt; (Optional) Fulfilled Requirements &gt;
+</p>
+
+<p>
+&lt; (optional) Open Issues/Problems/Risks &gt;
+</p>
+
+<p>
+<b>&lt; Name black box 2 &gt;</b>
+</p>
+
+<p>
+&lt; black box template &gt;
+</p>
+
+<p>
+<b>&lt; Name black box n &gt;</b>
+</p>
+
+<p>
+&lt; black box template &gt;
+</p>
+
+<p>
+<b>&lt; Name interface 1 &gt;</b>
+</p>
+
+<p>...</p>
+
+<p>
+<b>&lt; Name interface n &gt;</b>
+</p>

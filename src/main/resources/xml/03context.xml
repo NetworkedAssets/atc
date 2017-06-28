@@ -1,23 +1,30 @@
- <ac:structured-macro ac:name="info">
- <ac:rich-text-body>
-<ac:structured-macro ac:name="expand">
-  <ac:parameter ac:name="title">Click here for content instructions...</ac:parameter>
+<ac:structured-macro ac:name="info">
     <ac:rich-text-body>
+        <ac:structured-macro ac:name="expand">
+            <ac:parameter ac:name="title">Click here for content instructions...</ac:parameter>
+            <ac:rich-text-body>
 
-        <h4>Contents</h4>
-        <p>The context view defines the boundaries of the system under development to distinguish it from neighboring systems. It thereby identifies the system’s relevant external interfaces.</p>
-        <p>Make sure that the interfaces are specified with all their relevant aspects (what is communicated, in which format is it communicated, what is the transport medium, …), even though some popular diagrams (such as the UML use case diagram) represent only a few aspects of the interface.</p>
-        
-        <h4>Motivation</h4>
-        <p>The interfaces to neighboring systems are among most critical and risky aspects of a project. Ensure early on that you have understood them in their entirety.</p>
-        
-        <h4>Form</h4>
-        <ul>
-          <li>Various context diagram (see below)</li>
-          <li>Lists of neighboring systems and their interfaces.</li>
-        </ul>
+                <h4>Content</h4>
+                <p>System scope and context - as the name suggests - delimits your system (i.e. your scope) from all its communication partners
+                    (neighboring systems and users, i.e. the context of your system). It thereby specifies the external interfaces.
+                </p>
+                <p>If necessary, differentiate the business context (domain specific inputs and outputs) from the technical context (channels,
+                    protocols, hardware).
+                </p>
 
+                <h4>Motivation</h4>
+                <p>The domain interfaces and technical interfaces to communication partners are among your system’s most critical aspects. Make sure
+                    that you completely understand them.
+                </p>
+
+                <h4>Form</h4>
+                <ul>
+                    <li>Various context diagrams</li>
+                    <li>Lists of communication partners and their interfaces.</li>
+                </ul>
+
+                <p><a href="http://docs.arc42.org/section-3/" target="_blank">Read more</a></p>
+            </ac:rich-text-body>
+        </ac:structured-macro>
     </ac:rich-text-body>
-     </ac:structured-macro>
-  </ac:rich-text-body>
-  </ac:structured-macro>
+</ac:structured-macro>

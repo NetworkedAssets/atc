@@ -3,12 +3,18 @@
 <ac:structured-macro ac:name="expand">
   <ac:parameter ac:name="title">Click here for content instructions...</ac:parameter>
   <ac:rich-text-body>
-      <p>This chapter summarizes all you (or other stakeholders) might need to systematically evaluate the architecture against the quality requirements.</p>
-      <p>It contains:</p>
-      <ul>
-        <li>Quality Tree (sometimes called <em>utility tree</em>), an overview of the quality requirements</li>
-        <li>Evaluation or quality scenarios - detailed descriptions of the quality requirements or goals.</li>
-      </ul>
+      <h3 id="content">Content</h3>
+      <p>This section contains all quality requirements as quality tree with scenarios.
+          The most important ones have already been described in section 1.2. (quality goals)</p>
+
+      <p>Here you can also capture quality requirements with lesser priority,
+          which will not create high risks when they are not fully achieved.</p>
+
+      <h3 id="motivation">Motivation</h3>
+      <p>Since quality requirements will have a lot of influence on architectural
+          decisions you should know for every stakeholder what is really important to them,
+          concrete and measurable.</p>
+      <p><a href="http://docs.arc42.org/section-10/" target="_blank">Read more</a></p>
   </ac:rich-text-body>
   </ac:structured-macro>
   </ac:rich-text-body>

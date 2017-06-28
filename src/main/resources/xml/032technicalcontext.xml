@@ -4,13 +4,13 @@
   <ac:parameter ac:name="title">Click here for content instructions...</ac:parameter>
   <ac:rich-text-body>
     <h4>Contents</h4>
-      <p>Specification of the communication channels linking your system to neighboring systems and the environment.</p>
+      <p>Technical interfaces (channels and transmission media) linking your system to its environment. In addition a mapping of domain specific input/output to the channels, i.e. an explanation with I/O uses which channel.</p>
 
       <h4>Motivation</h4>
-      <p>Understanding of the media used for information exchange with neighboring systems, and the environment.</p>
+      <p>Many stakeholders make architectural decision based on the technical interfaces between the system and its context. Especially infrastructure or hardware designers decide these technical interfaces.</p>
       
       <h4>Form</h4>
-      <p>E.g. UML deployment diagram describing channels to neighboring systems, together with a mapping table of logical input and output flows of the business context diagram (3.1) to the channels.</p>
+      <p>E.g. UML deployment diagram describing channels to neighboring systems, together with a mapping table showing the relationships between channels and input/output.</p>
 
   </ac:rich-text-body>
     </ac:structured-macro>
