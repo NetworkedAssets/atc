@@ -1,7 +1,7 @@
 # <a href="http://opensource.networkedassets.com/"><img src="https://github.com/NetworkedAssets/atc/raw/master/src/main/resources/images/logo_arc42_with_text.png" height="79" title="Arc42 Template for Confluence"/></a>
   
 ## Overview
-The **Arc42 Template for Confluence** is an add-on to create a space for the documentation of software architecture in confluence, depending on the english version of the [Arc42](http://arc42.org/) structure. 
+The **ATC - Arc42 Template for Confluence** is an add-on to create a space for the documentation of software architecture in confluence, depending on the english version of the [Arc42](http://arc42.org/) structure. 
 The pagetree can also be inserted into already existing spaces via a page macro.
   
 See plugin details at: <a href="http://opensource.networkedassets.com/confluence/atc.html">ATC Description</a>  
