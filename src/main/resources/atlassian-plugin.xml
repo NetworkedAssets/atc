@@ -1,631 +1,370 @@
 <atlassian-plugin key="${project.groupId}.${project.artifactId}"
-	name="${project.name}" plugins-version="2">
-	<plugin-info>
-		<description>${project.description}</description>
-		<version>${project.version}</version>
-		<vendor name="${project.organization.name}" url="${project.organization.url}" />
-		<param name="plugin-icon">images/arcAddOnLogo.png</param>
-		<param name="plugin-logo">images/arcAddOnLogo.png</param>
-		<param name="vendor-icon">images/vendorIcon.png</param>
-		<param name="vendor-logo">images/vendorLogo.png</param>
-		<!--Licensing-->
-		<param name="atlassian-licensing-enabled">false</param>
-	</plugin-info>
+                  name="${project.name}" plugins-version="2">
+    <plugin-info>
+        <description>${project.description}</description>
+        <version>${project.version}</version>
+        <vendor name="${project.organization.name}" url="${project.organization.url}"/>
+        <param name="plugin-icon">images/arcAddOnLogo.png</param>
+        <param name="plugin-logo">images/arcAddOnLogo.png</param>
+        <param name="vendor-icon">images/vendorIcon.png</param>
+        <param name="vendor-logo">images/vendorLogo.png</param>
+        <!--Licensing-->
+        <param name="atlassian-licensing-enabled">false</param>
+    </plugin-info>
 
-	<!-- add our i18n resource -->
-	<resource type="i18n" name="i18n" location="arc42-template" />
+    <!-- add our i18n resource -->
+    <resource type="i18n" name="i18n" location="arc42-template"/>
 
-	<!-- add our web resources -->
-	<web-resource key="space-blueprint-resources" name="space-blueprint Web Resources">
+    <!-- add our web resources -->
+    <web-resource key="space-blueprint-resources" name="space-blueprint Web Resources">
 
-		<transformation extension="soy">
-			<transformer key="soyTransformer">
-				<functions>com.atlassian.confluence.plugins.soy:soy-core-functions
-				</functions>
-			</transformer>
-			<transformation extension="js">
-				<transformer key="jsI18n" />
-			</transformation>
-		</transformation>
-
-		<resource type="download" name="arc42-template.css" location="/css/arc42-template.css" />
-		<resource type="download" name="space-blueprint.js" location="/js/space-blueprint.js" />
-		<resource type="download" name="images/" location="/images" />
-		<resource type="download" name="dialog-page.js" location="/soy/dialog-page.soy" />
-		<resource type="download" name="error.soy" location="/soy/error.soy"/>
-
-		<dependency>com.atlassian.auiplugin:ajs</dependency>
-		<dependency>com.atlassian.confluence.plugins.confluence-create-content-plugin:space-blueprints</dependency>
-		<!-- This dependency is not required for confluence 5.4+ -->
-
-		<context>atl.general</context>
-		<context>atl.admin</context>
-	</web-resource>
-
-	<web-resource key="add-blueprint-resources">
-        <transformation extension="js">
-            <transformer key="jsI18n" />
+        <transformation extension="soy">
+            <transformer key="soyTransformer">
+                <functions>com.atlassian.confluence.plugins.soy:soy-core-functions
+                </functions>
+            </transformer>
+            <transformation extension="js">
+                <transformer key="jsI18n"/>
+            </transformation>
         </transformation>
 
-		<resource type="download" name="add-blueprint.js" location="/js/add-blueprint.js" />
+        <resource type="download" name="arc42-template.css" location="/css/arc42-template.css"/>
+        <resource type="download" name="space-blueprint.js" location="/js/space-blueprint.js"/>
+        <resource type="download" name="images/" location="/images"/>
+        <resource type="download" name="dialog-page.js" location="/soy/dialog-page.soy"/>
+        <resource type="download" name="error.soy" location="/soy/error.soy"/>
 
-		<context>page</context>
-	</web-resource>
+        <dependency>com.atlassian.auiplugin:ajs</dependency>
+        <dependency>com.atlassian.confluence.plugins.confluence-create-content-plugin:space-blueprints</dependency>
+        <!-- This dependency is not required for confluence 5.4+ -->
 
-	<!-- import from the product container -->
-	<component-import key="applicationProperties"
-		interface="com.atlassian.sal.api.ApplicationProperties" />
+        <context>atl.general</context>
+        <context>atl.admin</context>
+    </web-resource>
 
-	<web-item key="space-blueprint-item" i18n-name-key="confluence.arc42.template.name"
-		section="system.create.space.dialog/content">
-		<description key="confluence.arc42.template.description" />
-		<resource name="icon" type="download" location="/images/logo_arc42.png" />
-		<param name="blueprintKey" value="space-blueprint" />
-	</web-item>
+    <web-resource key="add-blueprint-resources">
+        <transformation extension="js">
+            <transformer key="jsI18n"/>
+        </transformation>
 
-<!-- Home page -->
-	<content-template key="space-homepage-template"
-		i18n-name-key="confluence.arc42.template.homepage.name">
-		<!--<description key="confluence.arc42.template.homepage.desc" />-->
-		<resource name="template" type="download" location="/xml/space-home.xml" />
-	</content-template>
-	
-<!-- Introduction page -->
-	<content-template key="introduction"
-		i18n-name-key="confluence.arc42.template.introduction.name">
-		<!--<description key="confluence.arc42.template.introduction.desc" />-->
-		<resource name="template" type="download" location="/xml/01introduction.xml" />
-	</content-template>
-	
-<!-- Requirements page -->
-	<content-template key="requirements"
-		i18n-name-key="confluence.arc42.template.requirements.name">
-		<!-- <description key="confluence.arc42.template.requirements.desc" /> -->
-		<resource name="template" type="download" location="/xml/011requirements.xml" />
-	</content-template>
-	
-<!-- Quality goals page -->
-	<content-template key="qualitygoals"
-		i18n-name-key="confluence.arc42.template.qualitygoals.name">
-		<!-- <description key="confluence.arc42.template.qualitygoals.desc" /> -->
-		<resource name="template" type="download" location="/xml/012qualitygoals.xml" />
-	</content-template>
-	
-<!-- Stakeholders page -->
-	<content-template key="stakeholders"
-		i18n-name-key="confluence.arc42.template.stakeholders.name">
-		<!-- <description key="confluence.arc42.template.stakeholders.desc" /> -->
-		<resource name="template" type="download" location="/xml/013stakeholders.xml" />
-	</content-template>
-	
-<!-- Constraints page -->
-	<content-template key="constraints"
-		i18n-name-key="confluence.arc42.template.constraints.name">
-		<!-- <description key="confluence.arc42.template.constraints.desc" /> -->
-		<resource name="template" type="download" location="/xml/02constraints.xml" />
-	</content-template>
-	
-<!-- Technical contraints page -->
-	<content-template key="technicalconstraints"
-		i18n-name-key="confluence.arc42.template.technicalconstraints.name">
-		<!-- <description key="confluence.arc42.template.technicalconstraints.desc" /> -->
-		<resource name="template" type="download" location="/xml/021technicalconstraints.xml" />
-	</content-template>
-	
-<!-- Orga Constraints page -->
-	<content-template key="orgaconstraints"
-		i18n-name-key="confluence.arc42.template.orgaconstraints.name">
-		<!-- <description key="confluence.arc42.template.orgaconstraints.desc" /> -->
-		<resource name="template" type="download" location="/xml/022orgaconstraints.xml" />
-	</content-template>
-	
-<!-- Conventions page -->
-	<content-template key="conventions"
-		i18n-name-key="confluence.arc42.template.conventions.name">
-		<!--  <description key="confluence.arc42.template.conventions.desc" />-->
-		<resource name="template" type="download" location="/xml/023conventions.xml" />
-	</content-template>
-	
-<!-- Context page -->
-	<content-template key="context"
-		i18n-name-key="confluence.arc42.template.context.name">
-		<!-- <description key="confluence.arc42.template.context.desc" /> -->
-		<resource name="template" type="download" location="/xml/03context.xml" />
-	</content-template>
-	
-<!-- Business Context page -->
-	<content-template key="businesscontext"
-		i18n-name-key="confluence.arc42.template.businesscontext.name">
-		<!--  <description key="confluence.arc42.template.businesscontext.desc" />-->
-		<resource name="template" type="download" location="/xml/031businesscontext.xml" />
-	</content-template>
-	
-<!-- Technical Context page -->
-	<content-template key="technicalcontext"
-		i18n-name-key="confluence.arc42.template.technicalcontext.name">
-		<!-- <description key="confluence.arc42.template.technicalcontext.desc" />-->
-		<resource name="template" type="download" location="/xml/032technicalcontext.xml" />
-	</content-template>
-	
-<!-- External Interfaces page -->
-	<content-template key="externalinterfaces"
-		i18n-name-key="confluence.arc42.template.externalinterfaces.name">
-		<!--  <description key="confluence.arc42.template.externalinterfaces.desc" />-->
-		<resource name="template" type="download" location="/xml/033externalinterfaces.xml" />
-	</content-template>
-	
-<!-- Interface Template page -->
-	<content-template key="interfacetemplate"
-		i18n-name-key="confluence.arc42.template.interfacetemplate.name">
-		<!--  <description key="confluence.arc42.template.interfacetemplate.desc" />-->
-		<resource name="template" type="download" location="/xml/034interfacetemplate.xml" />
-	</content-template>
-	
-<!-- Solution page -->
-	<content-template key="solution"
-		i18n-name-key="confluence.arc42.template.solution.name">
-		<!-- <description key="confluence.arc42.template.solution.desc" />-->
-		<resource name="template" type="download" location="/xml/04solution.xml" />
-	</content-template>
-	
-<!-- Building Block page -->
-	<content-template key="buildingblock"
-		i18n-name-key="confluence.arc42.template.buildingblock.name">
-		<!-- <description key="confluence.arc42.template.buildingblock.desc" /> -->
-		<resource name="template" type="download" location="/xml/05buildingblock.xml" />
-	</content-template>
-	
-<!-- Level 1 page -->
-	<content-template key="level1"
-		i18n-name-key="confluence.arc42.template.level1.name">
-		<!-- <description key="confluence.arc42.template.level1.desc" /> -->
-		<resource name="template" type="download" location="/xml/051level1.xml" />
-	</content-template>
-	
-<!-- Level 2 page -->
-	<content-template key="level2"
-		i18n-name-key="confluence.arc42.template.level2.name">
-		<!-- <description key="confluence.arc42.template.level2.desc" /> -->
-		<resource name="template" type="download" location="/xml/052level2.xml" />
-	</content-template>
-	
-<!-- Level 3 page -->
-	<content-template key="level3"
-		i18n-name-key="confluence.arc42.template.level3.name">
-		<!-- <description key="confluence.arc42.template.level3.desc" /> -->
-		<resource name="template" type="download" location="/xml/0521level3.xml" />
-	</content-template>
-	
-<!-- Whitebox Template page -->
-	<content-template key="whiteboxtemplate"
-		i18n-name-key="confluence.arc42.template.whiteboxtemplate.name">
-		<!-- <description key="confluence.arc42.template.whiteboxtemplate.desc" /> -->
-		<resource name="template" type="download" location="/xml/053whiteboxtemplate.xml" />
-	</content-template>
-	
-<!-- Blackbox Template page -->
-	<content-template key="blackboxtemplate"
-		i18n-name-key="confluence.arc42.template.blackboxtemplate.name">
-		<!-- <description key="confluence.arc42.template.blackboxtemplate.desc" /> -->
-		<resource name="template" type="download" location="/xml/054blackboxtemplate.xml" />
-	</content-template>
-	
-<!-- Runtime View page -->
-	<content-template key="runtimeview"
-		i18n-name-key="confluence.arc42.template.runtimeview.name">
-		<!-- <description key="confluence.arc42.template.runtimeview.desc" /> -->
-		<resource name="template" type="download" location="/xml/06runtimeview.xml" />
-	</content-template>
-	
-<!-- Runtime Scenario 1 page -->
-	<content-template key="runtimescenario1"
-		i18n-name-key="confluence.arc42.template.runtimescenario1.name">
-		<!-- <description key="confluence.arc42.template.runtimescenario1.desc" /> -->
-		<resource name="template" type="download" location="/xml/061runtimescenario1.xml" />
-	</content-template>
-	
-<!-- Runtime Scenario 2 page -->
-	<content-template key="runtimescenario2"
-		i18n-name-key="confluence.arc42.template.runtimescenario2.name">
-		<!-- <description key="confluence.arc42.template.runtimescenario2.desc" /> -->
-		<resource name="template" type="download" location="/xml/062runtimescenario2.xml" />
-	</content-template>
-	
-<!-- Runtime Scenario 3 page -->
-	<content-template key="runtimescenario3"
-		i18n-name-key="confluence.arc42.template.runtimescenario3.name">
-		<!-- <description key="confluence.arc42.template.runtimescenario3.desc" /> -->
-		<resource name="template" type="download" location="/xml/063runtimescenario3.xml" />
-	</content-template>
-	
-<!-- Runtime Scenario N page -->
-	<content-template key="runtimescenarion"
-		i18n-name-key="confluence.arc42.template.runtimescenarion.name">
-		<!-- <description key="confluence.arc42.template.runtimescenarion.desc" /> -->
-		<resource name="template" type="download" location="/xml/064runtimescenarion.xml" />
-	</content-template>
-	
-<!-- Deployment View page -->
-	<content-template key="deploymentview"
-		i18n-name-key="confluence.arc42.template.deploymentview.name">
-		<!-- <description key="confluence.arc42.template.deploymentview.desc" /> -->
-		<resource name="template" type="download" location="/xml/07deploymentview.xml" />
-	</content-template>
-	
-<!-- Infrastructure Level 1 page -->
-	<content-template key="infrastructurelevel1"
-		i18n-name-key="confluence.arc42.template.infrastructurelevel1.name">
-		<!-- <description key="confluence.arc42.template.infrastructurelevel1.desc" /> -->
-		<resource name="template" type="download" location="/xml/071infrastructurelevel1.xml" />
-	</content-template>
-	
-<!-- Infrastructure Level 2 page -->
-	<content-template key="infrastructurelevel2"
-		i18n-name-key="confluence.arc42.template.infrastructurelevel2.name">
-		<!--  <description key="confluence.arc42.template.infrastructurelevel2.desc" />-->
-		<resource name="template" type="download" location="/xml/0711infrastructurelevel2.xml" />
-	</content-template>
-	
-<!-- Concepts page -->
-	<content-template key="concepts"
-		i18n-name-key="confluence.arc42.template.concepts.name">
-		<!-- <description key="confluence.arc42.template.concepts.desc" /> -->
-		<resource name="template" type="download" location="/xml/08concepts.xml" />
-	</content-template>
-	
-<!-- Domain Models page -->
-	<content-template key="domainmodels"
-		i18n-name-key="confluence.arc42.template.domainmodels.name">
-		<!-- <description key="confluence.arc42.template.domainmodels.desc" /> -->
-		<resource name="template" type="download" location="/xml/081domainmodels.xml" />
-	</content-template>
-	
-<!-- Structures and Patterns page -->
-	<content-template key="structuresandpatterns"
-		i18n-name-key="confluence.arc42.template.structuresandpatterns.name">
-		<!-- <description key="confluence.arc42.template.structuresandpatterns.desc" /> -->
-		<resource name="template" type="download" location="/xml/082structuresandpatterns.xml" />
-	</content-template>
-	
-<!-- Persistency page -->
-	<content-template key="persistency"
-		i18n-name-key="confluence.arc42.template.persistency.name">
-		<!-- <description key="confluence.arc42.template.persistency.desc" /> -->
-		<resource name="template" type="download" location="/xml/083persistency.xml" />
-	</content-template>
-	
-<!-- User Interfaces page -->
-	<content-template key="userinterfaces"
-		i18n-name-key="confluence.arc42.template.userinterfaces.name">
-		<!-- <description key="confluence.arc42.template.userinterfaces.desc" /> -->
-		<resource name="template" type="download" location="/xml/084userinterfaces.xml" />
-	</content-template>
-	
-<!-- Ergonomics page -->
-	<content-template key="ergonomics"
-		i18n-name-key="confluence.arc42.template.ergonomics.name">
-		<!-- <description key="confluence.arc42.template.ergonomics.desc" /> -->
-		<resource name="template" type="download" location="/xml/085ergonomics.xml" />
-	</content-template>
-	
-<!-- Flow of Control page -->
-	<content-template key="flowofcontrol"
-		i18n-name-key="confluence.arc42.template.flowofcontrol.name">
-		<!-- <description key="confluence.arc42.template.flowofcontrol.desc" /> -->
-		<resource name="template" type="download" location="/xml/086flowofcontrol.xml" />
-	</content-template>
-	
-<!-- Transaction page -->
-	<content-template key="transaction"
-		i18n-name-key="confluence.arc42.template.transaction.name">
-		<!-- <description key="confluence.arc42.template.transaction.desc" /> -->
-		<resource name="template" type="download" location="/xml/087transaction.xml" />
-	</content-template>
-	
-<!-- Session Handling page -->
-	<content-template key="sessionhandling"
-		i18n-name-key="confluence.arc42.template.sessionhandling.name">
-		<!-- <description key="confluence.arc42.template.sessionhandling.desc" /> -->
-		<resource name="template" type="download" location="/xml/088sessionhandling.xml" />
-	</content-template>
-	
-<!-- Security page -->
-	<content-template key="security"
-		i18n-name-key="confluence.arc42.template.security.name">
-		<!-- <description key="confluence.arc42.template.security.desc" /> -->
-		<resource name="template" type="download" location="/xml/089security.xml" />
-	</content-template>
-	
-<!-- Safety page -->
-	<content-template key="safety"
-		i18n-name-key="confluence.arc42.template.safety.name">
-		<!-- <description key="confluence.arc42.template.safety.desc" /> -->
-		<resource name="template" type="download" location="/xml/0810safety.xml" />
-	</content-template>
-	
-<!-- Communication page -->
-	<content-template key="communication"
-		i18n-name-key="confluence.arc42.template.communication.name">
-		<!-- <description key="confluence.arc42.template.communication.desc" /> -->
-		<resource name="template" type="download" location="/xml/0811communication.xml" />
-	</content-template>
-	
-<!-- Distribution page -->
-	<content-template key="distribution"
-		i18n-name-key="confluence.arc42.template.distribution.name">
-		<!-- <description key="confluence.arc42.template.distribution.desc" /> -->
-		<resource name="template" type="download" location="/xml/0812distribution.xml" />
-	</content-template>
-	
-<!-- Plausibility page -->
-	<content-template key="plausibility"
-		i18n-name-key="confluence.arc42.template.plausibility.name">
-		<!-- <description key="confluence.arc42.template.plausibility.desc" /> -->
-		<resource name="template" type="download" location="/xml/0813plausibility.xml" />
-	</content-template>
-	
-<!-- Exception page -->
-	<content-template key="exception"
-		i18n-name-key="confluence.arc42.template.exception.name">
-		<!-- <description key="confluence.arc42.template.exception.desc" /> -->
-		<resource name="template" type="download" location="/xml/0814exception.xml" />
-	</content-template>
-	
-<!-- System Management page -->
-	<content-template key="systemmanagement"
-		i18n-name-key="confluence.arc42.template.systemmanagement.name">
-		<!-- <description key="confluence.arc42.template.systemmanagement.desc" /> -->
-		<resource name="template" type="download" location="/xml/0815systemmanagement.xml" />
-	</content-template>
-	
-<!-- Logging page -->
-	<content-template key="logging"
-		i18n-name-key="confluence.arc42.template.logging.name">
-		<!-- <description key="confluence.arc42.template.logging.desc" /> -->
-		<resource name="template" type="download" location="/xml/0816logging.xml" />
-	</content-template>
-	
-<!-- Business Rules page -->
-	<content-template key="businessrules"
-		i18n-name-key="confluence.arc42.template.businessrules.name">
-		<!-- <description key="confluence.arc42.template.businessrules.desc" /> -->
-		<resource name="template" type="download" location="/xml/0817businessrules.xml" />
-	</content-template>
-	
-<!-- Configurability page -->
-	<content-template key="configurability"
-		i18n-name-key="confluence.arc42.template.configurability.name">
-		<!-- <description key="confluence.arc42.template.configurability.desc" /> -->
-		<resource name="template" type="download" location="/xml/0818configurability.xml" />
-	</content-template>
-	
-<!-- Parallelization page -->
-	<content-template key="parallelization"
-		i18n-name-key="confluence.arc42.template.parallelization.name">
-		<!-- <description key="confluence.arc42.template.parallelization.desc" /> -->
-		<resource name="template" type="download" location="/xml/0819parallelization.xml" />
-	</content-template>
-	
-<!-- Internationalization page -->
-	<content-template key="internationalization"
-		i18n-name-key="confluence.arc42.template.internationalization.name">
-		<!-- <description key="confluence.arc42.template.internationalization.desc" /> -->
-		<resource name="template" type="download" location="/xml/0820internationalization.xml" />
-	</content-template>
-	
-<!-- Migration page -->
-	<content-template key="migration"
-		i18n-name-key="confluence.arc42.template.migration.name">
-		<!-- <description key="confluence.arc42.template.migration.desc" /> -->
-		<resource name="template" type="download" location="/xml/0821migration.xml" />
-	</content-template>
-	
-<!-- Testability page -->
-	<content-template key="testability"
-		i18n-name-key="confluence.arc42.template.testability.name">
-		<!-- <description key="confluence.arc42.template.testability.desc" /> -->
-		<resource name="template" type="download" location="/xml/0822testability.xml" />
-	</content-template>
-	
-<!-- Scaling page -->
-	<content-template key="scaling"
-		i18n-name-key="confluence.arc42.template.scaling.name">
-		<!-- <description key="confluence.arc42.template.scaling.desc" /> -->
-		<resource name="template" type="download" location="/xml/0823scaling.xml" />
-	</content-template>
-	
-<!-- High Availability page -->
-	<content-template key="highavailability"
-		i18n-name-key="confluence.arc42.template.highavailability.name">
-		<!-- <description key="confluence.arc42.template.highavailability.desc" /> -->
-		<resource name="template" type="download" location="/xml/0824highavailability.xml" />
-	</content-template>
-	
-<!-- Code Generation page -->
-	<content-template key="codegeneration"
-		i18n-name-key="confluence.arc42.template.codegeneration.name">
-		<!-- <description key="confluence.arc42.template.codegeneration.desc" /> -->
-		<resource name="template" type="download" location="/xml/0825codegeneration.xml" />
-	</content-template>
-	
-<!-- Build Management page -->
-	<content-template key="buildmanagement"
-		i18n-name-key="confluence.arc42.template.buildmanagement.name">
-		<!-- <description key="confluence.arc42.template.buildmanagement.desc" /> -->
-		<resource name="template" type="download" location="/xml/0826buildmanagement.xml" />
-	</content-template>
-	
-<!-- Design Decisions page -->
-	<content-template key="designdecisions"
-		i18n-name-key="confluence.arc42.template.designdecisions.name">
-		<!-- <description key="confluence.arc42.template.designdecisions.desc" /> -->
-		<resource name="template" type="download" location="/xml/09designdecisions.xml" />
-	</content-template>
-	
-<!-- Quality page -->
-	<content-template key="quality"
-		i18n-name-key="confluence.arc42.template.quality.name">
-		<!-- <description key="confluence.arc42.template.quality.desc" /> -->
-		<resource name="template" type="download" location="/xml/10quality.xml" />
-	</content-template>
-	
-<!-- Quality Tree page -->
-	<content-template key="qualitytree"
-		i18n-name-key="confluence.arc42.template.qualitytree.name">
-		<!-- <description key="confluence.arc42.template.qualitytree.desc" /> -->
-		<resource name="template" type="download" location="/xml/101qualitytree.xml" />
-	</content-template>
-	
-<!-- Evaluation page -->
-	<content-template key="evaluation"
-		i18n-name-key="confluence.arc42.template.evaluation.name">
-		<!-- <description key="confluence.arc42.template.evaluation.desc" /> -->
-		<resource name="template" type="download" location="/xml/102evaluation.xml" />
-	</content-template>
-	
-<!-- Technical Risks page -->
-	<content-template key="technicalrisks"
-		i18n-name-key="confluence.arc42.template.technicalrisks.name">
-		<!-- <description key="confluence.arc42.template.technicalrisks.desc" /> -->
-		<resource name="template" type="download" location="/xml/11technicalrisks.xml" />
-	</content-template>
-	
-<!-- Glossary page -->
-	<content-template key="glossary"
-		i18n-name-key="confluence.arc42.template.glossary.name">
-		<!-- <description key="confluence.arc42.template.glossary.desc" /> -->
-		<resource name="template" type="download" location="/xml/12glossary.xml" />
-	</content-template>
+        <resource type="download" name="add-blueprint.js" location="/js/add-blueprint.js"/>
 
-<!-- Definition of the space blueprint and the dialog wizard -->
-	<space-blueprint key="space-blueprint"
-		i18n-name-key="confluence.arc42.template.name" category="Architecture">
-		 <content-template ref="space-homepage-template">
-		     <content-template ref="introduction">
-		        <content-template ref="requirements"/>
-		        <content-template ref="qualitygoals"/>
-		        <content-template ref="stakeholders"/>
-		     </content-template>
-		     <content-template ref="constraints">
-		        <content-template ref="technicalconstraints"/>
-		        <content-template ref="orgaconstraints"/>
-		        <content-template ref="conventions"/>
-		     </content-template>
-		     <content-template ref="context">
-		        <content-template ref="businesscontext"/>
-		        <content-template ref="technicalcontext"/>
-		        <content-template ref="externalinterfaces">
-		           <content-template ref="interfacetemplate"/>
-		        </content-template>
-		     </content-template>
-		     <content-template ref="solution"/>
-		     <content-template ref="buildingblock">
-		        <content-template ref="level1">
-		           <content-template ref="level2">
-		              <content-template ref="level3"/>
-		           </content-template>
-		        </content-template>
-		        <content-template ref="whiteboxtemplate"/>
-		        <content-template ref="blackboxtemplate"/>
-		     </content-template>
-		     <content-template ref="runtimeview">
-		        <content-template ref="runtimescenario1"/>
-		        <content-template ref="runtimescenario2"/>
-		        <content-template ref="runtimescenario3"/>
-		        <content-template ref="runtimescenarion"/>
-		     </content-template>
-		     <content-template ref="deploymentview">
-		        <content-template ref="infrastructurelevel1">
-		           <content-template ref="infrastructurelevel2"/>
-		        </content-template>
-		     </content-template>
-		     <content-template ref="concepts">
-		        <content-template ref="domainmodels"/>
-		        <content-template ref="structuresandpatterns"/>
-		        <content-template ref="persistency"/>
-		        <content-template ref="userinterfaces"/>
-		        <content-template ref="ergonomics"/>
-		        <content-template ref="flowofcontrol"/>
-		        <content-template ref="transaction"/>
-		        <content-template ref="sessionhandling"/>
-		        <content-template ref="security"/>
-		        <content-template ref="safety"/>
-		        <content-template ref="communication"/>
-		        <content-template ref="distribution"/>
-		        <content-template ref="plausibility"/>
-		        <content-template ref="exception"/>
-		        <content-template ref="systemmanagement"/>
-		        <content-template ref="logging"/>
-		        <content-template ref="businessrules"/>
-		        <content-template ref="configurability"/>
-		        <content-template ref="parallelization"/>
-		        <content-template ref="internationalization"/>
-		        <content-template ref="migration"/>
-		        <content-template ref="testability"/>
-		        <content-template ref="scaling"/>
-		        <content-template ref="highavailability"/>
-		        <content-template ref="codegeneration"/>
-		        <content-template ref="buildmanagement"/>
-		     </content-template>
-		     <content-template ref="designdecisions"/>
-		     <content-template ref="quality">
-		        <content-template ref="qualitytree"/>
-		        <content-template ref="evaluation"/>
-		     </content-template>
-		     <content-template ref="technicalrisks"/>
-		     <content-template ref="glossary"/>
-		 </content-template>
+        <context>page</context>
+    </web-resource>
 
-		<dialog-wizard key="space-blueprint-wizard">
-			<dialog-page id="arcSpaceId"
-				template-key="Confluence.SpaceBlueprints.Arc.dialogForm"
-				title-key="confluence.arc42.template.dialog.create.title"
-				description-header-key="confluence.arc42.template.dialog.create.heading"
-				description-content-key="confluence.arc42.template.dialog.create.description"
-				last="true" />
-		</dialog-wizard>
-	</space-blueprint>
+    <!-- import from the product container -->
+    <component-import key="applicationProperties"
+                      interface="com.atlassian.sal.api.ApplicationProperties"/>
 
-	<xwork name="Add ARC42 Template in existing space" key="add-arc42-existing-space">
-		<description>Adds ARC42 Template in existing space</description>
-		<package name="add-arc42-existing-space-xwork-package"
-			extends="default" namespace="/plugins/${project.artifactId}">
-			<default-interceptor-ref name="validatingStack" />
+    <web-item key="space-blueprint-item" i18n-name-key="confluence.arc42.template.name"
+              section="system.create.space.dialog/content">
+        <description key="confluence.arc42.template.description"/>
+        <resource name="icon" type="download" location="/images/logo_arc42.png"/>
+        <param name="blueprintKey" value="space-blueprint"/>
+    </web-item>
 
-			<action name="add-arc42-existing"
-				class="com.networkedassets.plugins.space_blueprint.AddArc42Existing"
-				method="addInExisting">
-				<result name="success" type="redirect">${baseUrl}/pages/viewpage.action?pageId=${pageId}</result>
-				<result name="error" type="soy">
-          			<param name="location">${project.groupId}.${project.artifactId}:space-blueprint-resources/space_blueprint.unauth</param>
-   				</result>
-				<result name="pagesError" type="soy">
-          			<param name="location">${project.groupId}.${project.artifactId}:space-blueprint-resources/space_blueprint.pageError</param>
-   				</result>
-			</action>
-		</package>
-	</xwork>
+    <!-- Home page -->
+    <content-template key="space-homepage-template"
+                      i18n-name-key="confluence.arc42.template.homepage.name">
+        <!--<description key="confluence.arc42.template.homepage.desc" />-->
+        <resource name="template" type="download" location="/xml/space-home.xml"/>
+    </content-template>
 
-	<web-item name="confluence.arc42.addinexisting.menu.button" key="add-arc42-existing-space-link"
-		section="system.content.action/modify" weight="1000">
-		<description key="add-arc42-existing-space-link.description">
-			Link for adding ARC42 Template to existing space
-		</description>
-		<label key="confluence.arc42.template.add-to-existing-link" />
-		<condition class="com.atlassian.confluence.plugin.descriptor.web.conditions.SpacePermissionCondition">
-			<param name="permission">administer</param>
-		</condition>
-		<link linkId="add-arc42-existing-space-link-id">
-			javascript:void(0)
-		</link>
-	</web-item>
+    <!-- Introduction page -->
+    <content-template key="introduction"
+                      i18n-name-key="confluence.arc42.template.introduction.name">
+        <!--<description key="confluence.arc42.template.introduction.desc" />-->
+        <resource name="template" type="download" location="/xml/01introduction.xml"/>
+    </content-template>
 
-	<component-import key="attachmentManager" interface="com.atlassian.confluence.pages.AttachmentManager"/>
-	<component-import key="eventPublisher" interface="com.atlassian.event.api.EventPublisher"/>
-	<component-import key="colourSchemeManager" interface="com.atlassian.confluence.themes.ColourSchemeManager"/>
-	<!--Licensing-->
-	<component-import key="pluginLicenseManager" interface="com.atlassian.upm.api.license.PluginLicenseManager"/>
+    <!-- Requirements page -->
+    <content-template key="requirements"
+                      i18n-name-key="confluence.arc42.template.requirements.name">
+        <!-- <description key="confluence.arc42.template.requirements.desc" /> -->
+        <resource name="template" type="download" location="/xml/011requirements.xml"/>
+    </content-template>
 
-	<component key="arc42CreatedListener" class="com.networkedassets.plugins.space_blueprint.Arc42CreatedListener"/>
+    <!-- Quality goals page -->
+    <content-template key="qualitygoals"
+                      i18n-name-key="confluence.arc42.template.qualitygoals.name">
+        <!-- <description key="confluence.arc42.template.qualitygoals.desc" /> -->
+        <resource name="template" type="download" location="/xml/012qualitygoals.xml"/>
+    </content-template>
+
+    <!-- Stakeholders page -->
+    <content-template key="stakeholders"
+                      i18n-name-key="confluence.arc42.template.stakeholders.name">
+        <!-- <description key="confluence.arc42.template.stakeholders.desc" /> -->
+        <resource name="template" type="download" location="/xml/013stakeholders.xml"/>
+    </content-template>
+
+    <!-- Constraints page -->
+    <content-template key="constraints"
+                      i18n-name-key="confluence.arc42.template.constraints.name">
+        <!-- <description key="confluence.arc42.template.constraints.desc" /> -->
+        <resource name="template" type="download" location="/xml/02constraints.xml"/>
+    </content-template>
+
+    <!-- Context page -->
+    <content-template key="context"
+                      i18n-name-key="confluence.arc42.template.context.name">
+        <!-- <description key="confluence.arc42.template.context.desc" /> -->
+        <resource name="template" type="download" location="/xml/03context.xml"/>
+    </content-template>
+
+    <!-- Business Context page -->
+    <content-template key="businesscontext"
+                      i18n-name-key="confluence.arc42.template.businesscontext.name">
+        <!--  <description key="confluence.arc42.template.businesscontext.desc" />-->
+        <resource name="template" type="download" location="/xml/031businesscontext.xml"/>
+    </content-template>
+
+    <!-- Technical Context page -->
+    <content-template key="technicalcontext"
+                      i18n-name-key="confluence.arc42.template.technicalcontext.name">
+        <!-- <description key="confluence.arc42.template.technicalcontext.desc" />-->
+        <resource name="template" type="download" location="/xml/032technicalcontext.xml"/>
+    </content-template>
+    
+    <!-- Solution page -->
+    <content-template key="solution"
+                      i18n-name-key="confluence.arc42.template.solution.name">
+        <!-- <description key="confluence.arc42.template.solution.desc" />-->
+        <resource name="template" type="download" location="/xml/04solution.xml"/>
+    </content-template>
+
+    <!-- Building Block page -->
+    <content-template key="buildingblock"
+                      i18n-name-key="confluence.arc42.template.buildingblock.name">
+        <!-- <description key="confluence.arc42.template.buildingblock.desc" /> -->
+        <resource name="template" type="download" location="/xml/05buildingblock.xml"/>
+    </content-template>
+
+    <!-- Level 1 page -->
+    <content-template key="buildingblock1"
+                      i18n-name-key="confluence.arc42.template.buildingblock1.name">
+        <!-- <description key="confluence.arc42.template.level1.desc" /> -->
+        <resource name="template" type="download" location="/xml/051buildingblock1.xml"/>
+    </content-template>
+
+    <!-- Level 2 page -->
+    <content-template key="buildingblocklevel2"
+                      i18n-name-key="confluence.arc42.template.buildingblocklevel2.name">
+        <!-- <description key="confluence.arc42.template.level2.desc" /> -->
+        <resource name="template" type="download" location="/xml/052buildingblocklevel2.xml"/>
+    </content-template>
+
+    <content-template key="buildingblocklevel2block1"
+                      i18n-name-key="confluence.arc42.template.buildingblocklevel2block1.name">
+        <!-- <description key="confluence.arc42.template.level2.desc" /> -->
+        <resource name="template" type="download" location="/xml/0521buildingblocklevel2block1.xml"/>
+    </content-template>
+    <content-template key="buildingblocklevel2block2"
+                      i18n-name-key="confluence.arc42.template.buildingblocklevel2block2.name">
+        <!-- <description key="confluence.arc42.template.level2.desc" /> -->
+        <resource name="template" type="download" location="/xml/0522buildingblocklevel2block2.xml"/>
+    </content-template>
+    <content-template key="buildingblocklevel2blockn"
+                      i18n-name-key="confluence.arc42.template.buildingblocklevel2blockn.name">
+        <!-- <description key="confluence.arc42.template.level2.desc" /> -->
+        <resource name="template" type="download" location="/xml/0523buildingblocklevel2blockn.xml"/>
+    </content-template>
+
+
+    <!-- Level 3 page -->
+    <content-template key="buildingblocklevel3"
+                      i18n-name-key="confluence.arc42.template.buildingblocklevel3.name">
+        <!-- <description key="confluence.arc42.template.level2.desc" /> -->
+        <resource name="template" type="download" location="/xml/053buildingblocklevel3.xml"/>
+    </content-template>
+
+    <content-template key="buildingblocklevel3block1"
+                      i18n-name-key="confluence.arc42.template.buildingblocklevel3block1.name">
+        <!-- <description key="confluence.arc43.template.level3.desc" /> -->
+        <resource name="template" type="download" location="/xml/0531buildingblocklevel3block1.xml"/>
+    </content-template>
+    <content-template key="buildingblocklevel3block2"
+                      i18n-name-key="confluence.arc42.template.buildingblocklevel3block2.name">
+        <!-- <description key="confluence.arc43.template.level3.desc" /> -->
+        <resource name="template" type="download" location="/xml/0532buildingblocklevel3block2.xml"/>
+    </content-template>
+    <content-template key="buildingblocklevel3blockn"
+                      i18n-name-key="confluence.arc42.template.buildingblocklevel3blockn.name">
+        <!-- <description key="confluence.arc43.template.level3.desc" /> -->
+        <resource name="template" type="download" location="/xml/0533buildingblocklevel3blockn.xml"/>
+    </content-template>
+
+    <!-- Runtime View page -->
+    <content-template key="runtimeview"
+                      i18n-name-key="confluence.arc42.template.runtimeview.name">
+        <!-- <description key="confluence.arc42.template.runtimeview.desc" /> -->
+        <resource name="template" type="download" location="/xml/06runtimeview.xml"/>
+    </content-template>
+
+    <!-- Deployment View page -->
+    <content-template key="deploymentview"
+                      i18n-name-key="confluence.arc42.template.deploymentview.name">
+        <!-- <description key="confluence.arc42.template.deploymentview.desc" /> -->
+        <resource name="template" type="download" location="/xml/07deploymentview.xml"/>
+    </content-template>
+
+    <!-- Infrastructure Level 1 page -->
+    <content-template key="infrastructurelevel1"
+                      i18n-name-key="confluence.arc42.template.infrastructurelevel1.name">
+        <!-- <description key="confluence.arc42.template.infrastructurelevel1.desc" /> -->
+        <resource name="template" type="download" location="/xml/071infrastructurelevel1.xml"/>
+    </content-template>
+
+    <!-- Infrastructure Level 2 page -->
+    <content-template key="infrastructurelevel2"
+                      i18n-name-key="confluence.arc42.template.infrastructurelevel2.name">
+        <!--  <description key="confluence.arc42.template.infrastructurelevel2.desc" />-->
+        <resource name="template" type="download" location="/xml/072infrastructurelevel2.xml"/>
+    </content-template>
+
+    <!-- Concepts page -->
+    <content-template key="concepts"
+                      i18n-name-key="confluence.arc42.template.concepts.name">
+        <!-- <description key="confluence.arc42.template.concepts.desc" /> -->
+        <resource name="template" type="download" location="/xml/08concepts.xml"/>
+    </content-template>
+
+    <!-- Design Decisions page -->
+    <content-template key="designdecisions"
+                      i18n-name-key="confluence.arc42.template.designdecisions.name">
+        <!-- <description key="confluence.arc42.template.designdecisions.desc" /> -->
+        <resource name="template" type="download" location="/xml/09designdecisions.xml"/>
+    </content-template>
+
+    <!-- Quality page -->
+    <content-template key="quality"
+                      i18n-name-key="confluence.arc42.template.quality.name">
+        <!-- <description key="confluence.arc42.template.quality.desc" /> -->
+        <resource name="template" type="download" location="/xml/10quality.xml"/>
+    </content-template>
+
+    <!-- Quality Tree page -->
+    <content-template key="qualitytree"
+                      i18n-name-key="confluence.arc42.template.qualitytree.name">
+        <!-- <description key="confluence.arc42.template.qualitytree.desc" /> -->
+        <resource name="template" type="download" location="/xml/101qualitytree.xml"/>
+    </content-template>
+
+    <!-- Evaluation page -->
+    <content-template key="evaluation"
+                      i18n-name-key="confluence.arc42.template.evaluation.name">
+        <!-- <description key="confluence.arc42.template.evaluation.desc" /> -->
+        <resource name="template" type="download" location="/xml/102evaluation.xml"/>
+    </content-template>
+
+    <!-- Technical Risks page -->
+    <content-template key="technicalrisks"
+                      i18n-name-key="confluence.arc42.template.technicalrisks.name">
+        <!-- <description key="confluence.arc42.template.technicalrisks.desc" /> -->
+        <resource name="template" type="download" location="/xml/11technicalrisks.xml"/>
+    </content-template>
+
+    <!-- Glossary page -->
+    <content-template key="glossary"
+                      i18n-name-key="confluence.arc42.template.glossary.name">
+        <!-- <description key="confluence.arc42.template.glossary.desc" /> -->
+        <resource name="template" type="download" location="/xml/12glossary.xml"/>
+    </content-template>
+
+    <!-- Definition of the space blueprint and the dialog wizard -->
+    <space-blueprint key="space-blueprint"
+                     i18n-name-key="confluence.arc42.template.name" category="Architecture">
+        <content-template ref="space-homepage-template">
+            <content-template ref="introduction">
+                <content-template ref="requirements"/>
+                <content-template ref="qualitygoals"/>
+                <content-template ref="stakeholders"/>
+            </content-template>
+            <content-template ref="constraints">
+            </content-template>
+            <content-template ref="context">
+                <content-template ref="businesscontext"/>
+                <content-template ref="technicalcontext"/>
+            </content-template>
+            <content-template ref="solution"/>
+            <content-template ref="buildingblock">
+                <content-template ref="buildingblock1"/>
+                <content-template ref="buildingblocklevel2">
+                    <content-template ref="buildingblocklevel2block1"/>
+                    <content-template ref="buildingblocklevel2block2"/>
+                    <content-template ref="buildingblocklevel2blockn"/>
+                </content-template>
+                <content-template ref="buildingblocklevel3">
+                    <content-template ref="buildingblocklevel3block1"/>
+                    <content-template ref="buildingblocklevel3block2"/>
+                    <content-template ref="buildingblocklevel3blockn"/>
+                </content-template>
+            </content-template>
+            <content-template ref="runtimeview"/>
+            <content-template ref="deploymentview">
+                <content-template ref="infrastructurelevel1"/>
+                <content-template ref="infrastructurelevel2"/>
+            </content-template>
+            <content-template ref="concepts"/>
+            <content-template ref="designdecisions"/>
+            <content-template ref="quality">
+                <content-template ref="qualitytree"/>
+                <content-template ref="evaluation"/>
+            </content-template>
+            <content-template ref="technicalrisks"/>
+            <content-template ref="glossary"/>
+        </content-template>
+
+        <dialog-wizard key="space-blueprint-wizard">
+            <dialog-page id="arcSpaceId"
+                         template-key="Confluence.SpaceBlueprints.Arc.dialogForm"
+                         title-key="confluence.arc42.template.dialog.create.title"
+                         description-header-key="confluence.arc42.template.dialog.create.heading"
+                         description-content-key="confluence.arc42.template.dialog.create.description"
+                         last="true"/>
+        </dialog-wizard>
+    </space-blueprint>
+
+    <xwork name="Add ARC42 Template in existing space" key="add-arc42-existing-space">
+        <description>Adds ARC42 Template in existing space</description>
+        <package name="add-arc42-existing-space-xwork-package"
+                 extends="default" namespace="/plugins/${project.artifactId}">
+            <default-interceptor-ref name="validatingStack"/>
+
+            <action name="add-arc42-existing"
+                    class="com.networkedassets.plugins.space_blueprint.AddArc42Existing"
+                    method="addInExisting">
+                <result name="success" type="redirect">${baseUrl}/pages/viewpage.action?pageId=${pageId}</result>
+                <result name="error" type="soy">
+                    <param name="location">${project.groupId}.${project.artifactId}:space-blueprint-resources/space_blueprint.unauth</param>
+                </result>
+                <result name="pagesError" type="soy">
+                    <param name="location">${project.groupId}.${project.artifactId}:space-blueprint-resources/space_blueprint.pageError</param>
+                </result>
+            </action>
+        </package>
+    </xwork>
+
+    <web-item name="confluence.arc42.addinexisting.menu.button" key="add-arc42-existing-space-link"
+              section="system.content.action/modify" weight="1000">
+        <description key="add-arc42-existing-space-link.description">
+            Link for adding ARC42 Template to existing space
+        </description>
+        <label key="confluence.arc42.template.add-to-existing-link"/>
+        <condition class="com.atlassian.confluence.plugin.descriptor.web.conditions.SpacePermissionCondition">
+            <param name="permission">administer</param>
+        </condition>
+        <link linkId="add-arc42-existing-space-link-id">
+            javascript:void(0)
+        </link>
+    </web-item>
+
+    <component-import key="attachmentManager" interface="com.atlassian.confluence.pages.AttachmentManager"/>
+    <component-import key="eventPublisher" interface="com.atlassian.event.api.EventPublisher"/>
+    <component-import key="colourSchemeManager" interface="com.atlassian.confluence.themes.ColourSchemeManager"/>
+    <!--Licensing-->
+    <component-import key="pluginLicenseManager" interface="com.atlassian.upm.api.license.PluginLicenseManager"/>
+
+    <component key="arc42CreatedListener" class="com.networkedassets.plugins.space_blueprint.Arc42CreatedListener"/>
 
 </atlassian-plugin>

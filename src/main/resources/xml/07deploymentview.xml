@@ -3,18 +3,55 @@
 <ac:structured-macro ac:name="expand">
   <ac:parameter ac:name="title">Click here for content instructions...</ac:parameter>
   <ac:rich-text-body>
-      <h4>Contents</h4>
-      <p>This view describes the environment within which the system is executed. It describes the geographic distribution of the system or the structure of the hardware components that execute the software. It documents workstations, processors, network topologies and channels, as well as other elements of the physical system environment. The deployment view shows the system from the operator’s point of view.</p>
-      <p>Please explain how the systems’ building blocks are aggregated or packaged into deployment artifacts or deployment units.</p>
-      
+      <h4>Content</h4>
+      <p>The deployment view describes:</p>
+
+      <ol>
+          <li>the technical infrastructure used to execute your system,
+              with infrastructure elements like geographical locations, environments,
+              computers, processors, channels and net topologies as well as other
+              infrastructure elements and
+          </li>
+          <li>the mapping of (software) building blocks to that infrastructure elements.</li>
+      </ol>
+
+      <p>Often systems are executed in different environments, e.g. development environment, test environment,
+          production environment. In such cases you should document all relevant environments.
+      </p>
+
+      <p>Especially document the deployment view when your software is executed as
+          distributed system with more then one computer, processor, server or
+          container or when you design and construct your own hardware processors and
+          chips.
+      </p>
+
+      <p>From a software perspective it is sufficient to capture those elements of the infrastructure that are needed to
+          show the deployment of your building blocks.
+          Hardware architects can go beyond that and describe the infrastructure to any
+          level of detail they need to capture.
+      </p>
+
       <h4>Motivation</h4>
-      <p>Software is not much use without hardware. The minimum that is needed by you as a software architect is sufficient detail of the underlying (hardware) deployment so that you can assign each software building block that is relevant for the system’s operations to some hardware element. (This also holds for any COTS that is a prerequisite for the operations of the overall system.) These models should enable the operator to properly install the software.</p>
-      
+      <p>Software does not run without hardware.
+          This underlying infrastructure can and will influence your system and/or some
+          cross-cutting concepts. Therefore, you need to know the infrastructure.
+      </p>
+
       <h4>Form</h4>
-      <p>The UML provides deployment diagrams for describing this view. Use these – possibly in a nested manner if necessary. (The top level deployment diagram should already be part of your context view, showing your infrastructure as a single black box (cf. chapter 3.2). Here you are zooming into this black box with additional deployment diagrams.)</p>
+      <p>Maybe the highest level deployment diagram is already contained in
+          section 3.2. as technical context with your own infrastructure as ONE black box. In this section you will zoom
+          into this black box using additional deployment diagrams.
+      </p>
 
-      <p>Diagrams by your hardware-oriented colleagues who describe processors and channels are also usable. You should abstract these to aspects relevant for software deployment.</p>
-
+      <ul>
+          <li>UML offers deployment diagrams to express that view. Use it, probably with
+              nested diagrams, when your infrastructure is more complex.
+          </li>
+          <li>When your (hardware) stakeholders prefer other kinds of diagrams rather than UML
+              deployment diagram, let them use any kind that is able to show nodes and channels of the infrastructure.
+          </li>
+      </ul>
+      <p><a href="http://docs.arc42.org/section-7/" target="_blank">Read more</a></p>
   </ac:rich-text-body>
   </ac:structured-macro>
   </ac:rich-text-body>

@@ -1,20 +1,54 @@
 <ac:structured-macro ac:name="info">
- <ac:rich-text-body>
-<ac:structured-macro ac:name="expand">
-  <ac:parameter ac:name="title">Click here for content instructions...</ac:parameter>
-  <ac:rich-text-body>
-      <ac:rich-text-body>
-          <h4>Contents</h4>
-          <p>A short summary and explanation of the fundamental solution ideas and strategies.</p>
-          
-          <h4>Motivation</h4>
-          <p>An architecture is often based upon some key solution ideas or strategies. These ideas should be familiar to everyone involved into the architecture.</p>
-          
-          <h4>Form</h4>
-          <p>Diagrams and / or text, as appropriate. Keep it short, i.e. 1 or 2 pages at most!</p>
+    <ac:rich-text-body>
+        <ac:structured-macro ac:name="expand">
+            <ac:parameter ac:name="title">Click here for content instructions...</ac:parameter>
+            <ac:rich-text-body>
+                <ac:rich-text-body>
+                    <h4>Contents</h4>
+                    <p>A short summary and explanation of the fundamental decisions and solution strategies, that shape the system’s architecture.</p>
+                    <p>These include</p>
+                    <ul>
+                        <li>technology decisions</li>
+                        <li>decisions about the top-level decomposition of the system, e.g. usage of an architectural pattern or design pattern</li>
+                        <li>decisions on how to achieve key quality goals</li>
+                        <li>relevant organizational decisions, e.g. selecting a development process or delegating certain tasks to third parties.</li>
+                    </ul>
+                    <h4>Motivation</h4>
+                    <p>These decisions form the cornerstones for your architecture. They are the basis for many other detailed decisions or
+                        implementation rules.
+                    </p>
 
-      </ac:rich-text-body>
-  </ac:rich-text-body>
-  </ac:structured-macro>
-  </ac:rich-text-body>
+                    <h4>Form</h4>
+                    <p>Keep the explanation of these key decisions short.</p>
+                    <p>Motivate what you have decided and why you decided that way,
+                        based upon your problem statement, the quality goals and key constraints. Refer to details in the following sections.
+                    </p>
+
+                    <p>You might use a list of solution-approaches or a table similar to the following:</p>
+                    <table>
+                        <tr>
+                            <th>Quality goal</th>
+                            <th>Scenario</th>
+                            <th>Solution approach</th>
+                            <th>Link to Details</th>
+                        </tr>
+                        <tr>
+                            <td>&lt;Q-goal 1&gt;</td>
+                            <td>&lt;Text&gt;</td>
+                            <td>&lt;Text&gt;</td>
+                            <td>&lt;Link&gt;</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;Q-goal 2&gt;</td>
+                            <td>&lt;Text&gt;</td>
+                            <td>&lt;Text&gt;</td>
+                            <td>&lt;Link&gt;</td>
+                        </tr>
+                    </table>
+
+                    <p><a href="http://docs.arc42.org/section-4/" target="_blank">Read more</a></p>
+                </ac:rich-text-body>
+            </ac:rich-text-body>
+        </ac:structured-macro>
+    </ac:rich-text-body>
 </ac:structured-macro>

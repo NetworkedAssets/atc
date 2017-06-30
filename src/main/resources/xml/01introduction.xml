@@ -1,11 +1,17 @@
 <ac:structured-macro ac:name="info">
-<ac:rich-text-body>
-<ac:structured-macro ac:name="expand">
-  <ac:parameter ac:name="title">Click here for content instructions...</ac:parameter>
-  <ac:rich-text-body>
-    <p>The introduction to the architecture documentation should list the driving forces that software architects must consider in their decisions.</p>
-    <p>This includes on the one hand the fulfillment of functional requirements of the stakeholders, on the other hand the fulfillment of or compliance with required constraints, always in consideration of the architecture goals.</p>
-  </ac:rich-text-body>
-   </ac:structured-macro>
-   </ac:rich-text-body>
+    <ac:rich-text-body>
+        <ac:structured-macro ac:name="expand">
+            <ac:parameter ac:name="title">Click here for content instructions...</ac:parameter>
+            <ac:rich-text-body>
+                <p>Describes the relevant requirements and the driving forces that software architects and development team must consider.</p>
+                <p>These include</p>
+                <ul>
+                    <li>underlying business goals, essential features and functional requirements for the system</li>
+                    <li>quality goals for the architecture</li>
+                    <li>relevant stakeholders and their expectations</li>
+                </ul>
+                <p><a href="http://docs.arc42.org/section-1/" target="_blank">Read more</a></p>
+            </ac:rich-text-body>
+        </ac:structured-macro>
+    </ac:rich-text-body>
 </ac:structured-macro>

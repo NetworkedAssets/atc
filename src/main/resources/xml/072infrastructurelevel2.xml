@@ -1,0 +1,22 @@
+<ac:structured-macro ac:name="info">
+ <ac:rich-text-body>
+<ac:structured-macro ac:name="expand">
+  <ac:parameter ac:name="title">Click here for content instructions...</ac:parameter>
+  <ac:rich-text-body>
+      <p>Here you can include the internal structure of (some) infrastructure elements from
+          infrastructure level 1.</p>
+
+      <p>Please copy the structure from level 1 for each selected element.</p>
+  </ac:rich-text-body>
+   </ac:structured-macro>
+  </ac:rich-text-body>
+</ac:structured-macro>
+
+<h3>7.2.1 &lt;Infrastructure element 1&gt;</h3>
+<p>&lt; insert diagram + explanation &gt;</p>
+
+<h3>7.2.2 &lt;Infrastructure element 1&gt;</h3>
+<p>&lt; insert diagram + explanation &gt;</p>
+
+<h3>7.2.n &lt;Infrastructure element 1&gt;</h3>
+<p>&lt; insert diagram + explanation &gt;</p>

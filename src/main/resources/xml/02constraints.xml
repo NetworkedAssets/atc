@@ -1,28 +1,27 @@
 <ac:structured-macro ac:name="info">
-<ac:rich-text-body>
-<ac:structured-macro ac:name="expand">
-  <ac:parameter ac:name="title">Click here for content instructions...</ac:parameter>
-  
-  <ac:rich-text-body>
+    <ac:rich-text-body>
+        <ac:structured-macro ac:name="expand">
+            <ac:parameter ac:name="title">Click here for content instructions...</ac:parameter>
 
-      <h4>Contents</h4>
-      <p>Any requirement that constrains software architects in their freedom of design decisions or the development process.</p>
-      
-      <h4>Motivation</h4>
-      <p>Architects should know exactly where they are free in their design decisions and where they must adhere to constraints.</p>
-      <p>Constraints must always be dealt with; they may be negotiable, though.</p>
-      
-      <h4>Form</h4>
-      <p>Informal lists, structured by the sub-sections of this section.</p>
-      
-      <h4>Examples</h4>
-      <p>see sub-sections</p>
-      
-      <h4>Background Information</h4>
-      <p>In the optimal case constraints are defined by requirements. In any case, at least the architects must be aware of constraints.</p>
-      <p>The influence of constraints is described by [Hofmeister et al] (Software Architecture, A Practical Guide, Addison Wesley 1999)  using the term “global analysis”.</p>
+            <ac:rich-text-body>
 
-  </ac:rich-text-body>
-  </ac:structured-macro>
-  </ac:rich-text-body>
+                <h4>Content</h4>
+                <p>Any requirement that constrains software architects in their freedom of design and implementation decisions or decision about the
+                    development process. These constraints sometimes go beyond individual systems and are valid for whole organizations and companies.
+                </p>
+
+                <h4>Motivation</h4>
+                <p>Architects should know exactly where they are free in their design decisions and where they must adhere to constraints. Constraints
+                    must always be dealt with; they may be negotiable, though.
+                </p>
+
+                <h4>Form</h4>
+                <p>Simple tables of constraints with explanations. If needed you can subdivide them into technical constraints, organizational and
+                    political constraints and conventions (e.g. programming or versioning guidelines, documentation or naming conventions)
+                </p>
+
+                <p><a href="http://docs.arc42.org/section-2/" target="_blank">Read more</a></p>
+            </ac:rich-text-body>
+        </ac:structured-macro>
+    </ac:rich-text-body>
 </ac:structured-macro>

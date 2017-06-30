@@ -1,0 +1,13 @@
+<ac:structured-macro ac:name="info">
+    <ac:rich-text-body>
+        <ac:structured-macro ac:name="expand">
+            <ac:parameter ac:name="title">Click here for content instructions...</ac:parameter>
+            <ac:rich-text-body>
+                <p>Specifies the internal structure of building block x.1.</p>
+            </ac:rich-text-body>
+        </ac:structured-macro>
+    </ac:rich-text-body>
+</ac:structured-macro>
+<p>
+&lt; insert white box template of building block x.1 &gt;
+</p>

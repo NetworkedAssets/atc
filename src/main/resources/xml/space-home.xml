@@ -22,8 +22,11 @@
                             <ac:parameter ac:name="title">How to remove unwanted pages...</ac:parameter>
                             <ac:rich-text-body>
                                 <p>You can manage the added pages using our
-                                    <a href="https://marketplace.atlassian.com/plugins/com.networkedassets.plugins.manage-my-tree/server/overview">Manage My Tree</a>
-                                    plugin.</p>
+                                    <a href="https://marketplace.atlassian.com/plugins/com.networkedassets.plugins.manage-my-tree/server/overview">
+                                        Manage My Tree
+                                    </a>
+                                    plugin.
+                                </p>
                                 <p>To remove unwanted pages, click on page menu and choose <i>Manage page tree</i>.
                                 </p>
                                 <ac:image>
@@ -57,109 +60,195 @@
                     </ac:rich-text-body>
                 </ac:structured-macro>
 
-                <p>
-                    This is the index page for the Software Architecture Documentation with the english version of the
-                    arc42 standard as a template.
-                </p>
+                <ac:structured-macro ac:name="info">
+                    <ac:rich-text-body>
+                        <ac:structured-macro ac:name="expand">
+                            <ac:parameter ac:name="title">About arc42</ac:parameter>
+                            <ac:rich-text-body>
 
-                <p>
-                    <b>arc42</b>
-                    supports software- and system architects. It is based upon practical experience of many architecture
-                    projects of different sizes and domains. It includes feedback of its many users.
-                </p>
-                <p>
-                    <b>arc42</b>
-                    contains a template for development, documentation and communication of software architectures.
-                </p>
-                <p>
-                    <b>arc42</b>
-                    fits arbitrary technologies and tools.
-                </p>
-                <p>
-                    <b>arc42</b>
-                    therefore ensures better software- and system architectures.
-                </p>
 
-                <p>The easiest way for browsing this space is to turn on the sidebar of confluence. You will find the
-                    button for it on the lefthand
-                    side at the bottom corner of your browser, portrayed as two arrows. Click on it - and the sidebar
-                    will show up.
-                </p>
+                                <p>
+                                    <b>About arc42</b>
+                                    <br/>
+                                    arc42, the Template for documentation of software and system architecture.
+                                    <br/>
+                                    By Dr. Gernot Starke, Dr. Peter Hruschka and contributors.
+                                    <br/>
+                                    Template Revision: 7.0 EN (based on asciidoc), January 2017
+                                </p>
 
-                <p>The sidebar works like any browser tree structure. It shows all the 12 chapters of the ARC42
-                    Template.
-                    Click on the arrow to see the subchapters or hide them again.
-                </p>
+                                <p>
+                                    © We acknowledge that this document uses material from the arc 42 architecture template, <a
+                                        href="http://www.arc42.de">
+                                    http://www.arc42.de</a>. Created by Dr. Peter Hruschka &amp; Dr. Gernot Starke.
+                                </p>
 
-                <h2>Content Overview</h2>
+                                <p>
+                                    This is the index page for the Software Architecture Documentation with the english version of the
+                                    arc42 standard as a template.
+                                </p>
+
+                                <p>
+                                    Note:
+                                    <br/>
+                                    This version of the template contains some help and explanations. It is used for familiarization with arc42 and
+                                    the understanding
+                                    of the concepts.
+                                </p>
+
+                                <p>The easiest way for browsing this space is to turn on the sidebar of confluence. You will find the
+                                    button for it on the lefthand
+                                    side at the bottom corner of your browser, portrayed as two arrows. Click on it - and the sidebar
+                                    will show up.
+                                </p>
+
+                                <p>The sidebar works like any browser tree structure. It shows all the 12 chapters of the ARC42
+                                    Template.
+                                    Click on the arrow to see the subchapters or hide them again.
+                                </p>
+
+                                <h2>Content Overview</h2>
+                                <p>
+                                    <b>1. Introduction and Goals</b>
+                                    <br/>
+                                    Short description of the requirements, driving forces, extract (or abstract) of requirements. Top three (max five)
+                                    quality goals
+                                    for the architecture which have highest priority for the major stakeholders. A table of important stakeholders
+                                    with their
+                                    expectation regarding architecture.
+                                    <br/>
+                                    <ac:image ac:width="300">
+                                        <ri:url ri:value="http://arc42.org/assets/images/template/01-intro-and-goals.png"/>
+                                    </ac:image>
+                                </p>
+                                <p>
+                                    <b>2. Architecture Constraints</b>
+                                    <br/>
+                                    Anything that constrains teams in design and implementation decisions or decision about related processes. Can
+                                    sometimes go beyond
+                                    individual systems and are valid for whole organizations and companies.
+                                    <br/>
+                                    <ac:image ac:width="300">
+                                        <ri:url ri:value="http://arc42.org/assets/images/template/02-constraints-overview.png"/>
+                                    </ac:image>
+                                </p>
+                                <p>
+                                    <b>3. Context and scope</b>
+                                    <br/>
+                                    Delimits your system from its (external) communication partners (neighboring systems and users). Specifies the
+                                    external
+                                    interfaces. Shown from a business/domain perspective (always) or a technical perspective (optional).
+                                    <br/>
+                                    <ac:image ac:width="300">
+                                        <ri:url ri:value="http://arc42.org/assets/images/template/03-context-overview.png"/>
+                                    </ac:image>
+                                </p>
+                                <p>
+                                    <b>4. Solution Strategy</b>
+                                    <br/>
+                                    Summary of the fundamental decisions and solution strategies that shape the architecture. Can include technology,
+                                    top-level
+                                    decomposition, approaches to achieve top quality goals and relevant organizational decisions.
+                                    <br/>
+                                    <ac:image ac:width="300">
+                                        <ri:url ri:value="http://arc42.org/assets/images/template/04-solution-strategy-overview.svg"/>
+                                    </ac:image>
+                                </p>
+                                <p>
+                                    <b>5. Building Block View</b>
+                                    <br/>
+                                    Static decomposition of the system, abstractions of source-code, shown as hierarchy of white boxes (containing
+                                    black boxes), up to
+                                    the appropriate level of detail.
+                                    <br/>
+                                    <ac:image ac:width="300">
+                                        <ri:url ri:value="http://arc42.org/assets/images/template/05-building-block-overview.png"/>
+                                    </ac:image>
+                                </p>
+                                <p>
+                                    <b>6. Runtime View</b>
+                                    <br/>
+                                    Behavior of building blocks as scenarios, covering important use cases or features, interactions at critical
+                                    external interfaces,
+                                    operation and administration plus error and exception behavior.
+                                    <br/>
+                                    <ac:image ac:width="300">
+                                        <ri:url ri:value="http://arc42.org/assets/images/template/06-runtime-overview.png"/>
+                                    </ac:image>
+                                </p>
+                                <p>
+                                    <b>7. Deployment View</b>
+                                    <br/>
+                                    Technical infrastructure with environments, computers, processors, topologies. Mapping of (software) building
+                                    blocks to
+                                    infrastructure elements.
+                                    <br/>
+                                    <ac:image ac:width="300">
+                                        <ri:url ri:value="http://arc42.org/assets/images/template/07-deployment-overview.png"/>
+                                    </ac:image>
+                                </p>
+                                <p>
+                                    <b>8. Crosscutting Concepts</b>
+                                    Overall, principal regulations and solution approaches relevant in multiple parts (→ cross-cutting) of the system.
+                                    Concepts are
+                                    often related to multiple building blocks. Include different topics like domain models, architectur patterns and
+                                    -styles, rules
+                                    for using specific technology and inmplementation rules.
+                                    <br/>
+                                    <ac:image ac:width="300">
+                                        <ri:url ri:value="http://arc42.org/assets/images/template/08-concepts-overview.png"/>
+                                    </ac:image>
+                                </p>
+                                <p>
+                                    <b>9. Architecture Decisions</b>
+                                    <br/>
+                                    Important, expensive, critical, large scale or risky architecture decisions including rationals.
+                                    <br/>
+                                    <ac:image ac:width="300">
+                                        <ri:url ri:value="http://arc42.org/assets/images/template/09-decision-overview.png"/>
+                                    </ac:image>
+                                </p>
+                                <p>
+                                    <b>10. Quality Requirements</b>
+                                    <br/>
+                                    Quality requirements as scenarios, with quality tree to provide high-level overview. The most important quality
+                                    goals should have
+                                    been described in section 1.2. (quality goals).
+                                    <br/>
+                                    <ac:image ac:width="300">
+                                        <ri:url ri:value="http://arc42.org/assets/images/template/10-q-scenario-overview.png"/>
+                                    </ac:image>
+                                </p>
+                                <p>
+                                    <b>11. Risks and Technical Debt</b>
+                                    <br/>
+                                    Known technical risks or technical debt. What potential problems exist within or around the system? What does the
+                                    development team
+                                    feel miserable about?
+                                    <br/>
+                                    <ac:image ac:width="300">
+                                        <ri:url ri:value="http://arc42.org/assets/images/template/11-risk-overview.png"/>
+                                    </ac:image>
+                                </p>
+                                <p>
+                                    <b>12. Glossary</b>
+                                    <br/>
+                                    Important domain and technical terms that stakeholders use when discussing he system. Also: translation reference
+                                    if you work in a
+                                    multi-language environment.
+                                    <br/>
+                                    <ac:image ac:width="300">
+                                        <ri:url ri:value="http://arc42.org/assets/images/template/12-glossary-overview.png"/>
+                                    </ac:image>
+
+                                </p>
+                            </ac:rich-text-body>
+                        </ac:structured-macro>
+                    </ac:rich-text-body>
+                </ac:structured-macro>
                 <p>
-                    <b>1. Introduction and Goals</b>
-                    <br/>
-                    problem, brief definition of task, quality goals, summary of architecturally relevant requirements,
-                    especially the non-functional reqs, list of stakeholder.
+                    <i>Created with arc42-blueprint</i>
                 </p>
-                <p>
-                    <b>2. Constraints</b>
-                    <br/>
-                    What kind of constraints restrict design decisions?
-                </p>
-                <p>
-                    <b>3. Context</b>
-                    <br/>
-                    What's the business and technical context of the system?
-                </p>
-                <p>
-                    <b>4. Solution Ideas and Strategy</b>
-                    <br/>
-                    How does the solution work? What are the fundamental solution approaches?
-                </p>
-                <p>
-                    <b>5. Building Block View</b>
-                    <br/>
-                    Static structure of system, implementation Blocks.
-                </p>
-                <p>
-                    <b>6. Runtime View</b>
-                    <br/>
-                    Cooperation of (instances) of building blocks at runtime, relevant and important interactions.
-                </p>
-                <p>
-                    <b>7. Deployment View</b>
-                    <br/>
-                    Deployment: On which hardware will the building blocks be operated? What further information is
-                    required to
-                    operate the system?
-                </p>
-                <p>
-                    <b>8. Concepts</b>
-                    <br/>
-                    Recurring patterns and structures.
-                    <br/>
-                    Business domain models.
-                    <br/>
-                    Crosscutting (technical) concepts.
-                    <br/>
-                    These concepts can often be re-used across systems.
-                </p>
-                <p>
-                    <b>9. Design Decisions</b>
-                    <br/>
-                    Important design decisions.
-                </p>
-                <p>
-                    <b>10. Quality Scenarios</b>
-                    <br/>
-                    Quality tree with scenarios.
-                </p>
-                <p>
-                    <b>11. Risks</b>
-                </p>
-                <p>
-                    <b>12. Glossary</b>
-                    <br/>
-                    Important terms.
-                </p>
-                <p>Created with arc42-blueprint v${version}</p>
 
             </ac:rich-text-body>
         </ac:structured-macro>
@@ -169,7 +258,7 @@
             <ac:rich-text-body>
 
                 <ac:image ac:width="150">
-                    <ri:url ri:value="http://www.arc42.org/index_files/arc42-logo.png"/>
+                    <ri:url ri:value="http://www.arc42.de/index_files/stacks_image_1117.png"/>
                 </ac:image>
 
                 <h2>Table of Contents</h2>

@@ -3,56 +3,24 @@
 <ac:structured-macro ac:name="expand">
   <ac:parameter ac:name="title">Click here for content instructions...</ac:parameter>
   <ac:rich-text-body>
-      <h4>Contents</h4>
-      <p>Document all important design decisions and their reasons!</p>
-      
-      <h4>Motivation</h4>
-      <p>It is advantageous if all important design decisions can be found in one place. It is up to you to decide if a decision should be documented here or rather locally (e.g. in the white box descriptions of building blocks). In any case avoid redundancies.</p>
-      
-      <h4>Form</h4>
-      <p>Informal list, if possible ordered by the decisions’ importance for the reader.</p>
-      <p>Alternatively, use the following template to structure your decisions:</p>
-     
-      <h4>9.x.1 Problem</h4>
-      <div style="margin-left: 30.0px;">
-        <p>What exactly is the problem?</p>
-        <p>Why is it relevant for the architecture?</p>
-        <p>What consequences does the decision have?</p>
-      </div>
-      
-      <h4>9.x.2 Constraints</h4>
-      <div style="margin-left: 30.0px;">
-        <p>Which constraints do you have to keep in mind?</p>
-        <p>What factors influence the decision?</p>
-      </div>
-      
-      <h4>9.x.3 Assumptions</h4>
-      <div style="margin-left: 30.0px;">
-        <p>Which assumption have you made?</p>
-        <p>How can you check those assumptions?</p>
-        <p>Which risks are you facing?</p>
-      </div>
-      
-      <h4>9.x.4 Considered Alternatives</h4>
-      <div style="margin-left: 30.0px;">
-        <p>Which alternative options did you consider?</p>
-        <p>How do you judge each one?</p>
-        <p>Which alternatives are you excluding deliberately?</p>
-      </div>
-      
-      <h4>9.x.5 Decision</h4>
-      <div style="margin-left: 30.0px;">
-        <p>Who (if not you) has decided?</p>
-        <p>How has the decision been justified?</p>
-        <p>When did you decide?</p>
-      </div>
+      <h3 id="content">Content</h3>
+      <p>Important, expensive, large scale or risky architecture decisions including rationals. With “decisions” we mean selecting one alternative based on given criteria.</p>
+
+      <p>Please use your judgement to decide whether an architectural decision should be documented here in this central section or whether you better document it locally (e.g. within the white box template of one building block). Avoid redundant texts. Refer to section 4, where you captured the most important decisions of your architecture already.</p>
+
+      <h3 id="motivation">Motivation</h3>
+      <p>Stakeholders of your system should be able to comprehend and retrace your decisions.</p>
+
+      <h3 id="form">Form</h3>
+
+      <ul>
+          <li>list or table, ordered by importance and consequences or</li>
+          <li>more detailed in form of separate sections per decision</li>
+          <li>ADR (<a href="http://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions" target="_blank">architecture decision record</a>) for every important decision</li>
+      </ul>
+      <p><a href="http://docs.arc42.org/section-9/" target="_blank">Read more</a></p>
   </ac:rich-text-body>
    </ac:structured-macro>
   </ac:rich-text-body>
 </ac:structured-macro>
-
-<p> </p>
-<h2>9.1  &lt;Decision Topic 1&gt;</h2>
-<h2>9.2 &lt;Decision Topic 2&gt;</h2>
-<h2>9.3 &lt;Decision Topic 3&gt;</h2>
-<h2>...</h2>
+<p>&lt; describe important architecture decisions here &gt;</p>
